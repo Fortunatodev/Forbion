@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const generateMetadata = ({
     title = `Forbion | Home`,
     description = `Tecnologia Aplicada à Operação e Crescimento Empresarial`,
-    image = "/images/og-image.png",
+    image = "https://www.forbion.digital/images/og-image.png",
     icons = [
         {
             rel: "apple-touch-icon",
