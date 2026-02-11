@@ -133,9 +133,9 @@ const Integrations = () => {
                     </motion.div>
 
                     <Container animation="blurIn" delay={0.5} className="absolute inset-x-0 bottom-0 lg:bottom-1/10 mx-auto my-2 flex justify-center gap-2 w-fit scale-90 lg:scale-100">
-                        <div className="bg-primary/5 relative z-20 rounded-full border border-foreground/10 backdrop-blur-sm p-1.5 group">
+                        <div className="bg-primary/5 relative z-20 rounded-full m p-1.5 group">
                             <IntegrationCard className=" bg-primary/5">
-                                <Icons.icon className="text-primary group-hover:scale-110 group-active:scale-95 transition-all duration-300" />
+                                
                             </IntegrationCard>
                         </div>
                     </Container>

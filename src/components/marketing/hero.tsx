@@ -14,11 +14,12 @@ import Image from 'next/image';
 import Container from "../global/container";
 
 const badges = [
-    { text: "Project Management", top: "15%", left: "5%" },
-    { text: "Client Hub", top: "25%", right: "8%" },
-    { text: "Smart Contracts", top: "60%", left: "10%" },
-    { text: "Invoice Tracking", top: "70%", right: "18%" },
+    { text: "Respostas Automáticas 24h", top: "44%", left: "20%" },
+    { text: "Gestão Completa de Clientes", top: "6%", right: "44%" },
+    { text: "Fluxos Inteligentes com IA", top: "30%", left: "20%" },
+    { text: "Receita Sob Controle", top: "75%", right: "8%" },
 ];
+
 
 const FloatingBadge = ({ text, top, left, right, index }: { text: string; top: string; left?: string; right?: string; index: number }) => {
     const x = useMotionValue(0);
@@ -164,23 +165,43 @@ const Hero = () => {
                     transition={{ duration: 1, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
                     className={cn("mt-10 lg:mt-20 relative")}
                 >
-                    <div className="relative mx-auto max-w-6xl rounded-2xl md:rounded-[32px] border border-foreground/10 bg-foreground/5 backdrop-blur-lg p-2">
-                        <div className="absolute top-1/4 left-1/2 -z-10 w-4/5 h-1/3 -translate-x-1/2 -translate-y-1/2 bg-primary/20 blur-[10rem] opacity-50" />
+                    <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
-                        <div className="rounded-lg md:rounded-[24px] border border-foreground/10 bg-background overflow-hidden">
-                            <Image
-                                src="/images/dashboard.png"
-                                alt="Dashboard Preview"
-                                width={2896}
-                                height={1804}
-                                priority
-                                className="w-full h-auto lg:hidden"
-                            />
-                            <div className="hidden lg:block">
-                                <Dashboard />
+                        {/* Glow background */}
+                        <div className="absolute inset-0 flex justify-center -z-10">
+                            <div className="w-[90%] h-[60%] bg-primary/20 blur-[120px] opacity-40 rounded-full" />
+                        </div>
+
+                        <div className="
+        relative 
+        rounded-2xl 
+        sm:rounded-3xl 
+        lg:rounded-[32px]
+        border border-foreground/10
+        bg-foreground/5 
+        backdrop-blur-xl 
+        p-2 sm:p-3 lg:p-4
+        shadow-2xl
+    ">
+
+                            <div className="
+            rounded-xl 
+            sm:rounded-2xl 
+            lg:rounded-[28px] 
+            border border-foreground/10 
+            bg-background 
+            overflow-hidden
+        ">
+
+                                {/* Dashboard sempre ativo */}
+                                <div className="w-full h-full scale-[0.98] sm:scale-100 transition-transform duration-500">
+                                    <Dashboard />
+                                </div>
+
                             </div>
                         </div>
                     </div>
+
                     <div className="absolute inset-x-0 bottom-0 z-20 w-full h-3/4 bg-linear-to-t from-background to-background/0 from-10% pointer-events-none" />
 
                     <div className="absolute top-0 inset-x-0 w-3/5 mx-auto h-1/10 rounded-full bg-primary blur-[4rem] opacity-40 -z-10"></div>
