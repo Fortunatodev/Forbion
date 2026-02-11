@@ -32,10 +32,12 @@ export const footerLinks = {
         { label: "Planos", href: "#membership" }
     ],
     resources: [
-        { label: "Demonstração", href: "#" },,
+        { label: "Demonstração", href: "#" },
         { label: "Fale com um", href: "#" },
         { label: "Central de ajuda", href: "#" },
-    ],
+        { label: "Documentação", href: "#" },
+    ]
+    ,
     company: [
         { label: "Sobre a empresa", href: "#" },
         { label: "Metodologia", href: "#" },
@@ -49,6 +51,4 @@ export const socialLinks = [
     { label: "X", href: "https://x.com", icon: "x" },
     { label: "GitHub", href: "https://github.com", icon: "github" },
     { label: "LinkedIn", href: "https://linkedin.com", icon: "linkedin" },
-    { label: "Instagram", href: "https://instagram.com", icon: "instagram" },
-
 ];
