@@ -27,5 +27,19 @@ export const generateMetadata = ({
     title,
     description,
     icons,
+
+    openGraph: {
+        title,
+        description,
+        images: image ? [{ url: image }] : undefined,
+    },
+
+    twitter: {
+        card: "summary_large_image",
+        title,
+        description,
+        images: image ? [image] : undefined,
+    },
+
     ...(noIndex && { robots: { index: false, follow: false } }),
 });
