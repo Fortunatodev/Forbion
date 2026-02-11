@@ -135,7 +135,7 @@ const Integrations = () => {
                     <Container animation="blurIn" delay={0.5} className="absolute inset-x-0 bottom-0 lg:bottom-1/10 mx-auto my-2 flex justify-center gap-2 w-fit scale-90 lg:scale-100">
                         <div className="bg-primary/5 relative z-20 rounded-full m p-1.5 group">
                             <IntegrationCard className=" bg-primary/5">
-                                
+                                <Icons.icon className="size-5 text-primary group-hover:text-primary/80 transition-colors" />
                             </IntegrationCard>
                         </div>
                     </Container>
