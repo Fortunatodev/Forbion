@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const generateMetadata = ({
-    title = `${process.env.NEXT_PUBLIC_APP_NAME} | Home`,
+    title = `Forbion | Home`,
     description = `Tecnologia Aplicada à Operação e Crescimento Empresarial`,
     image = "/images/og-image.png",
     icons = [
