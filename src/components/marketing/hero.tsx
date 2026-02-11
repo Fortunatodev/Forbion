@@ -146,12 +146,20 @@ const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.6 }}
                         className={cn("flex items-center gap-4 flex-wrap justify-center mt-8")}
                     >
-                        <Link href={Routes.Dashboard}>
+                            <Link
+                            href="https://api.whatsapp.com/send/?phone=5547992507057&text=Ol%C3%A1%21+Quero+modernizar+os+processos+da+minha+empresa.+Como+voc%C3%AAs+trabalham%3F"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <Button size="lg">
                                 Entrar em Contato
                             </Button>
                         </Link>
-                        <Link href={Routes.Home}>
+                        <Link
+                            href="https://api.whatsapp.com/send/?phone=5547992507057&text=Ol%C3%A1%21+Quero+modernizar+os+processos+da+minha+empresa.+Como+voc%C3%AAs+trabalham%3F"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                             <Button size="lg" variant="outline">
                                 Solicitar Demonstração
                             </Button>

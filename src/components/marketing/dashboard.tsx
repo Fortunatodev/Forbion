@@ -4,6 +4,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { LayoutGrid, Users, DollarSign, FileText, MessageSquare, Zap, Settings, Search, Bell, TrendingUp, TrendingDown, Calendar, Clock, CheckCircle, AlertCircle, Circle, ChevronRight, BarChart3, Activity, Send, MoreVertical, Phone, Video, Menu, Home, Box, Target, Sparkles, X } from 'lucide-react';
 import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Area, AreaChart } from 'recharts';
 import Icons from '../global/icons';
+import { Routes } from '@/constants/routes';
+import Link from 'next/link';
 
 // Componente 3D AI Core
 const AICore3D = () => {
@@ -260,7 +262,7 @@ const Dashboard = () => {
                                     </p>
                                     <div className="mt-6">
                                         <div className="text-5xl lg:text-6xl font-bold text-card-foreground tracking-tight">
-                                            <AnimatedNumber value={5} />:<AnimatedNumber value={4} /><span className="text-xl lg:text-2xl text-muted-foreground ml-2">AM</span>
+                                            <AnimatedNumber value={9} />:<AnimatedNumber value={49} /><span className="text-xl lg:text-2xl text-muted-foreground ml-2">AM</span>
                                         </div>
                                     </div>
                                 </div>
@@ -743,7 +745,7 @@ const Dashboard = () => {
                 return (
                     <div className="space-y-6 animate-fade-in">
                         {/* Stats Overview */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                             <div className="bg-card rounded-xl p-6 border border-border">
                                 <p className="text-sm text-muted-foreground mb-2">Receita Total</p>
                                 <div className="text-2xl lg:text-3xl font-bold text-card-foreground">R$ <AnimatedNumber value={178000} /></div>
@@ -758,13 +760,6 @@ const Dashboard = () => {
                                 <div className="flex items-center gap-1 mt-2">
                                     <TrendingUp className="w-4 h-4 text-emerald-400" />
                                     <span className="text-sm text-emerald-400">+12</span>
-                                </div>
-                            </div>
-                            <div className="bg-card rounded-xl p-6 border border-border">
-                                <p className="text-sm text-muted-foreground mb-2">Pendentes</p>
-                                <div className="text-2xl lg:text-3xl font-bold text-card-foreground">R$ <AnimatedNumber value={28400} /></div>
-                                <div className="flex items-center gap-1 mt-2">
-                                    <span className="text-sm text-muted-foreground">3 faturas</span>
                                 </div>
                             </div>
                             <div className="bg-card rounded-xl p-6 border border-border">
@@ -940,7 +935,9 @@ const Dashboard = () => {
       `}>
                 <div className="p-6 border-b border-sidebar-border flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                        <Icons.wordmark className="h-5 w-auto text-white" />
+                        <Link href={Routes.Home} className="flex items-center gap-2">
+                            <Icons.wordmark className="h-5 w-auto text-white" />
+                        </Link>
                     </div>
                     <button
                         onClick={() => setSidebarOpen(false)}
@@ -952,10 +949,10 @@ const Dashboard = () => {
 
                 <nav className="flex-1 p-4 space-y-1 overflow-y-auto">
                     <div className="mb-6">
-                        <button className="w-full flex items-center gap-3 px-4 py-2.5 text-sidebar-foreground bg-sidebar-accent rounded-lg hover:bg-sidebar-accent/80 transition-colors">
+                        <Link href={Routes.Dashboard} className="w-full flex items-center gap-3 px-4 py-2.5 text-sidebar-foreground bg-sidebar-accent rounded-lg hover:bg-sidebar-accent/80 transition-colors">
                             <Home className="w-5 h-5" />
                             <span className="text-sm font-medium">Início</span>
-                        </button>
+                        </Link>
                     </div>
 
                     <div className="mb-2 px-4">

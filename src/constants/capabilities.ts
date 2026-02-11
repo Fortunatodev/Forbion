@@ -66,11 +66,11 @@ export const stats = [
     {
         id: 1,
         value: "Operações",
-        label: "estruturadas com o modelo Forme",
+        label: "estruturadas com o modelo Forbion",
         avatars: [
             "/images/avatars/avatar1.jpg",
             "/images/avatars/avatar2.jpg",
-            "/images/avatars/avatar3.jpg",
+            "/images/avatars/bis.jpg",
             "/images/avatars/avatar4.jpg",
             "/images/avatars/avatar5.jpg"
         ]

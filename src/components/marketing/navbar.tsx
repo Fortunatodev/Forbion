@@ -59,7 +59,11 @@ const Navbar = () => {
                         </div>
 
                         <div className="flex items-center gap-2 lg:gap-3">
-                            <Link href={Routes.Dashboard}>
+                        <Link
+                            href="https://api.whatsapp.com/send/?phone=5547992507057&text=Ol%C3%A1%21+Quero+modernizar+os+processos+da+minha+empresa.+Como+voc%C3%AAs+trabalham%3F"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                                 <Button variant="white" className="hidden lg:flex">
                                     Entrar em Contato
                                 </Button>

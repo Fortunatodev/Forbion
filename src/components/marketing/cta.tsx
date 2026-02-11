@@ -100,7 +100,11 @@ const Cta = () => {
                                 whileHover={{ scale: 1.05 }}
                                 className="mt-6"
                             >
-                                <Link href={Routes.Dashboard}>
+                                          <Link
+                            href="https://api.whatsapp.com/send/?phone=5547992507057&text=Ol%C3%A1%21+Quero+modernizar+os+processos+da+minha+empresa.+Como+voc%C3%AAs+trabalham%3F"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
                                     <Button size="lg" className="text-base">
                                         Entrar em Contato
                                     </Button>

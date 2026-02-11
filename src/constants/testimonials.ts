@@ -15,10 +15,10 @@ export const testimonials = [
     },
     {
         id: 3,
-        name: "Rafael Costa",
-        role: "Fundador",
+        name: "Victor BIS",
+        role: "Fundador CEO",
         text: "Antes dependíamos de mensagens e controles dispersos. Agora todo o processo está centralizado e nosso faturamento ficou previsível.",
-        avatar: "/images/avatars/avatar3.jpg"
+        avatar: "/images/avatars/bis.jpg"
     },
     {
         id: 4,
