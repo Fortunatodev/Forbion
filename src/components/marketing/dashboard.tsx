@@ -200,7 +200,7 @@ const Dashboard = () => {
         }
     }, [activeTab, messages.length]);
 
-    const tabs = [
+    const tabs: { id: TabId; name: string; icon: any }[] = [
         { id: 'visao-geral', name: 'Visão Geral', icon: LayoutGrid },
         { id: 'atendimento', name: 'Atendimento', icon: MessageSquare },
         { id: 'clientes', name: 'Clientes', icon: Users },
