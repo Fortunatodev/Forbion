@@ -408,8 +408,8 @@ const Dashboard = () => {
                                             <div
                                                 key={day}
                                                 className={`text-sm p-2 rounded-lg ${day === 11
-                                                        ? 'bg-primary text-primary-foreground font-semibold'
-                                                        : 'text-muted-foreground hover:bg-accent'
+                                                    ? 'bg-primary text-primary-foreground font-semibold'
+                                                    : 'text-muted-foreground hover:bg-accent'
                                                     } cursor-pointer transition-colors`}
                                             >
                                                 {day}
@@ -626,8 +626,8 @@ const Dashboard = () => {
                                                 )}
                                                 <div
                                                     className={`rounded-2xl px-4 py-3 ${msg.sender === 'client'
-                                                            ? 'bg-primary text-primary-foreground'
-                                                            : 'bg-accent text-card-foreground'
+                                                        ? 'bg-primary text-primary-foreground'
+                                                        : 'bg-accent text-card-foreground'
                                                         }`}
                                                 >
                                                     <p className="text-sm">{msg.text}</p>
@@ -714,8 +714,8 @@ const Dashboard = () => {
                                         <div className="flex items-start gap-4 group">
                                             <div className="flex flex-col items-center">
                                                 <div className={`w-12 h-12 rounded-full flex items-center justify-center ${step.status === 'complete' ? 'bg-emerald-500/20 border-2 border-emerald-500' :
-                                                        step.status === 'processing' ? 'bg-primary/20 border-2 border-primary animate-pulse' :
-                                                            'bg-accent border-2 border-border'
+                                                    step.status === 'processing' ? 'bg-primary/20 border-2 border-primary animate-pulse' :
+                                                        'bg-accent border-2 border-border'
                                                     }`}>
                                                     {step.status === 'complete' ? (
                                                         <CheckCircle className="w-6 h-6 text-emerald-500" />
@@ -892,8 +892,8 @@ const Dashboard = () => {
                                                 <td className="p-4 text-sm text-card-foreground font-semibold">{invoice.valor}</td>
                                                 <td className="p-4">
                                                     <span className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium ${invoice.status === 'pago' ? 'bg-emerald-500/20 text-emerald-400' :
-                                                            invoice.status === 'pendente' ? 'bg-yellow-500/20 text-yellow-400' :
-                                                                'bg-red-500/20 text-red-400'
+                                                        invoice.status === 'pendente' ? 'bg-yellow-500/20 text-yellow-400' :
+                                                            'bg-red-500/20 text-red-400'
                                                         }`}>
                                                         {invoice.status === 'pago' && <CheckCircle className="w-3 h-3" />}
                                                         {invoice.status === 'pendente' && <Clock className="w-3 h-3" />}
@@ -1017,8 +1017,8 @@ const Dashboard = () => {
                                     setSidebarOpen(false);
                                 }}
                                 className={`w-full flex items-center gap-3 px-4 py-2.5 rounded-lg transition-all duration-200 ${activeTab === tab.id
-                                        ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/20'
-                                        : 'text-sidebar-foreground/70 hover:bg-sidebar-accent hover:text-sidebar-foreground'
+                                    ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/20'
+                                    : 'text-sidebar-foreground/70 hover:bg-sidebar-accent hover:text-sidebar-foreground'
                                     }`}
                             >
                                 <Icon className="w-5 h-5" />
