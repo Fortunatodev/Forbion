@@ -277,26 +277,7 @@ const Dashboard = () => {
                         </div>
 
                         {/* Stats Grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                            <div className="bg-card rounded-xl p-6 border border-border hover:border-primary/30 transition-all duration-300 hover:scale-[1.02] group cursor-pointer">
-                                <div className="flex items-center justify-between mb-4">
-                                    <div className="p-2 bg-accent rounded-lg group-hover:bg-primary/10 transition-colors">
-                                        <Box className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
-                                    </div>
-                                    <MoreVertical className="w-4 h-4 text-muted-foreground" />
-                                </div>
-                                <div className="space-y-2">
-                                    <p className="text-sm text-muted-foreground">Total de Projetos</p>
-                                    <div className="flex items-end gap-2">
-                                        <h3 className="text-3xl font-bold text-card-foreground"><AnimatedNumber value={24} /></h3>
-                                        <div className="flex items-center text-emerald-400 text-sm mb-1">
-                                            <TrendingUp className="w-4 h-4 mr-1" />
-                                            <span>+3</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                             <div className="bg-card rounded-xl p-6 border border-border hover:border-primary/30 transition-all duration-300 hover:scale-[1.02] group cursor-pointer">
                                 <div className="flex items-center justify-between mb-4">
                                     <div className="p-2 bg-accent rounded-lg group-hover:bg-primary/10 transition-colors">
@@ -355,34 +336,8 @@ const Dashboard = () => {
                         </div>
 
                         {/* Content Grid */}
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                             {/* Quick Tasks */}
-                            <div className="bg-card rounded-xl p-6 border border-border">
-                                <h3 className="text-lg font-semibold text-card-foreground mb-4">Tarefas Rápidas</h3>
-                                <p className="text-sm text-muted-foreground mb-6">Gerencie suas tarefas diárias</p>
-
-                                <div className="flex gap-2 mb-6">
-                                    <button className="flex-1 py-2 px-4 bg-accent rounded-lg text-sm text-card-foreground hover:bg-accent/80 transition-colors">
-                                        <Circle className="w-4 h-4 inline mr-2" />
-                                        Ativas (0)
-                                    </button>
-                                    <button className="flex-1 py-2 px-4 bg-accent rounded-lg text-sm text-card-foreground hover:bg-accent/80 transition-colors">
-                                        <CheckCircle className="w-4 h-4 inline mr-2" />
-                                        Concluídas (0)
-                                    </button>
-                                </div>
-
-                                <div className="flex items-center gap-2">
-                                    <input
-                                        type="text"
-                                        placeholder="Adicionar tarefa rápida..."
-                                        className="flex-1 bg-accent border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder-muted-foreground focus:outline-none focus:border-ring"
-                                    />
-                                    <button className="p-3 bg-secondary hover:bg-secondary/80 rounded-lg transition-colors">
-                                        <span className="text-secondary-foreground text-lg">+</span>
-                                    </button>
-                                </div>
-                            </div>
 
                             {/* Calendar */}
                             <div className="bg-card rounded-xl p-6 border border-border">

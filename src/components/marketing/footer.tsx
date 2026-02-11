@@ -75,24 +75,6 @@ const Footer = () => {
 
                         <div>
                             <h3 className="text-sm font-semibold text-foreground mt-0">
-                                Empresa
-                            </h3>
-                            <ul className="mt-4 space-y-3">
-                                {footerLinks.resources.map((link) => (
-                                    <li key={link.label}>
-                                        <Link
-                                            href={link.href}
-                                            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-                                        >
-                                            {link.label}
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-
-                        <div>
-                            <h3 className="text-sm font-semibold text-foreground mt-0">
                                 Company
                             </h3>
                             <ul className="mt-4 space-y-3">
