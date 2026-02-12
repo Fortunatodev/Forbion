@@ -172,6 +172,7 @@ const Dashboard = () => {
         { id: 1, sender: 'client', text: 'Olá, gostaria de saber mais sobre os planos', time: '14:32', read: true },
         { id: 2, sender: 'ai', text: 'Olá! Fico feliz em ajudar. Temos 3 planos disponíveis: Starter, Professional e Enterprise. Qual o porte da sua empresa?', time: '14:32', read: true, isAI: true },
         { id: 3, sender: 'client', text: 'Somos uma empresa de médio porte, cerca de 50 funcionários', time: '14:34', read: true },
+        { id: 4, sender: 'client', text: 'Somos uma empresa de médio porte, cerca de 50 funcionários', time: '14:34', read: true },
     ]);
     const [typing, setTyping] = useState(false);
     const [selectedConversation, setSelectedConversation] = useState(0);
@@ -567,10 +568,7 @@ const Dashboard = () => {
                                 {/* Mensagens */}
                                 <div className="flex-1 overflow-y-auto p-6 space-y-4">
                                     {messages.map((msg) => (
-                                        <div
-                                            key={msg.id}
-                                            className={`flex ${msg.sender === 'client' ? 'justify-end' : 'justify-start'} animate-slide-up`}
-                                        >
+                                        <div key={msg.id} className={`flex ${msg.sender === 'client' ? 'justify-end' : 'justify-start'} animate-slide-up`}>
                                             <div className={`max-w-[70%] ${msg.sender === 'client' ? 'order-2' : 'order-1'}`}>
                                                 {msg.isAI && (
                                                     <div className="flex items-center gap-2 mb-2">

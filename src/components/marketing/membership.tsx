@@ -14,277 +14,289 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const integrationLogos = [
-    '/icons/integrations/cursor.svg',
-    '/icons/integrations/convex.svg',
-    '/icons/integrations/dribbble.svg',
-    '/icons/integrations/dub.svg',
-    '/icons/integrations/asana.svg',
-    '/icons/integrations/figma.svg',
-    '/icons/integrations/heptabase.svg',
-    '/icons/integrations/layers.svg',
-    '/icons/integrations/mintlify.svg',
-    '/icons/integrations/soldera.svg',
-    '/icons/integrations/polar.svg',
-    '/icons/integrations/slack.svg',
+  '/icons/integrations/cursor.svg',
+  '/icons/integrations/convex.svg',
+  '/icons/integrations/dribbble.svg',
+  '/icons/integrations/dub.svg',
+  '/icons/integrations/asana.svg',
+  '/icons/integrations/figma.svg',
+  '/icons/integrations/heptabase.svg',
+  '/icons/integrations/layers.svg',
+  '/icons/integrations/mintlify.svg',
+  '/icons/integrations/soldera.svg',
+  '/icons/integrations/polar.svg',
+  '/icons/integrations/slack.svg',
 ];
 
 const Membership = () => {
+  const [billingCycle, setBillingCycle] = useState<'mensal' | 'anual'>('mensal');
 
-    const [billingCycle, setBillingCycle] = useState<'monthly' | 'yearly'>('yearly');
+  return (
+    <section id="membership" className="w-full py-16 lg:py-24 relative">
+      <div className="hidden lg:block absolute -z-10 top-0 -left-1/4 size-1/3 bg-primary/10 rounded-full blur-[8rem]" />
 
-    return (
-        <section id="membership" className="w-full py-16 lg:py-24 relative">
+      <Wrapper>
+        <div className="flex flex-col items-center text-center">
+          <SectionBadge title="Planos e Implantação" />
 
-            <div className="hidden lg:block absolute -z-10 top-0 -left-1/4 size-1/3 bg-primary/10 rounded-full blur-[8rem]" />
+          <motion.h2
+            className="title mt-6"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            Estruture hoje.
+            <br />
+            Escale com previsibilidade.
+          </motion.h2>
 
-            <Wrapper>
-                <div className="flex flex-col items-center text-center">
-                    <SectionBadge title="Modelo de Atuação" />
+          <motion.p
+            className="desc mt-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+          >
+            Soluções específicas para donos de estética automotiva: organização do atendimento, automação no WhatsApp com IA e visão de faturamento em um único fluxo.
+          </motion.p>
 
-                    <motion.h2
-                        className="title mt-6"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
-                    >
-                        Estrutura pensada
-                        <br />
-                        para crescimento real
-                    </motion.h2>
+          <motion.div
+            className="flex items-center gap-3 mt-20 relative"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <span
+              role="button"
+              onClick={() => setBillingCycle('mensal')}
+              className={cn(
+                "text-sm font-medium transition-colors cursor-pointer",
+                billingCycle === 'mensal' ? 'text-primary' : 'text-muted-foreground'
+              )}
+            >
+              Mensal
+            </span>
 
-                    <motion.p
-                        className="desc mt-4"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.3 }}
-                    >
-                        Sistema estruturado para organizar atendimento e faturamento em um único ambiente.
-                    </motion.p>
+            <button
+              onClick={() => setBillingCycle(billingCycle === 'mensal' ? 'anual' : 'mensal')}
+              className={cn(
+                "relative w-10 h-6 rounded-full transition-colors cursor-pointer group",
+                "bg-foreground/10",
+              )}
+            >
+              <div
+                className={cn(
+                  "absolute top-0.5 left-0.5 size-5 rounded-full scale-90 shadow-[0_0_10px_rgba(0,85,255,0.8)] group-hover:scale-80 transition-all duration-300 bg-primary",
+                  billingCycle === 'anual' ? 'translate-x-4' : 'translate-x-0'
+                )}
+              />
+            </button>
 
-                    <motion.div
-                        className="flex items-center gap-3 mt-14 relative"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.4 }}
-                    >
-                        <span
-                            role="button"
-                            onClick={() => setBillingCycle('monthly')}
-                            className={cn(
-                                "text-sm font-medium transition-colors cursor-pointer",
-                                billingCycle === 'monthly' ? 'text-primary' : 'text-muted-foreground'
-                            )}>
-                            Monthly
-                        </span>
+            <span
+              role="button"
+              onClick={() => setBillingCycle('anual')}
+              className={cn(
+                "text-sm font-medium transition-colors cursor-pointer",
+                billingCycle === 'anual' ? 'text-primary' : 'text-muted-foreground'
+              )}
+            >
+              Anual
+            </span>
 
-                        <button
-                            onClick={() => setBillingCycle(billingCycle === 'monthly' ? 'yearly' : 'monthly')}
-                            className={cn(
-                                "relative w-10 h-6 rounded-full transition-colors cursor-pointer group",
-                                "bg-foreground/10",
-                            )}
+            <div className="absolute -top-18 -right-3/4 flex flex-col gap-2">
+              <span className="text-base text-muted-foreground font-handwriting">
+                7 dias grátis no plano Estética
+              </span>
+              <Image
+                src="/icons/curved-arrow.svg"
+                alt="arrow"
+                width={50}
+                height={20}
+                className="w-10 h-auto opacity-70"
+              />
+            </div>
+          </motion.div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-3xl mx-auto">
+          {pricingPlans.map((plan, index) => {
+            // Regras do seu posicionamento:
+            // - Starter: não exibe preço (CTA WhatsApp)
+            // - Estética: exibe R$149/mês e destaca 7 dias grátis
+            const hidePrice = plan.name === "Starter";
+
+            return (
+              <motion.div
+                key={plan.id}
+                className={cn(
+                  "relative rounded-xl lg:rounded-2xl p-5 lg:p-8 overflow-hidden",
+                  "bg-cardbox",
+                  "transition-all duration-300",
+                )}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
+              >
+                {plan.popular && (
+                  <>
+                    <div className="absolute top-0 inset-x-0 h-6 w-4/5 mx-auto bg-primary blur-[3rem]" />
+                    <div className="absolute top-0 inset-x-0 h-px w-full bg-linear-to-r from-primary/0 via-primary/50 to-primary/0" />
+                  </>
+                )}
+
+                {plan.popular && (
+                  <div className="absolute top-4 right-4">
+                    <span className="px-3 py-1 text-xs font-medium bg-primary text-white rounded-full">
+                      {plan.badge ?? "MAIS CONTRATADO"}
+                    </span>
+                  </div>
+                )}
+
+                <div>
+                  <h3 className="text-2xl font-semibold">{plan.name}</h3>
+
+                  <div className="flex items-baseline w-full mt-4">
+                    {hidePrice ? (
+                      <span className="text-2xl text-muted-foreground font-medium">
+                        Sem preço fixo — proposta no WhatsApp
+                      </span>
+                    ) : (
+                      <>
+                        <span className="text-5xl font-semibold">R$</span>
+                        <NumberFlow
+                          value={plan.price[billingCycle]}
+                          className="text-5xl font-semibold tracking-tight"
+                          format={{ notation: 'standard' }}
+                        />
+                        <motion.span
+                          key={billingCycle}
+                          initial={{ y: 20, opacity: 0, filter: 'blur(10px)' }}
+                          animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
+                          exit={{ y: -20, opacity: 0, filter: 'blur(10px)' }}
+                          transition={{ duration: 0.5, ease: 'easeOut' }}
+                          className="text-muted-foreground text-sm ml-1"
                         >
-                            <div className={cn(
-                                "absolute top-0.5 left-0.5 size-5 rounded-full scale-90 shadow-[0_0_10px_rgba(0,85,255,0.8)] group-hover:scale-80 transition-all duration-300 bg-primary",
-                                billingCycle === 'yearly' ? 'translate-x-4' : 'translate-x-0'
-                            )} />
-                        </button>
+                          {billingCycle === 'mensal' ? '/mês' : '/ano'}
+                        </motion.span>
+                      </>
+                    )}
+                  </div>
 
-                        <span
-                            role="button"
-                            onClick={() => setBillingCycle('yearly')}
-                            className={cn(
-                                "text-sm font-medium transition-colors cursor-pointer",
-                                billingCycle === 'yearly' ? 'text-primary' : 'text-muted-foreground'
-                            )}>
-                            Yearly
-                        </span>
-
-                        <div className="absolute -top-12 -right-3/5 flex flex-col gap-2">
-                            <span className="text-base text-muted-foreground font-handwriting">
-                                2 months free
-                            </span>
-                            <Image
-                                src="/icons/curved-arrow.svg"
-                                alt="arrow"
-                                width={50}
-                                height={20}
-                                className="w-10 h-auto opacity-70"
-                            />
-                        </div>
-                    </motion.div>
+                  <p className="text-muted-foreground text-sm mt-4 leading-relaxed">
+                    {plan.description}
+                  </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-3xl mx-auto">
-                    {pricingPlans.map((plan, index) => (
-                        <motion.div
-                            key={plan.id}
-                            className={cn(
-                                "relative rounded-xl lg:rounded-2xl p-5 lg:p-8 overflow-hidden",
-                                "bg-cardbox",
-                                "transition-all duration-300",
-                            )}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: 0.5 + index * 0.1 }}
-                        >
-                            {plan.popular && (
-                                <>
-                                    <div className="absolute top-0 inset-x-0 h-6 w-4/5 mx-auto bg-primary blur-[3rem]">
-                                    </div>
-                                    <div className="absolute top-0 inset-x-0 h-px w-full bg-linear-to-r from-primary/0 via-primary/50 to-primary/0"></div>
-                                </>
-                            )}
+                <Link href={plan.cta.href}>
+                  <Button
+                    variant={plan.popular ? "default" : "secondary"}
+                    className={cn("w-full mt-6")}
+                  >
+                    {plan.cta.text}
+                    <ArrowRight className="size-4" />
+                  </Button>
+                </Link>
 
-                            {plan.popular && (
-                                <div className="absolute top-4 right-4">
-                                    <span className="px-3 py-1 text-xs font-medium bg-primary text-white rounded-full">
-                                        {plan.badge}
-                                    </span>
-                                </div>
-                            )}
+                <ul className="space-y-3 mt-8">
+                  {plan.features.map((feature, idx) => (
+                    <motion.li
+                      key={idx}
+                      initial={{ opacity: 0, x: -10 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.3, delay: 0.6 + idx * 0.05 }}
+                      className={cn("flex items-center gap-2 transition-all duration-200")}
+                    >
+                      <Check
+                        className={cn(
+                          "size-3.5",
+                          feature.highlighted ? "text-primary" : "text-muted-foreground"
+                        )}
+                      />
+                      <span
+                        className={cn(
+                          "text-sm leading-relaxed",
+                          feature.highlighted
+                            ? "text-foreground font-medium"
+                            : "text-muted-foreground"
+                        )}
+                      >
+                        {feature.text}
+                      </span>
+                    </motion.li>
+                  ))}
+                </ul>
+              </motion.div>
+            );
+          })}
+        </div>
 
-                            <div>
-                                <h3 className="text-2xl font-semibold">
-                                    {plan.name}
-                                </h3>
-                                <div className="flex items-baseline w-full mt-4">
-                                    <span className="text-5xl font-semibold">
-                                        $
-                                    </span>
-                                    <NumberFlow
-                                        value={plan.price[billingCycle]}
-                                        className="text-5xl font-semibold tracking-tight"
-                                        format={{ notation: 'standard' }}
-                                    />
-                                    <motion.span
-                                        key={billingCycle}
-                                        initial={{ y: 20, opacity: 0, filter: 'blur(10px)' }}
-                                        animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
-                                        exit={{ y: -20, opacity: 0, filter: 'blur(10px)' }}
-                                        transition={{ duration: 0.5, ease: 'easeOut' }}
-                                        className="text-muted-foreground text-sm ml-1"
-                                    >
-                                        {billingCycle === 'monthly' ? '/month' : '/year'}
-                                    </motion.span>
-                                </div>
-                                <p className="text-muted-foreground text-sm mt-4 leading-relaxed">
-                                    {plan.description}
-                                </p>
-                            </div>
+        <motion.div
+          className="mt-6 max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.7 }}
+        >
+          <div className="rounded-xl lg:rounded-2xl p-8 lg:p-8 bg-cardbox">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
+              <div>
+                <h3 className="text-2xl font-medium">{trustedCompanies.title}</h3>
+                <p className="text-sm text-muted-foreground mt-2">
+                  {trustedCompanies.description}
+                </p>
+                <Link href={trustedCompanies.cta.href} className="cursor-pointer!">
+                  <Button
+                    variant="outline"
+                    className="text-primary mt-2 p-0! border-0 bg-transparent hover:text-primary/80 hover:bg-transparent"
+                  >
+                    {trustedCompanies.cta.text}
+                    <ArrowRight className="size-4" />
+                  </Button>
+                </Link>
+              </div>
 
-                            <Link href={plan.cta.href}>
-                                <Button
-                                    variant={plan.popular ? "default" : "secondary"}
-                                    className={cn(
-                                        "w-full mt-6"
-                                    )}
-
-                                >
-                                    {plan.cta.text}
-                                    <ArrowRight className="size-4" />
-                                </Button>
-                            </Link>
-
-                            <ul className="space-y-3 mt-8">
-                                {plan.features.map((feature, idx) => (
-                                    <motion.li
-                                        key={idx}
-                                        initial={{ opacity: 0, x: -10 }}
-                                        whileInView={{ opacity: 1, x: 0 }}
-                                        viewport={{ once: true }}
-                                        transition={{ duration: 0.3, delay: 0.6 + idx * 0.05 }}
-                                        className={cn(
-                                            "flex items-center gap-2 transition-all duration-200",
-                                        )}
-                                    >
-                                        <Check className={cn(
-                                            "size-3.5",
-                                            feature.highlighted
-                                                ? "text-primary"
-                                                : "text-muted-foreground"
-                                        )} />
-                                        <span className={cn(
-                                            "text-sm leading-relaxed",
-                                            feature.highlighted
-                                                ? "text-foreground font-medium"
-                                                : "text-muted-foreground"
-                                        )}>
-                                            {feature.text}
-                                        </span>
-                                    </motion.li>
-                                ))}
-                            </ul>
-                        </motion.div>
-                    ))}
-                </div>
-
-                <motion.div
-                    className="mt-6 max-w-3xl mx-auto"
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: 0.7 }}
-                >
-                    <div className="rounded-xl lg:rounded-2xl p-8 lg:p-8 bg-cardbox">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
-                            <div>
-                                <h3 className="text-2xl font-medium">
-                                    {trustedCompanies.title}
-                                </h3>
-                                <p className="text-sm text-muted-foreground mt-2">
-                                    {trustedCompanies.description}
-                                </p>
-                                <Link href={trustedCompanies.cta.href} className="cursor-pointer!">
-                                    <Button variant="outline" className="text-primary mt-2 p-0! border-0 bg-transparent hover:text-primary/80 hover:bg-transparent">
-                                        {trustedCompanies.cta.text}
-                                        <ArrowRight className="size-4" />
-                                    </Button>
-                                </Link>
-                            </div>
-
-                            <div className="flex flex-col gap-4 overflow-hidden relative z-0">
-                                <Marquee pauseOnHover className="[--duration:30s] opacity-40 [--gap:2rem]">
-                                    {integrationLogos.map((logo, idx) => (
-                                        <div key={idx} className="flex items-center justify-center">
-                                            <Image
-                                                src={logo}
-                                                alt=""
-                                                width={32}
-                                                height={32}
-                                                className="h-6 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                                            />
-                                        </div>
-                                    ))}
-                                </Marquee>
-
-                                <Marquee reverse pauseOnHover className="[--duration:30s] opacity-40 [--gap:2rem]">
-                                    {integrationLogos.map((logo, idx) => (
-                                        <div key={idx} className="flex items-center justify-center">
-                                            <Image
-                                                src={logo}
-                                                alt=""
-                                                width={32}
-                                                height={32}
-                                                className="h-6 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                                            />
-                                        </div>
-                                    ))}
-                                </Marquee>
-                                <div className="from-cardbox pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-linear-to-r"></div>
-                                <div className="from-cardbox pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-linear-to-l"></div>
-                            </div>
-                        </div>
+              <div className="flex flex-col gap-4 overflow-hidden relative z-0">
+                <Marquee pauseOnHover className="[--duration:30s] opacity-40 [--gap:2rem]">
+                  {integrationLogos.map((logo, idx) => (
+                    <div key={idx} className="flex items-center justify-center">
+                      <Image
+                        src={logo}
+                        alt=""
+                        width={32}
+                        height={32}
+                        className="h-6 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                      />
                     </div>
-                </motion.div>
-            </Wrapper>
-        </section>
-    );
+                  ))}
+                </Marquee>
+
+                <Marquee reverse pauseOnHover className="[--duration:30s] opacity-40 [--gap:2rem]">
+                  {integrationLogos.map((logo, idx) => (
+                    <div key={idx} className="flex items-center justify-center">
+                      <Image
+                        src={logo}
+                        alt=""
+                        width={32}
+                        height={32}
+                        className="h-6 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                      />
+                    </div>
+                  ))}
+                </Marquee>
+
+                <div className="from-cardbox pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-linear-to-r" />
+                <div className="from-cardbox pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-linear-to-l" />
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </Wrapper>
+    </section>
+  );
 };
 
 export default Membership;
-
