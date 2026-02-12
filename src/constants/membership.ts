@@ -41,7 +41,7 @@ export const pricingPlans = [
     ],
     cta: {
       text: "Ativar 7 dias grátis (R$149/mês)",
-      href: "#"
+      href: "https://pay.cakto.com.br/3c23rs8_764829"
     },
     popular: true,
     badge: "MAIS CONTRATADO",
