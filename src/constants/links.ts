@@ -2,53 +2,46 @@ import { Routes } from "./routes";
 
 export const NAV_LINKS = [
     {
-        label: "Visão Geral",
-        href: Routes.Difference,
+        label: "Para Quem",
+        href: Routes.ParaQuem,
     },
     {
-        label: "Processo",
+        label: "Como Funciona",
         href: Routes.Workflow,
     },
     {
-        label: "Soluções",
+        label: "Funcionalidades",
         href: Routes.Capabilities,
-    },
-    {
-        label: "Integrações",
-        href: Routes.Integrations,
     },
     {
         label: "Planos",
         href: Routes.Membership,
+    },
+    {
+        label: "FAQ",
+        href: Routes.FAQ,
     },
 ] as const;
 
 
 export const footerLinks = {
     product: [
-        { label: "Como funciona", href: "#workflow" },
-        { label: "Recursos", href: "#capabilities" },
-        { label: "Integrações", href: "#integrations" },
-        { label: "Planos", href: "#membership" }
+        { label: "Para Quem É", href: "#para-quem" },
+        { label: "Como Funciona", href: "#como-funciona" },
+        { label: "Funcionalidades", href: "#funcionalidades" },
+        { label: "Planos", href: "#planos" },
+        { label: "FAQ", href: "#faq" },
     ],
-    resources: [
-        { label: "Demonstração", href: "#" },
-        { label: "Fale com um", href: "#" },
-        { label: "Central de ajuda", href: "#" },
-        { label: "Documentação", href: "#" },
-    ]
-    ,
     company: [
-        { label: "Sobre a empresa", href: "#" },
-        { label: "Metodologia", href: "#" },
-        { label: "Contato", href: "#" },
-        { label: "Política de privacidade", href: "#" }
+        { label: "Sobre a Forbion", href: "#" },
+        { label: "Contato", href: Routes.WhatsApp },
+        { label: "Política de Privacidade", href: "#" },
+        { label: "Termos de Uso", href: "#" },
     ]
 };
 
 
 export const socialLinks = [
-    { label: "X", href: "https://x.com", icon: "x" },
-    { label: "GitHub", href: "https://github.com", icon: "github" },
+    { label: "Instagram", href: "https://instagram.com/forbion.digital", icon: "instagram" },
     { label: "LinkedIn", href: "https://linkedin.com", icon: "linkedin" },
 ];

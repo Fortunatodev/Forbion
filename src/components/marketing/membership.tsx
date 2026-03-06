@@ -2,9 +2,8 @@
 
 import Wrapper from '@/components/global/wrapper';
 import { Button } from '@/components/ui/button';
-import { Marquee } from '@/components/ui/marquee';
 import SectionBadge from '@/components/ui/section-badge';
-import { pricingPlans, trustedCompanies } from '@/constants/membership';
+import { pricingPlans, trustedCompanies, agencyServices } from '@/constants/membership';
 import { cn } from '@/utils';
 import NumberFlow from '@number-flow/react';
 import { ArrowRight, Check } from 'lucide-react';
@@ -13,31 +12,16 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
-const integrationLogos = [
-  '/icons/integrations/cursor.svg',
-  '/icons/integrations/convex.svg',
-  '/icons/integrations/dribbble.svg',
-  '/icons/integrations/dub.svg',
-  '/icons/integrations/asana.svg',
-  '/icons/integrations/figma.svg',
-  '/icons/integrations/heptabase.svg',
-  '/icons/integrations/layers.svg',
-  '/icons/integrations/mintlify.svg',
-  '/icons/integrations/soldera.svg',
-  '/icons/integrations/polar.svg',
-  '/icons/integrations/slack.svg',
-];
-
 const Membership = () => {
   const [billingCycle, setBillingCycle] = useState<'mensal' | 'anual'>('mensal');
 
   return (
-    <section id="membership" className="w-full py-16 lg:py-24 relative">
+    <section id="planos" className="w-full py-16 lg:py-24 relative">
       <div className="hidden lg:block absolute -z-10 top-0 -left-1/4 size-1/3 bg-primary/10 rounded-full blur-[8rem]" />
 
       <Wrapper>
         <div className="flex flex-col items-center text-center">
-          <SectionBadge title="Planos e Implantação" />
+          <SectionBadge title="PLANOS DO SISTEMA" />
 
           <motion.h2
             className="title mt-6"
@@ -46,9 +30,9 @@ const Membership = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Estruture hoje.
+            Escolha o plano certo
             <br />
-            Escale com previsibilidade.
+            para sua estética
           </motion.h2>
 
           <motion.p
@@ -58,7 +42,7 @@ const Membership = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            Soluções específicas para donos de estética automotiva: organização do atendimento, automação no WhatsApp com IA e visão de faturamento em um único fluxo.
+            Sem contrato longo. Cancele quando quiser. 7 dias grátis em qualquer plano.
           </motion.p>
 
           <motion.div
@@ -107,7 +91,7 @@ const Membership = () => {
 
             <div className="absolute -top-18 -right-3/4 flex flex-col gap-2">
               <span className="text-base text-muted-foreground font-handwriting">
-                7 dias grátis no plano Estética
+                7 dias grátis em qualquer plano
               </span>
               <Image
                 src="/icons/curved-arrow.svg"
@@ -122,11 +106,6 @@ const Membership = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-3xl mx-auto">
           {pricingPlans.map((plan, index) => {
-            // Regras do seu posicionamento:
-            // - Starter: não exibe preço (CTA WhatsApp)
-            // - Estética: exibe R$149/mês e destaca 7 dias grátis
-            const hidePrice = plan.name === "Starter";
-
             return (
               <motion.div
                 key={plan.id}
@@ -159,30 +138,22 @@ const Membership = () => {
                   <h3 className="text-2xl font-semibold">{plan.name}</h3>
 
                   <div className="flex items-baseline w-full mt-4">
-                    {hidePrice ? (
-                      <span className="text-2xl text-muted-foreground font-medium">
-                        Sem preço fixo — proposta no WhatsApp
-                      </span>
-                    ) : (
-                      <>
-                        <span className="text-5xl font-semibold">R$</span>
-                        <NumberFlow
-                          value={plan.price[billingCycle]}
-                          className="text-5xl font-semibold tracking-tight"
-                          format={{ notation: 'standard' }}
-                        />
-                        <motion.span
-                          key={billingCycle}
-                          initial={{ y: 20, opacity: 0, filter: 'blur(10px)' }}
-                          animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
-                          exit={{ y: -20, opacity: 0, filter: 'blur(10px)' }}
-                          transition={{ duration: 0.5, ease: 'easeOut' }}
-                          className="text-muted-foreground text-sm ml-1"
-                        >
-                          {billingCycle === 'mensal' ? '/mês' : '/ano'}
-                        </motion.span>
-                      </>
-                    )}
+                    <span className="text-5xl font-semibold">R$</span>
+                    <NumberFlow
+                      value={plan.price[billingCycle]}
+                      className="text-5xl font-semibold tracking-tight"
+                      format={{ notation: 'standard' }}
+                    />
+                    <motion.span
+                      key={billingCycle}
+                      initial={{ y: 20, opacity: 0, filter: 'blur(10px)' }}
+                      animate={{ y: 0, opacity: 1, filter: 'blur(0px)' }}
+                      exit={{ y: -20, opacity: 0, filter: 'blur(10px)' }}
+                      transition={{ duration: 0.5, ease: 'easeOut' }}
+                      className="text-muted-foreground text-sm ml-1"
+                    >
+                      {billingCycle === 'mensal' ? '/mês' : '/ano'}
+                    </motion.span>
                   </div>
 
                   <p className="text-muted-foreground text-sm mt-4 leading-relaxed">
@@ -235,63 +206,49 @@ const Membership = () => {
         </div>
 
         <motion.div
-          className="mt-6 max-w-3xl mx-auto"
+          className="mt-12 max-w-3xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          <div className="rounded-xl lg:rounded-2xl p-8 lg:p-8 bg-cardbox">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
-              <div>
-                <h3 className="text-2xl font-medium">{trustedCompanies.title}</h3>
-                <p className="text-sm text-muted-foreground mt-2">
-                  {trustedCompanies.description}
+          <div className="flex flex-col items-center text-center mb-8">
+            <h3 className="text-2xl font-medium">{trustedCompanies.title}</h3>
+            <p className="text-sm text-muted-foreground mt-2 max-w-lg">
+              {trustedCompanies.description}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {agencyServices.map((service, idx) => (
+              <motion.div
+                key={service.id}
+                className="rounded-xl lg:rounded-2xl p-6 lg:p-8 bg-cardbox"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.8 + idx * 0.1 }}
+              >
+                <h4 className="text-xl font-semibold">{service.name}</h4>
+                <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+                  {service.description}
                 </p>
-                <Link href={trustedCompanies.cta.href} className="cursor-pointer!">
-                  <Button
-                    variant="outline"
-                    className="text-primary mt-2 p-0! border-0 bg-transparent hover:text-primary/80 hover:bg-transparent"
-                  >
-                    {trustedCompanies.cta.text}
+                <ul className="space-y-2 mt-4">
+                  {service.features.map((feature, fIdx) => (
+                    <li key={fIdx} className="flex items-center gap-2">
+                      <Check className="size-3.5 text-primary" />
+                      <span className="text-sm text-muted-foreground">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link href={service.cta.href} target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="mt-4 w-full">
+                    {service.cta.text}
                     <ArrowRight className="size-4" />
                   </Button>
                 </Link>
-              </div>
-
-              <div className="flex flex-col gap-4 overflow-hidden relative z-0">
-                <Marquee pauseOnHover className="[--duration:30s] opacity-40 [--gap:2rem]">
-                  {integrationLogos.map((logo, idx) => (
-                    <div key={idx} className="flex items-center justify-center">
-                      <Image
-                        src={logo}
-                        alt=""
-                        width={32}
-                        height={32}
-                        className="h-6 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                      />
-                    </div>
-                  ))}
-                </Marquee>
-
-                <Marquee reverse pauseOnHover className="[--duration:30s] opacity-40 [--gap:2rem]">
-                  {integrationLogos.map((logo, idx) => (
-                    <div key={idx} className="flex items-center justify-center">
-                      <Image
-                        src={logo}
-                        alt=""
-                        width={32}
-                        height={32}
-                        className="h-6 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                      />
-                    </div>
-                  ))}
-                </Marquee>
-
-                <div className="from-cardbox pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-linear-to-r" />
-                <div className="from-cardbox pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-linear-to-l" />
-              </div>
-            </div>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       </Wrapper>

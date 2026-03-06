@@ -13,12 +13,12 @@ import Image from "next/image";
 
 const Capibilities = () => {
     return (
-        <section id="capabilities" className="w-full py-16 lg:py-24 relative">
+        <section id="funcionalidades" className="w-full py-16 lg:py-24 relative">
             <div className="hidden lg:block absolute -z-10 top-0 -left-1/4 size-1/3 bg-primary/10 rounded-full blur-[8rem]" />
 
             <Wrapper>
                 <div className="flex flex-col items-center text-center">
-                    <SectionBadge title="Arquitetura Operacional" />
+                    <SectionBadge title="FUNCIONALIDADES" />
 
                     <motion.h2
                         className="title mt-6"
@@ -27,7 +27,9 @@ const Capibilities = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.3, delay: 0.2 }}
                     >
-                        Tecnologia alinhada ao modelo de negócio
+                        Tudo que sua estética precisa
+                        <br />
+                        em um único lugar
                     </motion.h2>
 
                     <motion.p
@@ -37,7 +39,7 @@ const Capibilities = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.3, delay: 0.3 }}
                     >
-                        Conecte execução, controle e crescimento.
+                        Agenda, loja, clientes, planos e relatórios. Tudo integrado.
                     </motion.p>
                 </div>
 
@@ -69,7 +71,7 @@ const Capibilities = () => {
                         <div className="mt-6 relative grow h-48 transition-colors duration-300 z-0">
                             <Image
                                 src={capabilities[0].illustration}
-                                alt="Client"
+                                alt="Agenda Online — funcionalidade Forbion"
                                 width={500}
                                 height={500}
                                 unoptimized
@@ -105,7 +107,7 @@ const Capibilities = () => {
                         <div className="mt-6 relative grow h-48 transition-colors duration-300 z-0">
                             <Image
                                 src={capabilities[1].illustration}
-                                alt="Project"
+                                alt="Loja Pública de Agendamento — funcionalidade Forbion"
                                 width={500}
                                 height={500}
                                 unoptimized
@@ -141,7 +143,7 @@ const Capibilities = () => {
                         <div className="mt-6 relative grow h-48 transition-colors duration-300 z-0">
                             <Image
                                 src={capabilities[2].illustration}
-                                alt="Team"
+                                alt="Cadastro e Histórico de Clientes — funcionalidade Forbion"
                                 width={500}
                                 height={500}
                                 unoptimized
@@ -177,7 +179,7 @@ const Capibilities = () => {
                         <div className="mt-6 relative grow h-48 transition-colors duration-300 z-0">
                             <Image
                                 src={capabilities[3].illustration}
-                                alt="Team"
+                                alt="Planos de Assinatura — funcionalidade Forbion"
                                 width={500}
                                 height={500}
                                 unoptimized
@@ -208,7 +210,7 @@ const Capibilities = () => {
                                     {stats[0]?.value} {stats[0]?.label}
                                 </h3>
                                 <p className="text-sm text-muted-foreground mt-1">
-                                    already using forbion
+                                    já usam o Forbion
                                 </p>
                             </div>
                         </motion.div>
@@ -223,7 +225,7 @@ const Capibilities = () => {
                             <div className="relative">
                                 <div className="flex items-baseline gap-1">
                                     <h3 className="text-3xl bg-linear-to-r from-foreground to-foreground/70 text-transparent bg-clip-text font-semibold">
-                                        {stats[1]?.value} Sends
+                                        {stats[1]?.value} {stats[1]?.label}
                                     </h3>
                                 </div>
                                 <p className="text-muted-foreground mt-2 text-sm leading-relaxed">

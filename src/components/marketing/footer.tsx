@@ -32,21 +32,21 @@ const Footer = () => {
                             <Icons.wordmark className="h-5 w-auto text-foreground" />
                         </Link>
                         <p className="text-sm text-muted-foreground mt-4 max-w-xs">
-                           Sistema para organizar atendimento e estruturar faturamento.
+                           Sistema de gestão para estética automotiva. Agenda, planos e métricas em um só lugar.
                         </p>
 
                         <form onSubmit={handleSubmit} className="mt-6 w-full md:max-w-xs">
                             <div className="flex gap-2">
                                 <Input
                                     type="email"
-                                    placeholder="Enter your email"
+                                    placeholder="Seu melhor email"
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     required
                                     className="flex-1 h-8.5 text-sm bg-foreground/5 border-foreground/10 focus-visible:ring-0 focus-visible:ring-transparent rounded-full px-4"
                                 />
                                 <Button type="submit" size="sm" >
-                                    Subscribe
+                                    Assinar
                                 </Button>
                             </div>
                         </form>
@@ -75,7 +75,7 @@ const Footer = () => {
 
                         <div>
                             <h3 className="text-sm font-semibold text-foreground mt-0">
-                                Company
+                                Empresa
                             </h3>
                             <ul className="mt-4 space-y-3">
                                 {footerLinks.company.map((link) => (
@@ -95,7 +95,7 @@ const Footer = () => {
 
                 <div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-12 pt-8 border-t border-foreground/5">
                     <p className="text-sm text-muted-foreground">
-                        © {new Date().getFullYear()} forbion. All rights reserved.
+                        © {new Date().getFullYear()} Forbion. Todos os direitos reservados.
                     </p>
 
                     <div className="flex items-center gap-4">

@@ -58,7 +58,7 @@ const WallOfLove = () => {
 
             <Wrapper>
                 <div className="flex flex-col items-center text-center">
-                    <SectionBadge title="Wall of Love" />
+                    <SectionBadge title="DEPOIMENTOS" />
 
                     <motion.h2
                         className="title mt-6"
@@ -67,9 +67,9 @@ const WallOfLove = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        Empresas que decidiram
+                        O que donos de estética
                         <br />
-                        estruturar sua operação
+                        dizem sobre o Forbion
                     </motion.h2>
 
                     <motion.p
@@ -79,7 +79,7 @@ const WallOfLove = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
-                       Veja como a Forbion está transformando atendimento em crescimento previsível.
+                       Resultados reais de quem organizou a operação com a plataforma.
                     </motion.p>
                 </div>
 
@@ -100,7 +100,7 @@ const WallOfLove = () => {
                                     <div className="hidden lg:block absolute inset-0 bg-primary/20 rounded-full blur-xl" />
                                     <Image
                                         src={currentTestimonial.avatar}
-                                        alt={currentTestimonial.name}
+                                        alt={`${currentTestimonial.name} — cliente Forbion`}
                                         width={80}
                                         height={80}
                                         className="relative size-20 rounded-full object-cover border-2 border-primary/20"

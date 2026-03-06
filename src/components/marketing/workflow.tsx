@@ -10,13 +10,13 @@ import Image from 'next/image';
 
 const Workflow = () => {
     return (
-        <section id="workflow" className="w-full py-16 lg:py-24 relative">
+        <section id="como-funciona" className="w-full py-16 lg:py-24 relative">
 
             <div className="hidden lg:block absolute -z-10 top-0 -right-1/4 size-1/3 bg-primary/10 rounded-full blur-[8rem]" />
 
             <Wrapper>
                 <div className="flex flex-col items-center text-center">
-                    <SectionBadge title="MÉTODO FORBION" />
+                    <SectionBadge title="COMO FUNCIONA" />
 
                     <motion.h2
                         className="title mt-6"
@@ -25,9 +25,9 @@ const Workflow = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        Organização como base
+                        Do agendamento ao faturamento
                         <br />
-                        para escalar
+                        tudo organizado
                     </motion.h2>
 
                     <motion.p
@@ -37,11 +37,11 @@ const Workflow = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
-                        Estruturamos a base digital da empresa.
+                        Como o Forbion funciona no dia a dia da sua estética.
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-y-16 md:gap-y-8 gap-x-8 lg:gap-x-16 mx-auto relative mt-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-16 md:gap-y-8 gap-x-8 lg:gap-x-12 mx-auto relative mt-12">
                     {WORKFLOW_STEPS.map((step, index) => (
                         <React.Fragment key={index}>
                             <motion.div
@@ -93,9 +93,9 @@ const Workflow = () => {
 
                             {index < WORKFLOW_STEPS.length - 1 && (
                                 <motion.div
-                                    className="hidden md:flex absolute top-1/2 -translate-y-1/2"
+                                    className="hidden lg:flex absolute top-1/2 -translate-y-1/2"
                                     style={{
-                                        left: `calc(${(index + 1) * 33.333}% + ${index === 0 ? '-1.5rem' : '0.5rem'})`
+                                        left: `calc(${(index + 1) * 25}% + ${index === 0 ? '-1.5rem' : '-0.5rem'})`
                                     }}
                                     initial={{ opacity: 0, x: -10 }}
                                     whileInView={{ opacity: 1, x: 0 }}

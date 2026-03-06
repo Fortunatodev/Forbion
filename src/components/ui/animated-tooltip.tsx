@@ -89,7 +89,8 @@ export const AnimatedTooltip = ({
                         height={100}
                         width={100}
                         src={item.image}
-                        alt={item.name}
+                        alt={`${item.name} — cliente Forbion`}
+                        aria-label={`Logo ou foto da ${item.name}`}
                         className="relative m-0! size-10 rounded-full border-2 border-foreground/80 object-cover object-top p-0! transition duration-500 group-hover:z-30"
                     />
                 </div>

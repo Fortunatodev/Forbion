@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const generateMetadata = ({
-    title = `Forbion | Home`,
-    description = `Tecnologia Aplicada à Operação e Crescimento Empresarial`,
+    title = `Forbion | Sistema de Gestão para Estética Automotiva`,
+    description = `Agenda online, planos de assinatura e relatórios para donos de estética automotiva e lavação. Organize sua operação e crie receita recorrente com o Forbion.`,
     image = "https://www.forbion.digital/images/og-image.png",
     icons = [
         {

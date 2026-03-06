@@ -88,7 +88,7 @@ const Socials = () => {
             <Wrapper>
                 <Container animation="fadeUp" className="text-center">
                     <p className="text-sm text-transparent font-heading font-medium bg-clip-text bg-linear-to-r from-white/10 via-white/70 to-white/10 uppercase tracking-wider">
-                        Integração nativa com
+                        Estéticas em todo o Brasil já usam o Forbion
                     </p>
                 </Container>
 
@@ -122,8 +122,8 @@ const Socials = () => {
 
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0 flex items-center justify-center backdrop-blur-[2px]">
                         <Container animation="fadeUp" delay={0.2} className="text-center flex items-center justify-center size-full select-none">
-                            <Link href="#" className="text-sm text-foreground/40 hover:text-foreground/90 flex items-center justify-center gap-1">
-                                Meet our partners
+                            <Link href="#planos" className="text-sm text-foreground/40 hover:text-foreground/90 flex items-center justify-center gap-1">
+                                Ver planos
                                 <ChevronRightIcon className="size-3.5" />
                             </Link>
                         </Container>
@@ -132,7 +132,7 @@ const Socials = () => {
 
                 <Container animation="fadeUp" delay={0.2} className="text-center hidden mt-6">
                     <p className="text-sm text-foreground/40">
-                        Connect your favorite tools in seconds
+                        Agenda, planos e métricas em um só lugar
                     </p>
                 </Container>
             </Wrapper>

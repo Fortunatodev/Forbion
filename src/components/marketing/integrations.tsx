@@ -149,7 +149,7 @@ const Integrations = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: 0.4 }}
                     >
-                        Integração total com sua operação atual
+                        Conectado com as ferramentas que você já usa
                     </motion.h2>
 
                     <motion.p
@@ -159,7 +159,7 @@ const Integrations = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: 0.5 }}
                     >
-                        Integramos o sistema Forbion às ferramentas já presentes na sua operação, garantindo continuidade e controle.
+                        Login do cliente via Google — sem precisar criar nova senha. Mais integrações em breve.
                     </motion.p>
 
                     <motion.div
@@ -168,9 +168,9 @@ const Integrations = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.4, delay: 0.6 }}
                     >
-                        <Link href={Routes.Dashboard}>
+                        <Link href="#planos">
                             <Button variant="white">
-                                Começar
+                                Ver planos
                             </Button>
                         </Link>
                     </motion.div>

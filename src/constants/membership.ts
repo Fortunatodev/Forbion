@@ -1,60 +1,94 @@
 export const pricingPlans = [
   {
     id: 1,
-    name: "Starter",
+    name: "BASIC",
     price: {
-      mensal: 0,
-      anual: 0
+      mensal: 97,
+      anual: 970
     },
+    tagline: "Para começar organizado",
     description:
-      "Para estética automotiva que quer presença premium e conversão no WhatsApp: briefing, direção estratégica e estrutura de landing/site com padrão profissional.",
+      "Organize sua agenda, cadastre seus serviços e receba agendamentos pela loja online. Tudo que você precisa para sair do caos do WhatsApp.",
     features: [
-      { text: "Briefing guiado para definir oferta, público e promessa", highlighted: false },
-      { text: "Estrutura de landing page focada em orçamento e agendamento", highlighted: false },
-      { text: "Copy estratégica para aumentar conversão no WhatsApp", highlighted: false },
-      { text: "Layout de alto padrão (percepção de valor e autoridade)", highlighted: false },
-      { text: "Mapa de seção + CTA’s + fluxo de contato recomendado", highlighted: false },
-      { text: "Proposta sob medida após o briefing (escopo e prazo)", highlighted: false }
+      { text: "Agenda online com todos os agendamentos", highlighted: false },
+      { text: "Loja pública de agendamento para o cliente final", highlighted: false },
+      { text: "Cadastro de clientes e histórico", highlighted: false },
+      { text: "Cadastro de serviços com preço e duração", highlighted: false },
+      { text: "Relatórios básicos de faturamento", highlighted: false },
     ],
     cta: {
-      text: "Falar no WhatsApp e começar",
+      text: "Começar grátis por 7 dias",
       href: "#"
     },
     popular: false
   },
   {
     id: 2,
-    name: "Estética Automotiva",
+    name: "PRO",
     price: {
-      mensal: 149,
-      anual: 1490
+      mensal: 197,
+      anual: 1970
     },
+    tagline: "Para criar receita recorrente e dominar seus números",
     description:
-      "Sistema pronto para estética automotiva: organiza o atendimento, automatiza o WhatsApp e dá visão de faturamento para você escalar com controle.",
+      "Tudo do BASIC + planos de assinatura para seu cliente final, relatórios completos e métricas avançadas de desempenho.",
     features: [
-      { text: "Funil de atendimento no WhatsApp com histórico e status", highlighted: true },
-      { text: "IA para acelerar respostas, qualificar e aumentar conversão", highlighted: true },
-      { text: "Follow-up para não perder orçamento no “vácuo”", highlighted: true },
-      { text: "Gestão centralizada de clientes, serviços e atendimentos", highlighted: true },
-      { text: "Relatórios (volume, conversão e faturamento por período)", highlighted: true },
-      { text: "Suporte de implantação para padronizar a operação", highlighted: true }
+      { text: "Tudo do plano BASIC incluído", highlighted: false },
+      { text: "Planos de assinatura para o cliente final", highlighted: true },
+      { text: "Descontos automáticos por plano", highlighted: true },
+      { text: "Controle de usos incluídos por plano (ex.: 5 lavagens/mês)", highlighted: true },
+      { text: "Relatórios completos de faturamento e recorrência", highlighted: true },
+      { text: "Métricas avançadas de desempenho", highlighted: true },
     ],
     cta: {
-      text: "Ativar 7 dias grátis (R$149/mês)",
+      text: "Quero o PRO — 7 dias grátis",
       href: "https://pay.cakto.com.br/3c23rs8_764829"
     },
     popular: true,
-    badge: "MAIS CONTRATADO",
+    badge: "RECOMENDADO",
     anualDiscount: "7 dias grátis para testar na sua operação"
   }
 ];
 
+export const agencyServices = [
+  {
+    id: 1,
+    name: "Landing Page",
+    description: "Página de alta conversão para capturar orçamentos, agendamentos e apresentar sua estética com autoridade.",
+    features: [
+      "Briefing estratégico",
+      "Copy de conversão",
+      "Layout premium",
+      "Estrutura de CTA e fluxo de contato",
+    ],
+    cta: {
+      text: "Solicitar proposta",
+      href: "https://wa.me/5547920025084?text=Ol%C3%A1%2C+quero+uma+landing+page+para+minha+est%C3%A9tica+automotiva."
+    }
+  },
+  {
+    id: 2,
+    name: "Site Completo + SEO",
+    description: "Site institucional com otimização para o Google. Seja encontrado quando o cliente buscar estética automotiva na sua cidade.",
+    features: [
+      "Site multi-páginas",
+      "SEO on-page",
+      "Google Business",
+      "Copywriting profissional",
+    ],
+    cta: {
+      text: "Solicitar proposta",
+      href: "https://wa.me/5547920025084?text=Ol%C3%A1%2C+quero+um+site+completo+com+SEO+para+minha+est%C3%A9tica+automotiva."
+    }
+  }
+];
+
 export const trustedCompanies = {
-  title: "Estrutura feita para crescer com padrão",
+  title: "Quer um site de alto padrão para sua estética?",
   description:
-    "Centralize o atendimento, padronize a equipe e acompanhe indicadores que importam para aumentar faturamento com previsibilidade — do WhatsApp para o processo.",
+    "Além do sistema de gestão, criamos sites e landing pages com SEO para que sua estética seja encontrada no Google e converta visitantes em clientes.",
   cta: {
-    text: "Quero uma demonstração no WhatsApp",
-    href: "https://api.whatsapp.com/send/?phone=5547992507057&text=Ol%C3%A1%21+Quero+modernizar+os+processos+da+minha+empresa.+Como+voc%C3%AAs+trabalham%3F"
+    text: "Falar com a Forbion sobre presença digital",
+    href: "https://wa.me/5547920025084?text=Ol%C3%A1%2C+quero+saber+sobre+sites+e+landing+pages+para+minha+est%C3%A9tica."
   }
 };

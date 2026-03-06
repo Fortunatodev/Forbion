@@ -1,19 +1,23 @@
 export const WORKFLOW_STEPS = [
 {
     number: "1",
-    title: "Diagnosticar",
-    description: "Analisamos a operação atual e identificamos gargalos, falhas e oportunidades de estruturação",
+    title: "Configure sua loja",
+    description: "Cadastre seus serviços com nome, preço e duração. Sua loja online fica pronta para receber agendamentos.",
 },
 {
     number: "2",
-    title: "Estruturar",
-    description: "Construímos o sistema digital alinhado ao modelo de negócio e à lógica de crescimento",
+    title: "Seu cliente agenda sozinho",
+    description: "O cliente acessa sua loja, escolhe o serviço, o horário e confirma. Você recebe organizado na agenda.",
 },
 {
     number: "3",
-    title: "Implementar",
-    description: "Integramos clientes, operação e faturamento em um ambiente centralizado e escalável",
+    title: "Atenda e feche a comanda",
+    description: "Veja os agendamentos do dia, confirme presença, registre o pagamento e feche a comanda.",
 },
-
+{
+    number: "4",
+    title: "Acompanhe nos relatórios",
+    description: "Veja faturamento por período, serviços mais procurados, assinantes ativos e muito mais no painel.",
+},
 ];
 

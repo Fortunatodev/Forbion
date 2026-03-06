@@ -77,9 +77,9 @@ const Cta = () => {
                                 transition={{ duration: 0.6, delay: 0.3 }}
                                 className="text-3xl md:text-4xl lg:text-5xl font-medium bg-linear-to-r from-foreground to-foreground/70 text-transparent bg-clip-text leading-[1.2] mt-8 max-w-3xl"
                             >
-                                A melhor decisão para
+                                Sua estética merece funcionar
                                 <br />
-                                estruturar sua empresa
+                                como uma empresa de verdade
                             </motion.h2>
 
                             <motion.p
@@ -89,7 +89,7 @@ const Cta = () => {
                                 transition={{ duration: 0.6, delay: 0.4 }}
                                 className="text-base md:text-lg text-muted-foreground mt-6 max-w-2xl"
                             >
-                                Empresas estão centralizando atendimento <br /> o e organizando receita com a Forbion.
+                                Configure em menos de 15 minutos. <br /> Sem cartão de crédito para começar.
                             </motion.p>
 
                             <motion.div
@@ -98,15 +98,24 @@ const Cta = () => {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: 0.5 }}
                                 whileHover={{ scale: 1.05 }}
-                                className="mt-6"
+                                className="mt-6 flex flex-col sm:flex-row items-center gap-3"
                             >
-                                          <Link
-                            href="https://api.whatsapp.com/send/?phone=5547992507057&text=Ol%C3%A1%21+Quero+modernizar+os+processos+da+minha+empresa.+Como+voc%C3%AAs+trabalham%3F"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                                <Link
+                                    href={Routes.WhatsApp}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
                                     <Button size="lg" className="text-base">
-                                        Entrar em Contato
+                                        Começar meu teste grátis
+                                    </Button>
+                                </Link>
+                                <Link
+                                    href={Routes.WhatsApp}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Button size="lg" variant="outline" className="text-base">
+                                        Falar com a Forbion
                                     </Button>
                                 </Link>
                             </motion.div>

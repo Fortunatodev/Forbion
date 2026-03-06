@@ -1,72 +1,84 @@
 export const capabilities = [
     {
         id: 1,
-        title: "Central de Clientes",
-        description: "Gestão estruturada de relacionamento, contratos e histórico operacional em um único ambiente.",
+        title: "Agenda Online",
+        description: "Veja todos os agendamentos do dia e da semana, status de cada um e quem está atendendo. Sem conflito de horário.",
         illustration: "/images/client.png",
-        icon: "users"
+        icon: "calendar",
+        badge: "BASIC e PRO"
     },
     {
         id: 2,
-        title: "Gestão de Execução",
-        description: "Organização estratégica de demandas, prazos e entregas com visão clara do fluxo operacional.",
+        title: "Loja Pública de Agendamento",
+        description: "Seu cliente entra na sua loja, escolhe o serviço e agenda sozinho. Você recebe organizado, sem precisar do WhatsApp.",
         illustration: "/images/project.png",
-        icon: "calendar"
+        icon: "store",
+        badge: "BASIC e PRO"
     },
     {
         id: 3,
-        title: "Orquestração de Equipe",
-        description: "Distribuição inteligente de responsabilidades com controle total da capacidade operacional.",
+        title: "Cadastro e Histórico de Clientes",
+        description: "Saiba quem são seus clientes frequentes, quando foi a última vez que vieram e quais serviços utilizaram.",
         illustration: "/images/team.png",
-        icon: "zap"
+        icon: "users",
+        badge: "BASIC e PRO"
     },
     {
         id: 4,
-        title: "Controle de Receita",
-        description: "Gestão integrada de cobranças, pagamentos e previsibilidade financeira.",
+        title: "Planos de Assinatura",
+        description: "Crie planos mensais para seu cliente: lavagens inclusas, descontos automáticos e receita previsível todo mês.",
         illustration: "/images/invoices.png",
-        icon: "file"
+        icon: "star",
+        badge: "Exclusivo PRO"
+    },
+    {
+        id: 5,
+        title: "Relatórios e Métricas",
+        description: "Faturamento por período, serviços mais vendidos, assinantes ativos. Veja em números o que está funcionando.",
+        illustration: "/images/client.png",
+        icon: "chart",
+        badge: "Básico no BASIC / Completo no PRO"
     }
 ];
 
 export const AVATAR_ITEMS = [
     {
         id: 1,
-        name: "Mariana Oliveira",
-        designation: "Diretora Operacional",
+        name: "BRK estética automotiva",
+        designation: "Dono de Estética",
         image: "/images/avatars/avatar1.jpg"
     },
     {
         id: 2,
-        name: "Carlos Mendes",
-        designation: "CEO",
+        name: "Estética automotiva do Galiza",
+        designation: "Lavação Premium",
         image: "/images/avatars/avatar2.jpg"
     },
     {
         id: 3,
-        name: "Rafael Costa",
-        designation: "Gestor de Projetos",
+        name: "PRO estética automotiva",
+        designation: "Detalhamento Automotivo",
         image: "/images/avatars/avatar3.jpg"
     },
     {
         id: 4,
-        name: "Juliana Rocha",
-        designation: "Head Financeiro",
+        name: "Alpha estética automotiva",
+        designation: "Estética Automotiva",
         image: "/images/avatars/avatar4.jpg"
     },
     {
         id: 5,
-        name: "Fernando Alves",
-        designation: "Fundador",
-        image: "/images/avatars/avatar5.jpg"
+        name: "Brusque estética automotiva",
+        designation: "Lavação e Polimento",
+        image: "/images/avatars/avatar5.png"
     }
 ];
 
 export const stats = [
     {
         id: 1,
-        value: "Operações",
-        label: "estruturadas com o modelo Forbion",
+        value: "Estéticas",
+        label: "organizadas com o Forbion",
         avatars: [
             "/images/avatars/avatar1.jpg",
             "/images/avatars/avatar2.jpg",
@@ -78,11 +90,11 @@ export const stats = [
     {
         id: 2,
         value: "Receita",
-        label: "sob controle",
-        description: "Empresas operando com previsibilidade financeira e estrutura digital integrada.",
+        label: "recorrente",
+        description: "Donos de estética criando previsibilidade de faturamento com planos de assinatura para seus clientes.",
         button: {
-            text: "Solicitar demonstração",
-            href: "#"
+            text: "Começar agora",
+            href: "#planos"
         }
     }
 ];

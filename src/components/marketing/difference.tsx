@@ -8,10 +8,10 @@ import SectionBadge from '@/components/ui/section-badge';
 
 const Difference = () => {
     return (
-        <section id="difference" className="w-full py-16 lg:py-24 relative overflow-hidden">
+        <section id="antes-depois" className="w-full py-16 lg:py-24 relative overflow-hidden">
             <Wrapper>
                 <div className="flex flex-col items-center text-center">
-                    <SectionBadge title="COMO ATUAMOS" />
+                    <SectionBadge title="ANTES X DEPOIS" />
 
                     <motion.h2
                         className="title mt-6"
@@ -20,7 +20,9 @@ const Difference = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                     >
-                        Antes do crescimento, estrutura
+                        Antes e depois de ter estrutura
+                        <br />
+                        na sua estética
                     </motion.h2>
 
                     <motion.p
@@ -30,7 +32,7 @@ const Difference = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                     >
-                       Crescimento sem estrutura gera caos.
+                       Veja a diferença quando a agenda para de ser WhatsApp.
                     </motion.p>
                 </div>
 
@@ -50,7 +52,7 @@ const Difference = () => {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: 0.4 }}
                             >
-                                Soluções Genéricas
+                                Sem o Forbion
                             </motion.h3>
 
                             <div className="space-y-3 relative">
@@ -84,7 +86,7 @@ const Difference = () => {
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: 0.4 }}
                             >
-                                Forbion
+                                Com o Forbion
                             </motion.h3>
 
                             <div className="space-y-3 relative">
