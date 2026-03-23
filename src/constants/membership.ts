@@ -18,7 +18,7 @@ export const pricingPlans = [
     ],
     cta: {
       text: "Começar grátis por 7 dias",
-      href: "#"
+      href: "https://pay.cakto.com.br/3d4ss4h"
     },
     popular: false
   },
