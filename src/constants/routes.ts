@@ -11,5 +11,9 @@ export const Routes = {
 
     Dashboard: "/dashboard",
 
+    // ── Ponte para o produto (SaaS) ─────────────────────────────────────────
+    App:      "https://app.forbion.digital",
+    AppLogin: "https://app.forbion.digital/auth/login",
+
     WhatsApp: "https://wa.me/5547920025084?text=Ol%C3%A1%2C+vim+pelo+site+da+Forbion+e+gostaria+de+saber+mais.",
 } as const;

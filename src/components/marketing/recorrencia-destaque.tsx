@@ -85,7 +85,7 @@ const RecorrenciaDestaque = () => {
                             transition={{ duration: 0.6, delay: 0.7 }}
                             className="pt-2"
                         >
-                            <Link href={Routes.WhatsApp} target="_blank" rel="noopener noreferrer">
+                            <Link href={Routes.AppLogin} target="_blank" rel="noopener noreferrer">
                                 <Button>
                                     Quero criar meu plano de assinatura
                                     <ArrowRight className="size-4" />

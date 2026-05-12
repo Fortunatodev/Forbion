@@ -144,8 +144,8 @@ const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.6 }}
                         className={cn("flex items-center gap-4 flex-wrap justify-center mt-8")}
                     >
-                            <Link
-                            href={Routes.WhatsApp}
+                        <Link
+                            href={Routes.AppLogin}
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -153,9 +153,7 @@ const Hero = () => {
                                 Começar 7 dias grátis
                             </Button>
                         </Link>
-                        <Link
-                            href="#como-funciona"
-                        >
+                        <Link href="#como-funciona">
                             <Button size="lg" variant="outline">
                                 Como funciona?
                             </Button>

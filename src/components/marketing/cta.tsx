@@ -101,7 +101,7 @@ const Cta = () => {
                                 className="mt-6 flex flex-col sm:flex-row items-center gap-3"
                             >
                                 <Link
-                                    href={Routes.WhatsApp}
+                                    href={Routes.AppLogin}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >

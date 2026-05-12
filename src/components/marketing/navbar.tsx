@@ -59,13 +59,23 @@ const Navbar = () => {
                         </div>
 
                         <div className="flex items-center gap-2 lg:gap-3">
-                        <Link
-                            href="https://wa.me/5547920025084?text=Ol%C3%A1%2C+vim+pelo+site+da+Forbion+e+gostaria+de+saber+mais."
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                            <Link
+                                href={Routes.AppLogin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hidden lg:inline-flex"
+                            >
+                                <Button variant="ghost" className="text-sm">
+                                    Entrar
+                                </Button>
+                            </Link>
+                            <Link
+                                href={Routes.AppLogin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 <Button variant="white" className="hidden lg:flex">
-                                    Começar grátis
+                                    Começar 7 dias grátis
                                 </Button>
                             </Link>
                             <Button
