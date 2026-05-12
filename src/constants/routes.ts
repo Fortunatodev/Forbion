@@ -11,6 +11,10 @@ export const Routes = {
 
     Dashboard: "/dashboard",
 
+    // ── Páginas legais (requeridas pela verificação OAuth Google) ───────────
+    Privacy: "/privacy",
+    Terms:   "/terms",
+
     // ── Ponte para o produto (SaaS) ─────────────────────────────────────────
     App:      "https://app.forbion.digital",
     AppLogin: "https://app.forbion.digital/auth/login",

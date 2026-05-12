@@ -35,8 +35,8 @@ export const footerLinks = {
     company: [
         { label: "Sobre a Forbion", href: "#" },
         { label: "Contato", href: Routes.WhatsApp },
-        { label: "Política de Privacidade", href: "#" },
-        { label: "Termos de Uso", href: "#" },
+        { label: "Política de Privacidade", href: Routes.Privacy },
+        { label: "Termos de Uso", href: Routes.Terms },
     ]
 };
 
