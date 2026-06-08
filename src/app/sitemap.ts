@@ -1,10 +1,9 @@
 import type { MetadataRoute } from "next";
+import { SEO_PAGES } from "@/constants/seo-pages";
 
 const BASE = "https://www.forbion.digital";
 
-// Páginas estáticas atuais. Conteúdo novo (por-serviço, guias, FAQ) entra aqui
-// conforme for criado, pra entrar no índice do Google.
-const PAGES: { path: string; priority: number; freq: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
+const STATIC: { path: string; priority: number; freq: MetadataRoute.Sitemap[number]["changeFrequency"] }[] = [
     { path: "/", priority: 1.0, freq: "weekly" },
     { path: "/privacy", priority: 0.3, freq: "yearly" },
     { path: "/terms", priority: 0.3, freq: "yearly" },
@@ -12,10 +11,15 @@ const PAGES: { path: string; priority: number; freq: MetadataRoute.Sitemap[numbe
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const lastModified = new Date();
-    return PAGES.map(({ path, priority, freq }) => ({
-        url: `${BASE}${path}`,
-        lastModified,
-        changeFrequency: freq,
-        priority,
+    const staticEntries = STATIC.map(({ path, priority, freq }) => ({
+        url: `${BASE}${path}`, lastModified, changeFrequency: freq, priority,
     }));
+    // páginas de conteúdo (SEO) — pilar com prioridade maior
+    const contentEntries: MetadataRoute.Sitemap = SEO_PAGES.map((p) => ({
+        url: `${BASE}/${p.slug}`,
+        lastModified,
+        changeFrequency: "monthly",
+        priority: p.tier === 1 ? 0.8 : 0.6,
+    }));
+    return [...staticEntries, ...contentEntries];
 }
