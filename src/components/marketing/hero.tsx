@@ -4,8 +4,8 @@ import React from 'react';
 import Wrapper from '../global/wrapper';
 import { Button } from '../ui/button';
 import {
-    ArrowRightIcon, CalendarDays, CreditCard, BarChart3, Users,
-    LayoutDashboard, Repeat, Tag, Settings, Bell, Store
+    CalendarDays, Users, LayoutDashboard, Repeat, Tag, Settings, Bell,
+    CircleDollarSign, Calendar, Crown, TrendingUp, UserPlus, Star, BarChart3
 } from 'lucide-react';
 import { Routes } from '@/constants';
 import Link from 'next/link';
@@ -13,6 +13,17 @@ import { motion } from 'motion/react';
 import { cn } from '@/utils';
 import Balancer from 'react-wrap-balancer';
 import Container from "../global/container";
+
+/**
+ * Preview = réplica fiel da UI do dashboard real do app (fobion-front). Mesmas
+ * cores do tema dark (--c-*), mesmos cards (MetricCard r16, ícone 40x40), labels
+ * e layout. Estático (sem dados/animação) — só pra mostrar como é o produto.
+ */
+const T = {
+    bg: "#0A0A0A", surface: "#111111", surface2: "#161616",
+    border: "#1F1F1F", text: "#FFFFFF", text2: "#A1A1AA", text3: "#71717A", text4: "#52525B",
+    primary: "#0066FF",
+};
 
 const NAV = [
     { label: "Dashboard", icon: LayoutDashboard, active: true },
@@ -23,15 +34,19 @@ const NAV = [
     { label: "Relatórios", icon: BarChart3 },
 ];
 
-const KPIS = [
-    { icon: CalendarDays, label: "Agendamentos hoje", value: "8", hint: "+23% vs semana passada", up: true },
-    { icon: CreditCard, label: "Faturamento do mês", value: "R$ 4.200", hint: "+12% vs mês anterior", up: true },
-    { icon: Repeat, label: "Assinantes ativos", value: "12", hint: "R$ 1.788/mês recorrente", up: true },
-    { icon: Users, label: "Clientes", value: "87", hint: "+5 novos esta semana", up: false },
+const METRICS = [
+    { title: "Receita paga hoje", value: "R$ 1.240", sub: "serviços confirmados como pagos", icon: CircleDollarSign, color: "#10B981" },
+    { title: "Agendamentos hoje", value: "8", sub: "agendamentos neste dia", icon: Calendar, color: "#0066FF" },
+    { title: "Total de clientes", value: "287", sub: "clientes cadastrados", icon: Users, color: "#F59E0B" },
+    { title: "Assinantes ativos", value: "34", sub: "planos ativos agora", icon: Crown, color: "#7C3AED" },
 ];
 
-const REVENUE = [40, 55, 48, 70, 62, 88]; // alturas relativas (mini-gráfico)
-const MESES = ["Set", "Out", "Nov", "Dez", "Jan", "Fev"];
+const SUMMARY = [
+    { label: "Faturamento", value: "R$ 18.4k", icon: CircleDollarSign, color: "#10B981", sub: "+12%", subColor: "#10B981" },
+    { label: "Concluídos", value: "142", icon: Calendar, color: "#3B82F6", sub: "agendamentos" },
+    { label: "Novos clientes", value: "23", icon: UserPlus, color: "#F59E0B", sub: "no período" },
+    { label: "Assinantes", value: "34", icon: Star, color: "#7C3AED", sub: "ativos" },
+];
 
 const AGENDA = [
     { time: "09:00", client: "Carlos M.", service: "Lavagem Completa", status: "confirmado" },
@@ -39,6 +54,24 @@ const AGENDA = [
     { time: "13:00", client: "João S.", service: "Higienização Interna", status: "pendente" },
     { time: "14:30", client: "Maria L.", service: "Plano Premium — Lavagem", status: "assinante" },
 ];
+
+function MetricCard({ title, value, sub, icon: Icon, color }: { title: string; value: string; sub: string; icon: React.ElementType; color: string }) {
+    return (
+        <div style={{ backgroundColor: T.surface, border: `1px solid ${T.border}`, borderRadius: 16, padding: 18, position: "relative", overflow: "hidden", minWidth: 0 }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 8 }}>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                    <p style={{ fontSize: 12, fontWeight: 500, color: T.text3, margin: 0 }}>{title}</p>
+                    <span style={{ display: "block", marginTop: 8, fontSize: 22, fontWeight: 700, color: T.text, letterSpacing: "-0.5px" }}>{value}</span>
+                </div>
+                <div style={{ width: 38, height: 38, backgroundColor: `${color}1a`, borderRadius: 12, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, border: `1px solid ${color}40` }}>
+                    <Icon size={16} color={color} />
+                </div>
+            </div>
+            <span style={{ display: "block", marginTop: 10, fontSize: 11, color: T.text4 }}>{sub}</span>
+            <div style={{ position: "absolute", bottom: -20, right: -20, width: 80, height: 80, borderRadius: "50%", background: `${color}12`, filter: "blur(20px)", pointerEvents: "none" }} />
+        </div>
+    );
+}
 
 const Hero = () => {
     const badge = "Sistema para Estética Automotiva";
@@ -114,41 +147,36 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* Preview do painel — espelha o dashboard real do Forbion */}
+                {/* Preview = réplica fiel da UI do dashboard real do app */}
                 <div className="mt-10 lg:mt-20 relative">
                     <div className="relative mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8">
                         <div className="absolute inset-0 flex justify-center -z-10">
                             <div className="w-[90%] h-[60%] bg-primary/20 blur-[120px] opacity-40 rounded-full" />
                         </div>
 
-                        <div className="relative rounded-2xl lg:rounded-[28px] border border-foreground/10 bg-foreground/5 backdrop-blur-xl p-2 sm:p-3 shadow-2xl">
-                            <div className="rounded-xl lg:rounded-[22px] border border-foreground/10 bg-background overflow-hidden flex">
+                        <div className="relative rounded-2xl lg:rounded-[26px] p-1.5 sm:p-2 shadow-2xl" style={{ border: `1px solid ${T.border}`, background: T.surface }}>
+                            <div className="rounded-xl lg:rounded-[20px] overflow-hidden flex" style={{ border: `1px solid ${T.border}`, background: T.bg }}>
 
-                                {/* Sidebar */}
-                                <aside className="hidden md:flex w-48 shrink-0 flex-col border-r border-foreground/10 bg-foreground/[0.02]">
-                                    <div className="flex items-center gap-2 px-5 h-14 border-b border-foreground/10">
-                                        <div className="size-6 rounded-md bg-primary/90" />
-                                        <span className="font-semibold">Forbion</span>
+                                {/* Sidebar (igual ao app) */}
+                                <aside className="hidden md:flex w-48 shrink-0 flex-col" style={{ borderRight: `1px solid ${T.border}`, background: T.bg }}>
+                                    <div className="flex items-center gap-2 px-5 h-14" style={{ borderBottom: `1px solid ${T.border}` }}>
+                                        <div className="size-6 rounded-md" style={{ background: T.primary }} />
+                                        <span className="font-semibold" style={{ color: T.text }}>Forbion</span>
                                     </div>
                                     <nav className="flex-1 p-3 space-y-1">
                                         {NAV.map((item) => (
-                                            <div
-                                                key={item.label}
-                                                className={cn(
-                                                    "flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm",
-                                                    item.active
-                                                        ? "bg-primary/15 text-primary"
-                                                        : "text-muted-foreground"
-                                                )}
-                                            >
-                                                <item.icon className="size-4" />
+                                            <div key={item.label} className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm"
+                                                style={item.active
+                                                    ? { background: `${T.primary}1f`, color: T.primary }
+                                                    : { color: T.text3 }}>
+                                                <item.icon size={16} />
                                                 {item.label}
                                             </div>
                                         ))}
                                     </nav>
-                                    <div className="p-3 border-t border-foreground/10">
-                                        <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm text-muted-foreground">
-                                            <Settings className="size-4" /> Configurações
+                                    <div className="p-3" style={{ borderTop: `1px solid ${T.border}` }}>
+                                        <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg text-sm" style={{ color: T.text3 }}>
+                                            <Settings size={16} /> Configurações
                                         </div>
                                     </div>
                                 </aside>
@@ -156,80 +184,75 @@ const Hero = () => {
                                 {/* Conteúdo */}
                                 <div className="flex-1 min-w-0">
                                     {/* Topbar */}
-                                    <div className="flex items-center justify-between px-4 sm:px-6 h-14 border-b border-foreground/10">
-                                        <div className="flex items-center gap-2">
-                                            <Store className="size-4 text-primary" />
-                                            <span className="text-sm font-medium">Visão Geral — Fevereiro</span>
+                                    <div className="flex items-center justify-between px-4 sm:px-6 h-14" style={{ borderBottom: `1px solid ${T.border}` }}>
+                                        <div className="min-w-0">
+                                            <p className="text-sm font-semibold truncate" style={{ color: T.text }}>Olá, Estética do João 👋</p>
+                                            <p className="text-[11px] truncate" style={{ color: T.text4 }}>Aqui está o resumo de hoje</p>
                                         </div>
-                                        <div className="flex items-center gap-3">
-                                            <span className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                                                <span className="size-2 rounded-full bg-green-500 animate-pulse" /> Ao vivo
-                                            </span>
-                                            <Bell className="size-4 text-muted-foreground" />
-                                            <div className="size-7 rounded-full bg-foreground/10" />
+                                        <div className="flex items-center gap-3 shrink-0">
+                                            <Bell size={16} color={T.text3} />
+                                            <div className="size-7 rounded-full" style={{ background: T.surface2, border: `1px solid ${T.border}` }} />
                                         </div>
                                     </div>
 
-                                    <div className="p-4 sm:p-6 space-y-5">
-                                        {/* KPIs */}
+                                    <div className="p-4 sm:p-5 space-y-4" style={{ background: T.bg }}>
+                                        {/* MetricCards (idênticos ao app) */}
                                         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
-                                            {KPIS.map((k) => (
-                                                <div key={k.label} className="rounded-xl bg-foreground/5 border border-foreground/5 p-3.5">
-                                                    <div className="flex items-center gap-2">
-                                                        <k.icon className="size-4 text-primary" />
-                                                        <span className="text-xs text-muted-foreground">{k.label}</span>
-                                                    </div>
-                                                    <p className="text-2xl font-semibold mt-2">{k.value}</p>
-                                                    <p className={cn("text-xs mt-1", k.up ? "text-green-500" : "text-muted-foreground")}>{k.hint}</p>
-                                                </div>
+                                            {METRICS.map((m) => (
+                                                <MetricCard key={m.title} {...m} />
                                             ))}
                                         </div>
 
-                                        <div className="grid lg:grid-cols-5 gap-4">
-                                            {/* Mini-gráfico de faturamento */}
-                                            <div className="lg:col-span-2 rounded-xl bg-foreground/5 border border-foreground/5 p-4">
-                                                <p className="text-sm font-medium">Faturamento</p>
-                                                <p className="text-xs text-muted-foreground">Últimos 6 meses</p>
-                                                <div className="mt-4 flex items-end gap-2 h-28">
-                                                    {REVENUE.map((h, i) => (
-                                                        <div key={i} className="flex-1 flex flex-col items-center gap-1.5">
-                                                            <div
-                                                                className={cn(
-                                                                    "w-full rounded-t-md",
-                                                                    i === REVENUE.length - 1 ? "bg-primary" : "bg-primary/30"
-                                                                )}
-                                                                style={{ height: `${h}%` }}
-                                                            />
-                                                            <span className="text-[10px] text-muted-foreground">{MESES[i]}</span>
+                                        <div className="grid lg:grid-cols-2 gap-3">
+                                            {/* Próximos agendamentos */}
+                                            <div style={{ background: T.surface, border: `1px solid ${T.border}`, borderRadius: 16, padding: 18 }}>
+                                                <div className="flex items-start justify-between mb-3">
+                                                    <div>
+                                                        <h3 style={{ fontSize: 14, fontWeight: 600, color: T.text, margin: 0 }}>Próximos agendamentos</h3>
+                                                        <p style={{ fontSize: 11, color: T.text4, marginTop: 3 }}>Pendentes e em andamento hoje</p>
+                                                    </div>
+                                                    <span style={{ fontSize: 12, color: T.primary }}>Ver todos</span>
+                                                </div>
+                                                <div className="space-y-2">
+                                                    {AGENDA.map((item, i) => (
+                                                        <div key={i} className="flex items-center justify-between rounded-lg px-3 py-2" style={{ background: T.surface2, border: `1px solid ${T.border}` }}>
+                                                            <div className="flex items-center gap-3 min-w-0">
+                                                                <span className="font-mono shrink-0" style={{ fontSize: 11, color: T.text3, width: 38 }}>{item.time}</span>
+                                                                <div className="min-w-0">
+                                                                    <p className="truncate" style={{ fontSize: 13, fontWeight: 500, color: T.text, margin: 0 }}>{item.client}</p>
+                                                                    <p className="truncate" style={{ fontSize: 11, color: T.text4, margin: 0 }}>{item.service}</p>
+                                                                </div>
+                                                            </div>
+                                                            <span className="shrink-0" style={{
+                                                                fontSize: 10, padding: "3px 8px", borderRadius: 999,
+                                                                ...(item.status === "confirmado" ? { color: "#10B981", background: "rgba(16,185,129,0.1)" }
+                                                                    : item.status === "pendente" ? { color: "#F59E0B", background: "rgba(245,158,11,0.1)" }
+                                                                        : { color: "#7C3AED", background: "rgba(124,58,237,0.1)" }),
+                                                            }}>
+                                                                {item.status === "assinante" ? "Assinante" : item.status === "confirmado" ? "Confirmado" : "Pendente"}
+                                                            </span>
                                                         </div>
                                                     ))}
                                                 </div>
                                             </div>
 
-                                            {/* Agenda de hoje */}
-                                            <div className="lg:col-span-3 rounded-xl bg-foreground/5 border border-foreground/5 p-4">
-                                                <div className="flex items-center justify-between">
-                                                    <p className="text-sm font-medium">Agenda de hoje</p>
-                                                    <span className="text-xs text-primary">Loja de agendamento ativa</span>
-                                                </div>
-                                                <div className="space-y-2 mt-3">
-                                                    {AGENDA.map((item, i) => (
-                                                        <div key={i} className="flex items-center justify-between px-3 py-2 rounded-lg bg-foreground/[0.03] border border-foreground/5">
-                                                            <div className="flex items-center gap-3 min-w-0">
-                                                                <span className="text-xs text-muted-foreground font-mono w-10 shrink-0">{item.time}</span>
-                                                                <div className="min-w-0">
-                                                                    <p className="text-sm font-medium truncate">{item.client}</p>
-                                                                    <p className="text-xs text-muted-foreground truncate">{item.service}</p>
+                                            {/* Resumo do mês (SummaryCardGrid) */}
+                                            <div style={{ background: T.surface, border: `1px solid ${T.border}`, borderRadius: 16, padding: 18 }}>
+                                                <h3 style={{ fontSize: 14, fontWeight: 600, color: T.text, margin: "0 0 12px" }}>Resumo do mês</h3>
+                                                <div className="grid grid-cols-2 gap-2">
+                                                    {SUMMARY.map((s) => (
+                                                        <div key={s.label} style={{ background: T.surface2, border: `1px solid ${T.border}`, borderRadius: 10, padding: "10px 12px" }}>
+                                                            <div className="flex items-center gap-1.5 mb-1.5">
+                                                                <div style={{ width: 20, height: 20, borderRadius: 5, background: `linear-gradient(135deg, ${s.color}40, ${s.color}1a)`, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                                                                    <s.icon size={11} color={s.color} />
                                                                 </div>
+                                                                <span style={{ fontSize: 10, fontWeight: 500, color: T.text3 }}>{s.label}</span>
                                                             </div>
-                                                            <span className={cn(
-                                                                "text-xs px-2 py-0.5 rounded-full shrink-0",
-                                                                item.status === "confirmado" && "bg-green-500/10 text-green-500",
-                                                                item.status === "pendente" && "bg-yellow-500/10 text-yellow-500",
-                                                                item.status === "assinante" && "bg-primary/10 text-primary",
-                                                            )}>
-                                                                {item.status === "assinante" ? "Assinante" : item.status === "confirmado" ? "Confirmado" : "Pendente"}
-                                                            </span>
+                                                            <p style={{ fontSize: 17, fontWeight: 700, color: T.text, margin: 0, letterSpacing: "-0.3px" }}>{s.value}</p>
+                                                            <div className="flex items-center gap-1 mt-0.5">
+                                                                {s.subColor && <TrendingUp size={10} color={s.subColor} />}
+                                                                <span style={{ fontSize: 10, fontWeight: s.subColor ? 600 : 400, color: s.subColor ?? T.text4 }}>{s.sub}</span>
+                                                            </div>
                                                         </div>
                                                     ))}
                                                 </div>
@@ -240,8 +263,7 @@ const Hero = () => {
                             </div>
                         </div>
 
-                        {/* fade leve só na pontinha de baixo, sem comer o painel */}
-                        <div className="absolute inset-x-0 bottom-0 z-20 w-full h-16 bg-linear-to-t from-background to-transparent pointer-events-none" />
+                        <div className="absolute inset-x-0 bottom-0 z-20 w-full h-12 bg-linear-to-t from-background to-transparent pointer-events-none" />
                     </div>
                 </div>
             </Wrapper>
