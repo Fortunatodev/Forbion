@@ -57,7 +57,25 @@ const Footer = () => {
                     <div className="lg:col-span-6 grid grid-cols-2 md:grid-cols-3 lg:place-items-end gap-8">
                         <div>
                             <h3 className="text-sm font-semibold text-foreground mt-0">
-                                Solução
+                                Soluções
+                            </h3>
+                            <ul className="mt-4 space-y-3">
+                                {footerLinks.solutions.map((link) => (
+                                    <li key={link.label}>
+                                        <Link
+                                            href={link.href}
+                                            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                        >
+                                            {link.label}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 className="text-sm font-semibold text-foreground mt-0">
+                                Navegar
                             </h3>
                             <ul className="mt-4 space-y-3">
                                 {footerLinks.product.map((link) => (

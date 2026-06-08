@@ -25,6 +25,13 @@ export const NAV_LINKS = [
 
 
 export const footerLinks = {
+    solutions: [
+        { label: "Software para estética automotiva", href: "/software-para-estetica-automotiva" },
+        { label: "Agenda online", href: "/agenda-online-estetica-automotiva" },
+        { label: "Clube de assinatura", href: "/clube-de-assinatura-estetica-automotiva" },
+        { label: "Recall de garantia", href: "/recall-garantia-estetica-automotiva" },
+        { label: "Forbion vs CERA", href: "/forbion-vs-cera-comparativo" },
+    ],
     product: [
         { label: "Para Quem É", href: "#para-quem" },
         { label: "Como Funciona", href: "#como-funciona" },
