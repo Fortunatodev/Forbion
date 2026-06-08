@@ -107,7 +107,7 @@ const RecorrenciaDestaque = () => {
 
                             <div className="flex items-center gap-2 mb-4">
                                 <Star className="size-5 text-amber-400 fill-amber-400" />
-                                <span className="text-sm font-medium text-foreground/60">Exemplo real</span>
+                                <span className="text-sm font-medium text-foreground/60">Exemplo ilustrativo</span>
                             </div>
 
                             <h4 className="text-lg font-semibold">
@@ -130,7 +130,7 @@ const RecorrenciaDestaque = () => {
                             </div>
 
                             <div className="mt-6 rounded-xl bg-primary/5 border border-primary/10 p-4 text-center">
-                                <p className="text-xs text-muted-foreground uppercase tracking-wider">Receita recorrente garantida</p>
+                                <p className="text-xs text-muted-foreground uppercase tracking-wider">Receita recorrente previsível</p>
                                 <p className="text-3xl font-semibold text-primary mt-1">R$ 1.490</p>
                                 <p className="text-sm text-muted-foreground mt-1">todo mês, antes de abrir a porta</p>
                             </div>
