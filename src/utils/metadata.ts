@@ -16,22 +16,41 @@ export const generateMetadata = ({
             url: "/icons/icon.svg"
         },
     ],
+    path = "/",
+    keywords = [
+        "sistema para estética automotiva",
+        "software de gestão estética automotiva",
+        "agenda online estética automotiva",
+        "gestão de lava rápido",
+        "sistema para detailing",
+        "controle de garantia automotiva",
+        "clube de assinatura estética automotiva",
+    ],
     noIndex = false
 }: {
     title?: string;
     description?: string;
     image?: string | null;
     icons?: Metadata["icons"];
+    path?: string;
+    keywords?: string[];
     noIndex?: boolean;
 } = {}): Metadata => ({
+    metadataBase: new URL("https://www.forbion.digital"),
     title,
     description,
+    keywords,
     icons,
+    alternates: { canonical: path },
 
     openGraph: {
         title,
         description,
-        images: image ? [{ url: image }] : undefined,
+        url: path,
+        siteName: "Forbion",
+        locale: "pt_BR",
+        type: "website",
+        images: image ? [{ url: image, width: 1200, height: 630, alt: "Forbion — gestão para estética automotiva" }] : undefined,
     },
 
     twitter: {
@@ -41,5 +60,7 @@ export const generateMetadata = ({
         images: image ? [image] : undefined,
     },
 
-    ...(noIndex && { robots: { index: false, follow: false } }),
+    robots: noIndex
+        ? { index: false, follow: false }
+        : { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 } },
 });
