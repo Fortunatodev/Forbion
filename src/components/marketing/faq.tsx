@@ -21,8 +21,8 @@ const faqItems = [
         answer: "Não. Os 7 dias de teste são totalmente gratuitos, sem precisar de cartão de crédito. Você acessa a plataforma e começa a configurar sua loja."
     },
     {
-        question: "Qual a diferença entre o BASIC e o PRO?",
-        answer: "O BASIC organiza sua agenda e loja de agendamento. O PRO adiciona os planos de assinatura do cliente final, permitindo criar receita recorrente mensal, além de relatórios completos de faturamento e métricas."
+        question: "Qual a diferença entre os planos Essencial, Premium e Pro?",
+        answer: "O Essencial (R$79/mês) organiza sua agenda, loja de agendamento, serviços e pátio. O Premium (R$179/mês) adiciona o clube de assinatura (receita recorrente), recall de garantia e relatórios. O Pro (R$197/mês) inclui ainda assistente de IA e emissão de NF-e."
     },
     {
         question: "Meu cliente precisa baixar algum app?",
@@ -30,7 +30,7 @@ const faqItems = [
     },
     {
         question: "Posso criar mais de um tipo de plano de assinatura?",
-        answer: "Sim. No plano PRO você cria quantos planos quiser, com preços, descontos e serviços incluídos diferentes para cada um."
+        answer: "Sim. A partir do plano Premium você cria quantos planos de assinatura quiser, com preços, descontos e serviços incluídos diferentes para cada um."
     },
     {
         question: "O Forbion também faz sites e landing pages?",
@@ -38,9 +38,20 @@ const faqItems = [
     },
 ];
 
+const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((f) => ({
+        "@type": "Question",
+        name: f.question,
+        acceptedAnswer: { "@type": "Answer", text: f.answer },
+    })),
+};
+
 const Faq = () => {
     return (
         <section id="faq" className="w-full py-16 lg:py-24 relative">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
             <div className="hidden lg:block absolute -z-10 top-0 -left-1/4 size-1/3 bg-primary/10 rounded-full blur-[8rem]" />
 
             <Wrapper>
