@@ -1,52 +1,75 @@
 export const pricingPlans = [
   {
     id: 1,
-    name: "BASIC",
+    name: "Essencial",
     price: {
-      mensal: 97,
-      anual: 970
+      mensal: 79,
+      anual: 790
     },
-    tagline: "Para começar organizado",
+    tagline: "Para tirar a oficina do caderno",
     description:
-      "Organize sua agenda, cadastre seus serviços e receba agendamentos pela loja online. Tudo que você precisa para sair do caos do WhatsApp.",
+      "Tudo pra sair do caos do WhatsApp: agenda online, loja pública de agendamento e controle da operação do dia.",
     features: [
-      { text: "Agenda online com todos os agendamentos", highlighted: false },
-      { text: "Loja pública de agendamento para o cliente final", highlighted: false },
-      { text: "Cadastro de clientes e histórico", highlighted: false },
-      { text: "Cadastro de serviços com preço e duração", highlighted: false },
-      { text: "Relatórios básicos de faturamento", highlighted: false },
+      { text: "Agenda e agendamento online", highlighted: false },
+      { text: "Loja pública de agendamento (seu link próprio)", highlighted: false },
+      { text: "Cadastro de clientes e veículos", highlighted: false },
+      { text: "Serviços com preço por porte de veículo", highlighted: false },
+      { text: "Pátio, estoque e orçamentos", highlighted: false },
+      { text: "Lembrete e confirmação por WhatsApp", highlighted: false },
     ],
     cta: {
-      text: "Começar grátis por 7 dias",
-      href: "https://pay.cakto.com.br/3d4ss4h"
+      text: "Começar 7 dias grátis",
+      href: "https://pay.cakto.com.br/3b4vdqb"
     },
     popular: false
   },
   {
     id: 2,
-    name: "PRO",
+    name: "Premium",
+    price: {
+      mensal: 179,
+      anual: 1790
+    },
+    tagline: "Para crescer com recorrência e dados",
+    description:
+      "Tudo do Essencial + clube de assinatura (receita recorrente), recall de garantia que traz o cliente de volta e relatórios pra decidir com número.",
+    features: [
+      { text: "Tudo do Essencial incluído", highlighted: false },
+      { text: "Clube de assinatura do cliente (receita recorrente)", highlighted: true },
+      { text: "Recall de garantia — avisa o cliente pra voltar", highlighted: true },
+      { text: "Relatórios e retenção (RFM)", highlighted: true },
+      { text: "Equipe com permissões + repasses/comissão", highlighted: true },
+    ],
+    cta: {
+      text: "Começar 7 dias grátis",
+      href: "https://pay.cakto.com.br/3d4ss4h"
+    },
+    popular: true,
+    badge: "MAIS ESCOLHIDO",
+    anualDiscount: "2 meses grátis no plano anual"
+  },
+  {
+    id: 3,
+    name: "Pro",
     price: {
       mensal: 197,
       anual: 1970
     },
-    tagline: "Para criar receita recorrente e dominar seus números",
+    tagline: "A oficina no automático, com IA e nota fiscal",
     description:
-      "Tudo do BASIC + planos de assinatura para seu cliente final, relatórios completos e métricas avançadas de desempenho.",
+      "Tudo do Premium + assistente com IA atendendo no WhatsApp, emissão de NF-e e prioridade no suporte.",
     features: [
-      { text: "Tudo do plano BASIC incluído", highlighted: false },
-      { text: "Planos de assinatura para o cliente final", highlighted: true },
-      { text: "Descontos automáticos por plano", highlighted: true },
-      { text: "Controle de usos incluídos por plano (ex.: 5 lavagens/mês)", highlighted: true },
-      { text: "Relatórios completos de faturamento e recorrência", highlighted: true },
-      { text: "Métricas avançadas de desempenho", highlighted: true },
+      { text: "Tudo do Premium incluído", highlighted: false },
+      { text: "Assistente com IA (Carla) atendendo no WhatsApp", highlighted: true },
+      { text: "Emissão de NF-e (nota de serviço)", highlighted: true },
+      { text: "Vistoria do veículo com fotos e assinatura", highlighted: true },
+      { text: "Prioridade no suporte", highlighted: true },
     ],
     cta: {
-      text: "Quero o PRO — 7 dias grátis",
+      text: "Começar 7 dias grátis",
       href: "https://pay.cakto.com.br/3c23rs8_764829"
     },
-    popular: true,
-    badge: "RECOMENDADO",
-    anualDiscount: "7 dias grátis para testar na sua operação"
+    popular: false
   }
 ];
 
