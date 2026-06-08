@@ -23,7 +23,7 @@ const Capibilities = () => {
                         className="title mt-6"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, amount: 0.15, margin: "0px 0px 240px 0px" }}
                         transition={{ duration: 0.3, delay: 0.2 }}
                     >
                         Tudo que sua estética precisa
@@ -35,7 +35,7 @@ const Capibilities = () => {
                         className="desc mt-4"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
+                        viewport={{ once: true, amount: 0.15, margin: "0px 0px 240px 0px" }}
                         transition={{ duration: 0.3, delay: 0.3 }}
                     >
                         Agenda, loja, clientes, planos e relatórios. Tudo integrado.
@@ -52,8 +52,8 @@ const Capibilities = () => {
                         )}
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.3, delay: 0.4 }}
+                        viewport={{ once: true, amount: 0.15, margin: "0px 0px 240px 0px" }}
+                        transition={{ duration: 0.3, delay: 0.08 }}
                     >
 
                         <div className="relative">
@@ -88,8 +88,8 @@ const Capibilities = () => {
                         )}
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.3, delay: 0.5 }}
+                        viewport={{ once: true, amount: 0.15, margin: "0px 0px 240px 0px" }}
+                        transition={{ duration: 0.3, delay: 0.12 }}
                     >
 
                         <div className="relative">
@@ -124,8 +124,8 @@ const Capibilities = () => {
                         )}
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.3, delay: 0.6 }}
+                        viewport={{ once: true, amount: 0.15, margin: "0px 0px 240px 0px" }}
+                        transition={{ duration: 0.3, delay: 0.16 }}
                     >
 
                         <div className="relative">
@@ -160,8 +160,8 @@ const Capibilities = () => {
                         )}
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.3, delay: 0.7 }}
+                        viewport={{ once: true, amount: 0.15, margin: "0px 0px 240px 0px" }}
+                        transition={{ duration: 0.3, delay: 0.2 }}
                     >
 
                         <div className="relative">
@@ -191,8 +191,8 @@ const Capibilities = () => {
                         className="lg:col-span-4 flex flex-col gap-4"
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.3, delay: 0.8 }}
+                        viewport={{ once: true, amount: 0.15, margin: "0px 0px 240px 0px" }}
+                        transition={{ duration: 0.3, delay: 0.24 }}
                     >
                         <motion.div
                             className={cn(

@@ -37,34 +37,28 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Tudo que sua estética precisa, sem gambiarra",
                 paragraphs: [
-                    "Gerir uma estética automotiva no WhatsApp e no caderno funciona até o segundo carro do dia. O Forbion organiza a operação de ponta a ponta: o cliente agenda sozinho pela sua loja online, você acompanha o pátio do dia, fecha a comanda com o pagamento e ainda registra a vistoria do veículo na entrada.",
-                ],
+                    "Gerir uma estética automotiva no WhatsApp e no caderno funciona até o segundo carro do dia. O Forbion organiza a operação de ponta a ponta: o cliente agenda sozinho pela sua loja online, você acompanha o pátio do dia, fecha a comanda com o pagamento e ainda registra a vistoria do veículo na entrada."],
                 bullets: [
                     "Agenda e agendamento online com a sua loja pública",
                     "Cadastro de clientes, veículos e histórico de serviços",
                     "Catálogo de serviços com preço por porte de veículo",
                     "Pátio do dia, estoque e orçamentos",
-                    "Lembrete e confirmação por WhatsApp",
-                ],
+                    "Lembrete e confirmação por WhatsApp"],
             },
             {
                 h2: "Receita recorrente, não só serviço avulso",
                 paragraphs: [
-                    "O que separa a estética que cresce da que vive de altos e baixos é a recorrência. Com o clube de assinatura do Forbion você transforma lavagem e manutenção em mensalidade — receita previsível todo mês. E o recall de garantia avisa o cliente automaticamente quando a vitrificação ou o polimento precisa de revisão, trazendo ele de volta sem você correr atrás.",
-                ],
+                    "O que separa a estética que cresce da que vive de altos e baixos é a recorrência. Com o clube de assinatura do Forbion você transforma lavagem e manutenção em mensalidade — receita previsível todo mês. E o recall de garantia avisa o cliente automaticamente quando a vitrificação ou o polimento precisa de revisão, trazendo ele de volta sem você correr atrás."],
             },
             {
                 h2: "Decida com número, não no achismo",
                 paragraphs: [
-                    "Relatórios de faturamento e a análise de retenção (RFM) mostram quem são seus melhores clientes, quem está sumindo e quanto cada serviço rende. No plano Pro, a assistente de IA e a emissão de NF-e deixam a operação ainda mais no automático.",
-                ],
-            },
-        ],
+                    "Relatórios de faturamento e a análise de retenção (RFM) mostram quem são seus melhores clientes, quem está sumindo e quanto cada serviço rende. Com o recall de garantia e o clube de assinatura, você ainda traz o cliente de volta e transforma serviço avulso em receita recorrente."],
+            }],
         faq: [
             { q: "O Forbion serve para lava-rápido e detailing?", a: "Sim. O Forbion foi feito para estética automotiva, detailing e lava-rápido — dos serviços simples (lavagem, aspiração) aos de ticket alto (vitrificação, polimento, PPF)." },
-            { q: "Quanto custa o Forbion?", a: "São três planos: Essencial a R$79/mês, Premium a R$179/mês e Pro a R$197/mês, com 7 dias grátis para testar. O plano anual sai mais barato." },
-            { q: "Preciso instalar alguma coisa?", a: "Não. O Forbion roda no navegador (computador e celular) e o seu cliente agenda pela sua loja online, sem instalar app." },
-        ],
+            { q: "Quanto custa o Forbion?", a: "São dois planos: Essencial a partir de R$79/mês e Premium a R$179/mês, com 7 dias grátis para testar. O plano anual sai mais barato." },
+            { q: "Preciso instalar alguma coisa?", a: "Não. O Forbion roda no navegador (computador e celular) e o seu cliente agenda pela sua loja online, sem instalar app." }],
         related: ["agenda-online-estetica-automotiva", "clube-de-assinatura-estetica-automotiva", "recall-garantia-estetica-automotiva"],
     },
     {
@@ -78,27 +72,22 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "O cliente agenda sozinho",
                 paragraphs: [
-                    "Você divulga o link da sua loja online (na bio do Instagram, no Google, no WhatsApp) e o cliente escolhe o serviço, o horário e confirma. Sem ida e volta de mensagem, sem horário marcado em dois lugares ao mesmo tempo.",
-                ],
+                    "Você divulga o link da sua loja online (na bio do Instagram, no Google, no WhatsApp) e o cliente escolhe o serviço, o horário e confirma. Sem ida e volta de mensagem, sem horário marcado em dois lugares ao mesmo tempo."],
                 bullets: [
                     "Horários livres calculados pela duração de cada serviço",
                     "Bloqueio automático de horário já ocupado",
                     "Duração e preço por porte de veículo (hatch, SUV, picape…)",
-                    "Lembrete e confirmação por WhatsApp pra reduzir o no-show",
-                ],
+                    "Lembrete e confirmação por WhatsApp pra reduzir o no-show"],
             },
             {
                 h2: "Sua operação do dia, organizada",
                 paragraphs: [
-                    "Tudo que entra na agenda aparece no pátio do dia: o que está aguardando, em atendimento e pronto. No fim, você fecha a comanda com a forma de pagamento e o faturamento já entra nos relatórios.",
-                ],
-            },
-        ],
+                    "Tudo que entra na agenda aparece no pátio do dia: o que está aguardando, em atendimento e pronto. No fim, você fecha a comanda com a forma de pagamento e o faturamento já entra nos relatórios."],
+            }],
         faq: [
             { q: "O cliente precisa baixar app pra agendar?", a: "Não. Ele agenda pela sua loja online, direto no navegador do celular." },
             { q: "Dá pra ter mais de um profissional na agenda?", a: "Sim. Você pode ter a equipe com horários próprios e até vincular o Google Calendar de cada um." },
-            { q: "E se dois clientes tentarem o mesmo horário?", a: "O sistema bloqueia: assim que um horário é reservado, ele some pros outros — sem agendamento duplicado." },
-        ],
+            { q: "E se dois clientes tentarem o mesmo horário?", a: "O sistema bloqueia: assim que um horário é reservado, ele some pros outros — sem agendamento duplicado." }],
         related: ["software-para-estetica-automotiva", "loja-online-agendamento-estetica", "recall-garantia-estetica-automotiva"],
     },
     {
@@ -112,20 +101,16 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Um link que vende por você",
                 paragraphs: [
-                    "A loja online é a sua vitrine: serviços, preços, horário de funcionamento e o botão de agendar. Você coloca o link na bio do Instagram, no Google e no WhatsApp, e o cliente resolve sozinho — inclusive fora do horário comercial.",
-                ],
+                    "A loja online é a sua vitrine: serviços, preços, horário de funcionamento e o botão de agendar. Você coloca o link na bio do Instagram, no Google e no WhatsApp, e o cliente resolve sozinho — inclusive fora do horário comercial."],
                 bullets: [
                     "Página própria com sua marca e seus serviços",
                     "Cliente vê preço e duração antes de agendar",
                     "Funciona 24h — agendamento mesmo com você ocupado",
-                    "Pronta pra divulgar na bio e nos anúncios",
-                ],
-            },
-        ],
+                    "Pronta pra divulgar na bio e nos anúncios"],
+            }],
         faq: [
             { q: "A loja online tem custo extra?", a: "Não. Ela já vem em todos os planos do Forbion, inclusive no Essencial." },
-            { q: "Posso mostrar preços diferentes por tamanho de carro?", a: "Sim. Você define preço por porte de veículo, então um SUV pode custar mais que um hatch automaticamente." },
-        ],
+            { q: "Posso mostrar preços diferentes por tamanho de carro?", a: "Sim. Você define preço por porte de veículo, então um SUV pode custar mais que um hatch automaticamente." }],
         related: ["agenda-online-estetica-automotiva", "software-para-estetica-automotiva"],
     },
     {
@@ -139,25 +124,20 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Transforme serviço avulso em mensalidade",
                 paragraphs: [
-                    "Em vez de torcer pra o cliente voltar, você cria planos — por exemplo, 4 lavagens por mês ou manutenção da vitrificação — e ele assina. A recorrência estabiliza o caixa e aumenta o valor de cada cliente ao longo do tempo.",
-                ],
+                    "Em vez de torcer pra o cliente voltar, você cria planos — por exemplo, 4 lavagens por mês ou manutenção da vitrificação — e ele assina. A recorrência estabiliza o caixa e aumenta o valor de cada cliente ao longo do tempo."],
                 bullets: [
                     "Planos mensais com serviços inclusos (ex.: 4 lavagens/mês)",
                     "Controle de quantos usos o cliente já consumiu no mês",
-                    "Base de assinantes e receita recorrente no relatório",
-                ],
+                    "Base de assinantes e receita recorrente no relatório"],
             },
             {
                 h2: "Fidelização que se paga",
                 paragraphs: [
-                    "Cliente de assinatura volta mais, indica mais e some menos. Junto com o recall de garantia, o clube cria um motivo recorrente pro cliente estar sempre na sua estética — e não na do concorrente.",
-                ],
-            },
-        ],
+                    "Cliente de assinatura volta mais, indica mais e some menos. Junto com o recall de garantia, o clube cria um motivo recorrente pro cliente estar sempre na sua estética — e não na do concorrente."],
+            }],
         faq: [
             { q: "O clube de assinatura está em qual plano?", a: "A partir do plano Premium (R$179/mês), que inclui recorrência, recall de garantia e relatórios." },
-            { q: "Consigo limitar quantas lavagens entram no plano?", a: "Sim. Você define os serviços e a quantidade incluída, e o sistema controla o consumo no mês." },
-        ],
+            { q: "Consigo limitar quantas lavagens entram no plano?", a: "Sim. Você define os serviços e a quantidade incluída, e o sistema controla o consumo no mês." }],
         related: ["software-para-estetica-automotiva", "recall-garantia-estetica-automotiva", "relatorios-retencao-clientes-rfm-estetica"],
     },
     {
@@ -171,19 +151,15 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "A garantia que trabalha a seu favor",
                 paragraphs: [
-                    "Você define o prazo de garantia de cada serviço (ex.: vitrificação 180 dias). Quando o prazo se aproxima, o cliente entra na lista de recall — e você o chama de volta pra revisão pelo WhatsApp, com um clique. É o motor de recompra do detailing premium.",
-                ],
+                    "Você define o prazo de garantia de cada serviço (ex.: vitrificação 180 dias). Quando o prazo se aproxima, o cliente entra na lista de recall — e você o chama de volta pra revisão pelo WhatsApp, com um clique. É o motor de recompra do detailing premium."],
                 bullets: [
                     "Prazo de garantia por serviço",
                     "Lista de retornos a cobrar, atualizada sozinha",
-                    "Chamada pelo WhatsApp pra trazer o cliente de volta",
-                ],
-            },
-        ],
+                    "Chamada pelo WhatsApp pra trazer o cliente de volta"],
+            }],
         faq: [
             { q: "Como o recall sabe a hora de avisar?", a: "Ao fechar a comanda de um serviço com garantia, o Forbion calcula a data de revisão. Quando ela se aproxima, o cliente aparece na lista de recall." },
-            { q: "O recall está em qual plano?", a: "A partir do Premium (R$179/mês), junto com clube de assinatura e relatórios." },
-        ],
+            { q: "O recall está em qual plano?", a: "A partir do Premium (R$179/mês), junto com clube de assinatura e relatórios." }],
         related: ["clube-de-assinatura-estetica-automotiva", "software-para-estetica-automotiva"],
     },
 
@@ -199,21 +175,17 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Prova do estado de entrada",
                 paragraphs: [
-                    "Na chegada do veículo, você tira fotos, marca as avarias no diagrama do carro e colhe a assinatura do cliente. Fica tudo registrado e ligado àquele atendimento. Quando o serviço fecha, a vistoria é travada — vira um registro imutável que protege você juridicamente.",
-                ],
+                    "Na chegada do veículo, você tira fotos, marca as avarias no diagrama do carro e colhe a assinatura do cliente. Fica tudo registrado e ligado àquele atendimento. Quando o serviço fecha, a vistoria é travada — vira um registro imutável que protege você juridicamente."],
                 bullets: [
                     "Fotos do estado de chegada",
                     "Marcação de avarias (risco, amassado, arranhão) no diagrama",
                     "Assinatura do cliente na tela",
-                    "Trava após o fechamento (registro imutável)",
-                ],
-            },
-        ],
+                    "Trava após o fechamento (registro imutável)"],
+            }],
         faq: [
-            { q: "A vistoria está em qual plano?", a: "No plano Pro (R$197/mês), junto com a assistente de IA e a emissão de NF-e." },
-            { q: "Serve como prova contra reclamação?", a: "Sim. Com fotos, marcação de avarias e assinatura do cliente travadas no fechamento, você tem o registro do estado de entrada do veículo." },
-        ],
-        related: ["software-para-estetica-automotiva", "assistente-ia-estetica-automotiva"],
+            { q: "A vistoria está em qual plano?", a: "A partir do Premium (R$179/mês), junto com clube de assinatura, recall de garantia e relatórios." },
+            { q: "Serve como prova contra reclamação?", a: "Sim. Com fotos, marcação de avarias e assinatura do cliente travadas no fechamento, você tem o registro do estado de entrada do veículo." }],
+        related: ["software-para-estetica-automotiva"],
     },
     {
         slug: "relatorios-retencao-clientes-rfm-estetica",
@@ -226,19 +198,15 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Quem volta, quem some, quanto rende",
                 paragraphs: [
-                    "A análise de retenção (RFM — recência, frequência e valor) separa seus clientes em grupos: os fiéis, os que estão esfriando e os que já sumiram. Você vê a receita em risco e a lista de clientes pra recuperar — e age antes de perder.",
-                ],
+                    "A análise de retenção (RFM — recência, frequência e valor) separa seus clientes em grupos: os fiéis, os que estão esfriando e os que já sumiram. Você vê a receita em risco e a lista de clientes pra recuperar — e age antes de perder."],
                 bullets: [
                     "Faturamento por período e por serviço",
                     "Segmentação RFM (melhores clientes x em risco)",
-                    "Receita em risco e clientes a recuperar",
-                ],
-            },
-        ],
+                    "Receita em risco e clientes a recuperar"],
+            }],
         faq: [
             { q: "Preciso entender de dados pra usar?", a: "Não. O Forbion já mostra os grupos prontos e a lista de quem chamar de volta — é só agir." },
-            { q: "Relatórios estão em qual plano?", a: "A partir do Premium (R$179/mês)." },
-        ],
+            { q: "Relatórios estão em qual plano?", a: "A partir do Premium (R$179/mês)." }],
         related: ["clube-de-assinatura-estetica-automotiva", "recall-garantia-estetica-automotiva"],
     },
     {
@@ -252,96 +220,38 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Cobre o preço certo por veículo",
                 paragraphs: [
-                    "Vitrificar um SUV dá mais trabalho que um hatch — e o preço tem que refletir isso. No Forbion você define o valor por porte do veículo, e o sistema já cobra o certo no agendamento e no orçamento.",
-                ],
+                    "Vitrificar um SUV dá mais trabalho que um hatch — e o preço tem que refletir isso. No Forbion você define o valor por porte do veículo, e o sistema já cobra o certo no agendamento e no orçamento."],
                 bullets: [
                     "Preço por porte (hatch, sedan, SUV, picape)",
                     "Orçamentos de serviços de ticket alto, enviáveis por WhatsApp",
-                    "Estoque de insumos com entrada/saída e alerta de mínimo",
-                ],
-            },
-        ],
+                    "Estoque de insumos com entrada/saída e alerta de mínimo"],
+            }],
         faq: [
             { q: "Dá pra enviar o orçamento pro cliente?", a: "Sim. Você monta o orçamento com os itens e envia a proposta pelo WhatsApp; depois acompanha aprovado/recusado/vendido." },
-            { q: "Em qual plano está?", a: "Orçamento, estoque e preço por porte já estão no Essencial (R$79/mês)." },
-        ],
+            { q: "Em qual plano está?", a: "Orçamento, estoque e preço por porte já estão no Essencial (R$79/mês)." }],
         related: ["software-para-estetica-automotiva", "agenda-online-estetica-automotiva"],
-    },
-    {
-        slug: "assistente-ia-estetica-automotiva",
-        tier: 2,
-        title: "Assistente de IA para Estética Automotiva (Carla) | Plano Pro — Forbion",
-        description: "Conheça a Carla, a assistente de IA do Forbion no plano Pro, que ajuda no atendimento e nas dúvidas dos clientes da sua estética automotiva.",
-        h1: "Carla, a assistente de IA do Forbion",
-        lead: "A Carla é a assistente de inteligência artificial do Forbion, disponível no plano Pro. Ela ajuda a tirar dúvidas de serviço e a orientar o atendimento — uma camada de IA nativa dentro do sistema.",
-        sections: [
-            {
-                h2: "IA dentro da sua operação",
-                paragraphs: [
-                    "Diferente de ferramentas soltas, a Carla vive dentro do Forbion, com o contexto da sua estética. Ela ajuda no atendimento e nas dúvidas do dia a dia. É um recurso do plano Pro — pensado pra evoluir junto com a sua operação.",
-                ],
-            },
-        ],
-        faq: [
-            { q: "A Carla está em qual plano?", a: "No plano Pro (R$197/mês)." },
-            { q: "Ela substitui meu atendimento?", a: "Não — ela é uma ajuda dentro do sistema. O atendimento continua seu; a Carla acelera e tira dúvidas." },
-        ],
-        related: ["software-para-estetica-automotiva", "vistoria-veiculo-com-fotos-assinatura"],
-    },
-
-    // ── TIER 3 — comparativo / marca ───────────────────────────────────────────
-    {
-        slug: "forbion-vs-cera-comparativo",
-        tier: 3,
-        title: "Forbion vs CERA: Comparativo Honesto de Software para Estética Automotiva",
-        description: "Comparação transparente entre Forbion e CERA: preço, IA, recorrência e o que cada um faz melhor — inclusive onde o concorrente leva vantagem.",
-        h1: "Forbion vs CERA: comparativo honesto",
-        lead: "Em vez de só dizer que somos melhores, aqui vai uma comparação transparente — inclusive nos pontos onde a CERA tem vantagem. Você decide com a informação na mesa.",
-        sections: [
-            {
-                h2: "Onde o Forbion se destaca",
-                paragraphs: [
-                    "O Forbion aposta em três coisas: preço transparente e publicado (a partir de R$79/mês), recorrência embutida com clube de assinatura, e uma assistente de IA nativa no plano Pro. Some a isso a vistoria do veículo com fotos e assinatura e o recall de garantia, e você tem uma operação pensada pro detailing que quer crescer com previsibilidade.",
-                ],
-            },
-            {
-                h2: "Onde a CERA pode ser melhor pra você",
-                paragraphs: [
-                    "Sendo honesto: ferramentas mais maduras costumam ter mais profundidade em alguns relatórios financeiros e contábeis. Se o seu critério número um é volume de funcionalidade financeira, vale comparar de perto. Se é preço claro, recorrência e IA, o Forbion tende a ganhar. Não citamos o preço do concorrente porque ele não é publicado abertamente — confirme direto com eles.",
-                ],
-            },
-        ],
-        faq: [
-            { q: "Posso testar o Forbion antes de migrar?", a: "Sim, são 7 dias grátis. Dá pra rodar na sua operação real antes de decidir." },
-            { q: "Quanto custa o Forbion?", a: "Essencial R$79, Premium R$179 e Pro R$197 por mês, com plano anual mais barato." },
-        ],
-        related: ["por-que-forbion", "software-para-estetica-automotiva"],
     },
     {
         slug: "por-que-forbion",
         tier: 3,
-        title: "Por que Forbion | Software de Estética Automotiva com Preço Aberto e IA",
-        description: "Por que escolher o Forbion: preço transparente, clube de recorrência e assistente de IA pensados para estética automotiva.",
+        title: "Por que Forbion | Software de Estética Automotiva com Preço Aberto e Recorrência",
+        description: "Por que escolher o Forbion: preço transparente, clube de recorrência e operação completa pensados para estética automotiva.",
         h1: "Por que escolher o Forbion",
         lead: "O Forbion nasceu pra ser o sistema simples, transparente e completo que a estética automotiva brasileira merece — sem letra miúda e sem enrolação.",
         sections: [
             {
                 h2: "Três motivos que fazem diferença",
                 paragraphs: [
-                    "Preço aberto: você vê quanto custa antes de falar com vendedor. Recorrência de verdade: o clube de assinatura transforma cliente avulso em mensalidade. E uma operação completa: agenda, loja online, pátio, vistoria, recall e relatórios num lugar só.",
-                ],
+                    "Preço aberto: você vê quanto custa antes de falar com vendedor. Recorrência de verdade: o clube de assinatura transforma cliente avulso em mensalidade. E uma operação completa: agenda, loja online, pátio, vistoria, recall e relatórios num lugar só."],
                 bullets: [
                     "Preço transparente, publicado, a partir de R$79/mês",
                     "Clube de assinatura pra receita recorrente",
-                    "IA (Carla) e NF-e no plano Pro",
-                    "7 dias grátis pra testar na sua operação",
-                ],
-            },
-        ],
+                    "Recall de garantia e NF-e pra completar a operação",
+                    "7 dias grátis pra testar na sua operação"],
+            }],
         faq: [
-            { q: "O Forbion é novo? Posso confiar?", a: "É um sistema novo e em evolução rápida, com suporte próximo. Por isso o teste grátis de 7 dias existe — pra você validar na prática antes de assinar." },
-        ],
-        related: ["forbion-vs-cera-comparativo", "software-para-estetica-automotiva"],
+            { q: "O Forbion é novo? Posso confiar?", a: "É um sistema novo e em evolução rápida, com suporte próximo. Por isso o teste grátis de 7 dias existe — pra você validar na prática antes de assinar." }],
+        related: ["software-para-estetica-automotiva"],
     },
 
     // ── Lote 2 — use-cases (lava-rápido, detailing), comissão, guias e features ──
@@ -366,14 +276,12 @@ export const SEO_PAGES: SeoPage[] = [
                 h2: "Clube de lavagem: receita que entra todo mês",
                 paragraphs: ["O que tira o lava-rápido da montanha-russa de movimento é a recorrência. Com o clube de assinatura você cria planos como '4 lavagens por mês' ou 'lavagem ilimitada do mês', o cliente paga a mensalidade e o sistema controla quantos usos ele já consumiu. É faturamento garantido na largada do mês e cliente que sempre volta na sua mão, não na do concorrente da esquina."],
                 bullets: ["Planos mensais com quantidade de lavagens inclusa", "Controle de quantos usos o cliente já gastou no mês", "Receita recorrente acompanhada no relatório"],
-            },
-        ],
+            }],
         faq: [
             { q: "O Forbion serve mesmo pra lava-rápido de muito volume?", a: "Sim. O pátio do dia foi feito pra acompanhar vários carros ao mesmo tempo com status (aguardando, em lavagem, pronto), e o cliente pode agendar online pra desafogar o pico do fim de semana." },
             { q: "Dá pra cobrar valores diferentes por tamanho de carro?", a: "Sim. Você define preço por porte do veículo e o sistema cobra automaticamente o valor de cada tamanho no agendamento e na comanda." },
             { q: "Consigo montar um plano de lavagem mensal?", a: "Sim, com o clube de assinatura (a partir do plano Premium). Você define os serviços e a quantidade inclusa e o sistema controla o consumo do mês." },
-            { q: "Quanto custa?", a: "Essencial R$79, Premium R$179 e Pro R$197 por mês, com 7 dias grátis e plano anual mais barato." },
-        ],
+            { q: "Quanto custa?", a: "Essencial a partir de R$79/mês e Premium a R$179/mês, com 7 dias grátis e plano anual mais barato." }],
         related: ["software-para-estetica-automotiva", "clube-de-assinatura-estetica-automotiva", "agenda-online-estetica-automotiva"],
     },
     {
@@ -396,14 +304,12 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Clube de manutenção: recorrência no detailing",
                 paragraphs: ["Quem vitrifica precisa manter. Com o clube de assinatura você cria planos de manutenção mensal da proteção e transforma o serviço pontual em receita recorrente — combinado com o recall, é o motor que faz o cliente premium voltar sempre. A análise de retenção (RFM) ainda mostra seus melhores clientes e quem está esfriando, pra você agir antes de perder."],
-            },
-        ],
+            }],
         faq: [
             { q: "O Forbion controla a garantia da vitrificação e do PPF?", a: "Sim. Você define o prazo de garantia de cada serviço e o cliente entra automaticamente na lista de recall quando a revisão se aproxima — funciona como motor de recompra no detailing premium." },
-            { q: "A vistoria com fotos e assinatura está em qual plano?", a: "No plano Pro (R$197/mês). Ela registra fotos, marcação de avarias e a assinatura do cliente, e trava esse registro no fechamento do serviço." },
+            { q: "A vistoria com fotos e assinatura está em qual plano?", a: "A partir do Premium (R$179/mês). Ela registra fotos, marcação de avarias e a assinatura do cliente, e trava esse registro no fechamento do serviço." },
             { q: "Dá pra enviar orçamento de ticket alto pro cliente?", a: "Sim. Você monta o orçamento com os itens, envia a proposta pelo WhatsApp e acompanha o status (aprovado, recusado, vendido). Orçamento e estoque já estão no plano Essencial." },
-            { q: "Tem como criar plano de manutenção recorrente?", a: "Sim, com o clube de assinatura a partir do plano Premium (R$179/mês), que também inclui recall de garantia e relatórios." },
-        ],
+            { q: "Tem como criar plano de manutenção recorrente?", a: "Sim, com o clube de assinatura a partir do plano Premium (R$179/mês), que também inclui recall de garantia e relatórios." }],
         related: ["recall-garantia-estetica-automotiva", "vistoria-veiculo-com-fotos-assinatura", "orcamento-estoque-preco-por-porte-estetica"],
     },
     {
@@ -427,14 +333,12 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Transparência pra você e pra equipe",
                 paragraphs: ["Com o repasse registrado por serviço, a conversa com a equipe deixa de ser no 'eu acho'. Cada funcionário tem o histórico do que executou e do que recebe, e você fecha o mês com número, não com memória. É o tipo de organização que segura bom profissional e evita ruído sobre quanto cada um ganhou."],
-            },
-        ],
+            }],
         faq: [
             { q: "Como o Forbion calcula a comissão?", a: "Você define o percentual de repasse de cada serviço. Quando um agendamento atendido por um funcionário é fechado, o sistema calcula o valor sobre o preço do serviço e registra o repasse como pendente, automaticamente." },
             { q: "Posso dar percentual diferente pra cada funcionário?", a: "Sim. Além do percentual padrão por serviço, você pode cadastrar uma regra de exceção por funcionário num serviço específico, que sobrepõe o padrão." },
             { q: "E se o cliente cancelar o atendimento?", a: "Os repasses pendentes daquele agendamento viram estornados automaticamente, então você não paga comissão por serviço que não foi realizado. Repasses já pagos permanecem pagos." },
-            { q: "Consigo ver quanto tenho a pagar e marcar como pago?", a: "Sim. O relatório de repasses mostra o total a pagar por funcionário, e você marca os pendentes como pagos com a data registrada. Também dá pra exportar em CSV." },
-        ],
+            { q: "Consigo ver quanto tenho a pagar e marcar como pago?", a: "Sim. O relatório de repasses mostra o total a pagar por funcionário, e você marca os pendentes como pagos com a data registrada. Também dá pra exportar em CSV." }],
         related: ["software-para-estetica-automotiva", "relatorios-retencao-clientes-rfm-estetica", "orcamento-estoque-preco-por-porte-estetica"],
     },
     {
@@ -458,14 +362,12 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Cobre por porte e revise os preços com dados",
                 paragraphs: ["Um SUV ou uma picape consomem mais produto e mais tempo que um hatch — então não podem custar o mesmo. Trabalhar com preço por porte de veículo é o jeito honesto de proteger sua margem sem afastar o cliente do carro pequeno.", "Por fim, preço não é uma decisão de uma vez só. Custo de insumo sobe, sua agenda lota, sua técnica melhora. Reveja a tabela a cada poucos meses olhando o que cada serviço realmente rende e quanto tempo de fato leva — não a estimativa que você fez no começo."],
-            },
-        ],
+            }],
         faq: [
             { q: "Qual a margem ideal para estética automotiva?", a: "Depende do serviço. Em mão de obra intensiva, margens de 10% a 30% são comuns. Já proteção de pintura (vitrificação e coating) costuma ter as maiores margens do setor, em média perto de 65%, segundo a ABEx. O segredo é calcular por serviço, não usar uma margem única para tudo." },
             { q: "Como saber quanto tempo um serviço realmente leva?", a: "Cronometre. A maioria precifica pela estimativa do começo e nunca confere. Registrar o tempo real de cada serviço (entrada e saída do veículo) revela onde você está cobrando pouco. Um sistema de gestão com pátio do dia facilita esse acompanhamento." },
             { q: "Devo cobrar o mesmo preço para qualquer carro?", a: "Não. SUVs e picapes consomem mais tempo e mais material que carros pequenos. Trabalhar com preço por porte de veículo protege sua margem e mantém o preço justo para o cliente do carro pequeno." },
-            { q: "Preço baixo atrai mais cliente?", a: "Atrai volume, mas pode mascarar prejuízo. Preço baixo sem saber a hora técnica é a forma mais comum de uma estética parecer cheia e não sobrar dinheiro no fim do mês. Calcule primeiro, desconte depois — só onde a margem permite." },
-        ],
+            { q: "Preço baixo atrai mais cliente?", a: "Atrai volume, mas pode mascarar prejuízo. Preço baixo sem saber a hora técnica é a forma mais comum de uma estética parecer cheia e não sobrar dinheiro no fim do mês. Calcule primeiro, desconte depois — só onde a margem permite." }],
         related: ["orcamento-estoque-preco-por-porte-estetica", "relatorios-retencao-clientes-rfm-estetica", "software-para-estetica-automotiva"],
     },
     {
@@ -489,14 +391,12 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Atrair é metade — reter é onde está o dinheiro",
                 paragraphs: ["Conquistar cliente novo custa caro. O crescimento sustentável vem de fazer o cliente voltar. Dois mecanismos funcionam muito bem na estética: o recall de garantia, que lembra o cliente automaticamente quando a vitrificação ou o polimento precisa de revisão, e o clube de assinatura, que transforma lavagem e manutenção em mensalidade.", "Para saber quem trazer de volta, use os dados que você já tem: quem foi seu melhor cliente, quem está sumindo, quem não aparece há meses. Uma análise de retenção (RFM) aponta exatamente quem merece um contato — e evita você gastar esforço com quem nunca mais voltaria mesmo."],
-            },
-        ],
+            }],
         faq: [
             { q: "Qual o canal que mais traz cliente para estética automotiva?", a: "Para a maioria, o Google Meu Negócio (busca local e Maps) e o Instagram com antes e depois são os que mais retornam. O Google captura quem já está procurando; o Instagram gera desejo e prova de qualidade. Os dois são de baixo custo." },
             { q: "Vale a pena investir em anúncios pagos?", a: "Vale, mas depois de organizar o básico: perfil no Google ativo, Instagram com conteúdo e um link de agendamento funcionando. Sem isso, o anúncio leva o cliente para um lugar que não converte. Comece pelo orgânico, escale com pago." },
             { q: "Como faço o cliente voltar?", a: "Dê motivos automáticos: recall de garantia avisa quando a vitrificação ou o polimento precisa de revisão, e um clube de assinatura transforma o cliente avulso em mensalidade. Reter custa muito menos que conquistar." },
-            { q: "Como saber quais clientes contatar para reativar?", a: "Use seus dados. Uma análise de retenção (RFM) mostra quem comprou mais, há quanto tempo e com que frequência — assim você foca o esforço em quem tem chance real de voltar, em vez de mandar mensagem para todo mundo." },
-        ],
+            { q: "Como saber quais clientes contatar para reativar?", a: "Use seus dados. Uma análise de retenção (RFM) mostra quem comprou mais, há quanto tempo e com que frequência — assim você foca o esforço em quem tem chance real de voltar, em vez de mandar mensagem para todo mundo." }],
         related: ["loja-online-agendamento-estetica", "clube-de-assinatura-estetica-automotiva", "relatorios-retencao-clientes-rfm-estetica"],
     },
     {
@@ -519,23 +419,21 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Cobrança, controle e retenção",
                 paragraphs: ["O calcanhar de aquiles de qualquer clube é a cobrança recorrente. Cobrar no boleto manual ou cobrar cada um no WhatsApp vira um inferno administrativo e gera inadimplência. Você precisa de cobrança automática, com renovação mensal e visão de quem está em dia, vencendo e atrasado.", "Reter assinante é tão importante quanto vendê-lo. Acompanhe quem está usando pouco o plano (risco de cancelar) e quem usa muito (candidato a subir de plano). Com a operação e os dados num só lugar — agenda, assinaturas e relatórios — você gerencia o clube sem planilha paralela e sabe exatamente quanto a recorrência representa do seu faturamento."],
-            },
-        ],
+            }],
         faq: [
             { q: "Quantos planos devo oferecer no clube?", a: "Comece com dois ou três. Muitos planos confundem e travam a decisão. Uma escada simples — básico, intermediário e completo — deixa claro o que o cliente ganha ao subir de nível e facilita a venda." },
             { q: "Quanto cobrar na assinatura?", a: "Parta da sua hora técnica e do custo do serviço incluso, e some um valor que ainda compense pela frequência maior. No mercado, planos de lavagem por assinatura começam na casa dos R$150/mês por carro, mas o número certo depende dos seus custos e do que cada plano inclui. Defina limites para não estourar a margem." },
             { q: "Como cobro a mensalidade sem virar bagunça?", a: "Com cobrança recorrente automática. Cobrar no boleto manual ou pelo WhatsApp gera atraso e trabalho. Um sistema de clube de assinatura renova a mensalidade, mostra quem está em dia, a vencer ou atrasado, e reduz a inadimplência." },
-            { q: "Vale a pena ter clube de assinatura numa estética pequena?", a: "Sim — talvez seja onde mais faz diferença. Negócio pequeno sofre com a oscilação do faturamento; a recorrência traz a base de receita previsível que sustenta os meses fracos. Não precisa de mil assinantes para sentir o efeito." },
-        ],
+            { q: "Vale a pena ter clube de assinatura numa estética pequena?", a: "Sim — talvez seja onde mais faz diferença. Negócio pequeno sofre com a oscilação do faturamento; a recorrência traz a base de receita previsível que sustenta os meses fracos. Não precisa de mil assinantes para sentir o efeito." }],
         related: ["clube-de-assinatura-estetica-automotiva", "recall-garantia-estetica-automotiva", "software-para-estetica-automotiva"],
     },
     {
         slug: "emissao-nfe-nota-fiscal-estetica-automotiva",
         tier: 2,
-        title: "Emissão de NF-e para Estética Automotiva | Nota Fiscal no Pro — Forbion",
-        description: "Emita nota fiscal direto do sistema da sua estética automotiva. NF-e ligada ao atendimento, sem retrabalho e sem sair do Forbion. Recurso do plano Pro.",
+        title: "Emissão de NF-e para Estética Automotiva | Nota Fiscal Integrada — Forbion",
+        description: "Emita nota fiscal direto do sistema da sua estética automotiva. NF-e ligada ao atendimento, sem retrabalho e sem sair do Forbion.",
         h1: "Emissão de NF-e para estética automotiva",
-        lead: "Emitir nota fiscal não precisa ser uma segunda planilha nem uma ida ao contador a cada serviço. No plano Pro do Forbion, a emissão de NF-e fica dentro do mesmo sistema onde você já agenda, fecha a comanda e controla o caixa — sem digitar tudo de novo em outro lugar.",
+        lead: "Emitir nota fiscal não precisa ser uma segunda planilha nem uma ida ao contador a cada serviço. No Forbion, a emissão de NF-e fica dentro do mesmo sistema onde você já agenda, fecha a comanda e controla o caixa — sem digitar tudo de novo em outro lugar.",
         sections: [
             {
                 h2: "Nota fiscal sem sair do sistema",
@@ -543,17 +441,15 @@ export const SEO_PAGES: SeoPage[] = [
                 bullets: ["Emissão ligada ao atendimento já registrado no sistema", "Menos retrabalho: o que foi vendido alimenta a nota", "Atende clientes que exigem nota (frotas, PJ, locadoras)", "Tudo no mesmo lugar onde você já gerencia a estética"],
             },
             {
-                h2: "Recurso do plano Pro, junto com IA e vistoria",
-                paragraphs: ["A emissão de NF-e faz parte do plano Pro (R$197/mês), no mesmo pacote da assistente de IA (Carla) e da vistoria do veículo com fotos e assinatura. É o plano pensado pra estética que já tem volume e precisa de uma operação mais completa e profissional, com a parte fiscal resolvida dentro da rotina.", "Se hoje você ainda não emite nota ou faz isso por fora, o Pro permite trazer essa etapa pra dentro do sistema e parar de tratar fiscal como um processo solto."],
-            },
-        ],
+                h2: "A parte fiscal dentro da rotina, junto com a vistoria",
+                paragraphs: ["A emissão de NF-e fica no mesmo pacote da vistoria do veículo com fotos e assinatura. É o recurso pensado pra estética que já tem volume e precisa de uma operação mais completa e profissional, com a parte fiscal resolvida dentro da rotina.", "Se hoje você ainda não emite nota ou faz isso por fora, o Forbion permite trazer essa etapa pra dentro do sistema e parar de tratar fiscal como um processo solto."],
+            }],
         faq: [
-            { q: "A emissão de NF-e está em qual plano?", a: "No plano Pro (R$197/mês), junto com a assistente de IA (Carla) e a vistoria do veículo com fotos e assinatura." },
+            { q: "A emissão de NF-e está em qual plano?", a: "A partir do Premium (R$179/mês), junto com a vistoria do veículo com fotos e assinatura." },
             { q: "Preciso usar outro programa pra emitir nota?", a: "A proposta do Forbion é manter a emissão de NF-e dentro do próprio sistema, ligada ao atendimento que você já registrou — sem ter que redigitar tudo num programa separado." },
-            { q: "Posso testar antes de assinar o Pro?", a: "Sim. O Forbion tem 7 dias grátis, então dá pra conhecer os recursos do plano antes de decidir." },
-            { q: "Estética automotiva precisa emitir nota fiscal?", a: "Depende do enquadramento do seu negócio e do tipo de cliente. Clientes empresariais e frotas costumam exigir nota; vale confirmar a obrigatoriedade com o seu contador para o seu caso." },
-        ],
-        related: ["assistente-ia-estetica-automotiva", "vistoria-veiculo-com-fotos-assinatura", "software-para-estetica-automotiva"],
+            { q: "Posso testar antes de assinar?", a: "Sim. O Forbion tem 7 dias grátis, então dá pra conhecer os recursos do plano antes de decidir." },
+            { q: "Estética automotiva precisa emitir nota fiscal?", a: "Depende do enquadramento do seu negócio e do tipo de cliente. Clientes empresariais e frotas costumam exigir nota; vale confirmar a obrigatoriedade com o seu contador para o seu caso." }],
+        related: ["vistoria-veiculo-com-fotos-assinatura", "software-para-estetica-automotiva"],
     },
     {
         slug: "preco-por-porte-veiculo-estetica-automotiva",
@@ -571,14 +467,12 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Transparência que evita atrito no caixa",
                 paragraphs: ["Quando o preço por porte está definido, o cliente vê o valor antes de agendar e não tem surpresa na entrega. Isso reduz a negociação na hora do pagamento e profissionaliza a percepção do seu serviço — você não está 'chutando' o preço, está aplicando uma tabela clara por tamanho de carro.", "Para serviços de ticket alto, o preço por porte alimenta o orçamento que você envia pelo WhatsApp, mantendo o valor coerente do agendamento até o fechamento."],
-            },
-        ],
+            }],
         faq: [
             { q: "O preço por porte está em qual plano?", a: "Já está no plano Essencial (R$79/mês), junto com orçamento e estoque." },
             { q: "Quantos portes posso configurar?", a: "Você define os preços por porte de veículo (como hatch, sedan, SUV e picape) para cada serviço, de acordo com a sua tabela." },
             { q: "O cliente vê o preço por porte ao agendar?", a: "Sim. Como o valor por porte está no catálogo de serviços, o cliente enxerga o preço correto na sua loja online antes de confirmar o agendamento." },
-            { q: "Dá pra usar o preço por porte em orçamentos?", a: "Sim. O mesmo preço por porte é usado tanto no agendamento quanto no orçamento de serviços de maior valor." },
-        ],
+            { q: "Dá pra usar o preço por porte em orçamentos?", a: "Sim. O mesmo preço por porte é usado tanto no agendamento quanto no orçamento de serviços de maior valor." }],
         related: ["orcamento-estoque-preco-por-porte-estetica", "agenda-online-estetica-automotiva", "loja-online-agendamento-estetica"],
     },
     {
@@ -601,14 +495,12 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Boas práticas pra furar menos a agenda",
                 paragraphs: ["Além do lembrete automático, alguns hábitos simples ajudam: deixe claro o horário e o endereço na confirmação, peça a confirmação do cliente com antecedência e mantenha uma lista de espera pra encaixar quem está disponível quando alguém cancelar. Combinando o lembrete do Forbion com essas práticas, o no-show cai e o box rende mais."],
-            },
-        ],
+            }],
         faq: [
             { q: "O lembrete por WhatsApp está em qual plano?", a: "A agenda com lembrete e confirmação por WhatsApp está disponível desde o plano Essencial (R$79/mês)." },
             { q: "O lembrete acaba 100% com as faltas?", a: "Não existe mágica: o lembrete e a confirmação por WhatsApp reduzem bastante o esquecimento, que é a maior causa de no-show, mas sempre vai existir uma falta ocasional. Por isso vale manter uma lista de espera pra encaixar carros." },
             { q: "O cliente precisa de app pra confirmar?", a: "Não. O lembrete e a confirmação acontecem pelo WhatsApp, e o agendamento é feito pela sua loja online direto no navegador — sem instalar nada." },
-            { q: "E se o cliente não confirmar?", a: "Você vê isso na agenda e pode usar aquele horário pra encaixar outro carro da lista de espera, em vez de deixar o box parado." },
-        ],
+            { q: "E se o cliente não confirmar?", a: "Você vê isso na agenda e pode usar aquele horário pra encaixar outro carro da lista de espera, em vez de deixar o box parado." }],
         related: ["agenda-online-estetica-automotiva", "loja-online-agendamento-estetica", "recall-garantia-estetica-automotiva"],
     },
 
@@ -633,17 +525,15 @@ export const SEO_PAGES: SeoPage[] = [
             },
             {
                 h2: "O ponto de virada: quando trocar passa a se pagar",
-                paragraphs: ["Você não troca de ferramenta por modernismo — troca quando o manual começa a custar mais caro que o sistema. Na prática, o ponto de virada chega quando aparece pelo menos um destes sinais: você já furou agendamento por confusão de horário, já perdeu cliente de ticket alto por não ter chamado de volta, ou passa o fim do mês refém da planilha de comissão. Quando isso acontece, um sistema deixa de ser custo e vira recuperação de dinheiro que você já estava perdendo.", "O Forbion foi feito pra resolver exatamente esses buracos, sem te obrigar a virar especialista em tecnologia. O cliente agenda sozinho pela sua loja online (e o horário ocupado some pros outros, acabando com o agendamento duplo). A confirmação automática por WhatsApp lembra o cliente do horário — é o atendente que não dorme, reduzindo o no-show sem você mandar mensagem um por um. O recall de garantia avisa quando a vitrificação ou o polimento precisa de revisão, trazendo de volta o cliente que sumiria. A comissão é calculada a cada serviço fechado, então o fim do mês deixa de ser pesadelo de planilha. E a vistoria com fotos e assinatura registra o estado do carro na entrada, pra acabar com a discussão de arranhão.", "Importante: trocar não significa perder o que você tem. Você não precisa migrar tudo de uma vez nem abandonar o WhatsApp — o WhatsApp continua sendo o canal com o cliente, só que agora a confirmação sai sozinha. O caderno é que sai de cena. Por isso o Forbion tem 7 dias grátis sem cartão: a ideia é você rodar na sua operação real e ver, na prática, se o sistema recupera mais dinheiro do que custa antes de decidir."],
+                paragraphs: ["Você não troca de ferramenta por modernismo — troca quando o manual começa a custar mais caro que o sistema. Na prática, o ponto de virada chega quando aparece pelo menos um destes sinais: você já furou agendamento por confusão de horário, já perdeu cliente de ticket alto por não ter chamado de volta, ou passa o fim do mês refém da planilha de comissão. Quando isso acontece, um sistema deixa de ser custo e vira recuperação de dinheiro que você já estava perdendo.", "O Forbion foi feito pra resolver exatamente esses buracos, sem te obrigar a virar especialista em tecnologia. O cliente agenda sozinho pela sua loja online (e o horário ocupado some pros outros, acabando com o agendamento duplo). A confirmação automática por WhatsApp lembra o cliente do horário, reduzindo o no-show sem você mandar mensagem um por um. O recall de garantia avisa quando a vitrificação ou o polimento precisa de revisão, trazendo de volta o cliente que sumiria. A comissão é calculada a cada serviço fechado, então o fim do mês deixa de ser pesadelo de planilha. E a vistoria com fotos e assinatura registra o estado do carro na entrada, pra acabar com a discussão de arranhão.", "Importante: trocar não significa perder o que você tem. Você não precisa migrar tudo de uma vez nem abandonar o WhatsApp — o WhatsApp continua sendo o canal com o cliente, só que agora a confirmação sai sozinha. O caderno é que sai de cena. Por isso o Forbion tem 7 dias grátis sem cartão: a ideia é você rodar na sua operação real e ver, na prática, se o sistema recupera mais dinheiro do que custa antes de decidir."],
                 bullets: ["Sinal de virada 1: você já furou horário por agendamento duplo no WhatsApp", "Sinal de virada 2: já perdeu cliente de vitrificação/PPF por não ter chamado pra revisão", "Sinal de virada 3: o fechamento da comissão vira uma noite de planilha todo mês", "Sinal de virada 4: você não sabe dizer com número qual serviço dá mais lucro", "Comece pelo essencial (R$79/mês): agenda, loja online, preço por porte, orçamento e estoque"],
-            },
-        ],
+            }],
         faq: [
             { q: "Vale a pena trocar a planilha e o WhatsApp por um sistema?", a: "Depende do seu momento. Se você atende poucos carros e dá conta sozinho no caderno, ainda não precisa. O sistema passa a valer a pena quando o manual começa a custar dinheiro: agendamento duplo, no-show, cliente que some e fechamento de comissão virando pesadelo. Quando aparece pelo menos um desses sinais, o sistema costuma recuperar mais do que custa. Por isso existe o teste de 7 dias grátis: pra você medir isso na sua operação antes de pagar." },
             { q: "Eu perco meu histórico do caderno e da planilha se trocar?", a: "Não precisa perder. Você não migra tudo de um dia pro outro: começa cadastrando os clientes e veículos que mais voltam e segue dali. O WhatsApp continua sendo o seu canal com o cliente — a diferença é que a confirmação do horário passa a sair automaticamente, em vez de você digitar uma por uma. O que sai de cena é o caderno, não o relacionamento que você já tem." },
             { q: "Não é complicado demais sair do Excel pra um sistema?", a: "O medo é justo, mas o Forbion roda no navegador (no computador e no celular) e foi pensado pra dono de estética, não pra técnico. Na prática, muita coisa fica mais simples: o cliente agenda sozinho, a comissão é calculada automaticamente e os números do mês aparecem prontos. Você troca o trabalho de manter a planilha pelo de só conferir." },
             { q: "O sistema acaba com o no-show?", a: "Não existe mágica — sempre vai ter uma falta ocasional. Mas a maior causa de no-show é esquecimento, e a confirmação automática por WhatsApp ataca exatamente isso: o cliente recebe o lembrete no canal que ele lê, no horário certo, sem você precisar mandar nada. Isso reduz bastante o box parado. Combinado com uma lista de espera pra encaixar carros, o prejuízo da falta cai." },
-            { q: "Quanto custa e qual plano resolve o que a planilha não dá conta?", a: "São três planos: Essencial R$79/mês (agenda, loja online de agendamento, preço por porte, orçamento e estoque), Premium R$179/mês (acrescenta clube de assinatura, recall de garantia e relatórios com análise de retenção/RFM) e Pro R$197/mês (acrescenta vistoria com fotos e assinatura, NF-e e o assistente). São 7 dias grátis sem cartão, e o plano anual sai mais barato. A maioria começa no Essencial pra resolver agenda e agendamento duplo, e sobe pra Premium quando quer recorrência e trazer cliente de volta." },
-        ],
+            { q: "Quanto custa e qual plano resolve o que a planilha não dá conta?", a: "São dois planos: Essencial a partir de R$79/mês (agenda, loja online de agendamento, preço por porte, orçamento e estoque) e Premium R$179/mês (acrescenta clube de assinatura, recall de garantia, vistoria com fotos e assinatura, NF-e e relatórios com análise de retenção/RFM). São 7 dias grátis sem cartão, e o plano anual sai mais barato. A maioria começa no Essencial pra resolver agenda e agendamento duplo, e sobe pra Premium quando quer recorrência e trazer cliente de volta." }],
         related: ["software-para-estetica-automotiva", "reduzir-no-show-faltas-whatsapp-estetica-automotiva", "controle-comissao-repasse-funcionario-estetica"],
     },
     {
@@ -673,15 +563,13 @@ export const SEO_PAGES: SeoPage[] = [
                 h2: "Aparecer não basta: tem que fechar o agendamento ali",
                 paragraphs: ["Aqui está o erro que faz a busca local virar dinheiro perdido: o cliente te acha no Google, fica interessado, manda um WhatsApp — e cai numa conversa de ida e volta de mensagem que esfria, ou que ninguém responde porque você está com o carro na mão. A busca trouxe o cliente até a porta e a falta de um caminho de fechamento deixou ele escapar.", "Por isso a sua página própria de agendamento é o que fecha o ciclo. Em vez de \"me chama no WhatsApp\", o seu perfil do Google e a bio do Instagram apontam para a sua loja online do Forbion: o cliente vê os serviços, o preço por porte do veículo e os horários livres, e agenda sozinho — inclusive de madrugada ou enquanto você está atendendo. A confirmação automática e os lembretes seguram esse agendamento até o carro chegar, em vez de você ter que ficar de olho no celular.", "É essa ponte — busca local que traz, página que apresenta, agendamento que fecha — que transforma quem te achou em cliente de verdade. E quem agenda entra no seu cadastro: dá para chamar de volta com recall de garantia quando a vitrificação pede revisão e oferecer o clube de assinatura para virar receita recorrente."],
                 bullets: ["Coloque o link de agendamento no Google, na bio do Instagram e no WhatsApp", "Cliente vê serviço, preço por porte e horário antes de marcar — sem conversa", "Confirmação e lembrete automáticos reduzem o não comparecimento", "Quem agenda vira cadastro: recall de garantia e clube de assinatura trazem ele de volta"],
-            },
-        ],
+            }],
         faq: [
             { q: "Quanto custa aparecer no Google quando buscam estética automotiva perto de mim?", a: "Aparecer no mapa e nas buscas locais é de graça: basta criar e manter o seu Perfil da Empresa no Google (antigo Google Meu Negócio). O custo é o seu tempo mantendo fotos, serviços e avaliações em dia. Anúncio pago só vale depois que esse básico estiver funcionando." },
             { q: "Quanto tempo leva para minha estética começar a aparecer?", a: "Depois de criar e verificar o perfil, ele costuma começar a aparecer nas buscas locais em alguns dias a poucas semanas. A posição melhora com o tempo conforme você acumula avaliações, mantém fotos atualizadas e responde aos clientes. É um trabalho contínuo, não uma configuração única." },
             { q: "Preciso de site para aparecer no Google?", a: "Para aparecer no mapa, não — o Perfil da Empresa basta. Mas você precisa de algum lugar para o cliente que te achou agendar sem ficar trocando mensagem. A loja online de agendamento do Forbion resolve isso: é uma página própria com seus serviços, preços e horários, com link pronto para o Google e a bio do Instagram." },
             { q: "Como peço avaliação sem parecer chato?", a: "Peça na entrega do carro, quando o cliente está vendo o resultado, e mande em seguida o link direto da avaliação pelo WhatsApp junto com o agradecimento. Não force nem ofereça desconto em troca — apenas facilite ao máximo para quem ficou satisfeito. A vistoria com fotos do antes e depois ajuda a lembrar de pedir a quem teve a melhor experiência." },
-            { q: "O Forbion ajuda a aparecer no Google?", a: "O Forbion não cria o seu perfil no Google por você, mas entrega a peça que fecha o cliente que te achou: a loja online de agendamento, com link para colocar no perfil do Google e na bio. Assim a busca local que traz o cliente termina em agendamento de verdade. Os planos vão de R$79 (Essencial) a R$179 (Premium) e R$197 (Pro, com NF-e e assistente), com 7 dias grátis sem cartão e anual mais barato." },
-        ],
+            { q: "O Forbion ajuda a aparecer no Google?", a: "O Forbion não cria o seu perfil no Google por você, mas entrega a peça que fecha o cliente que te achou: a loja online de agendamento, com link para colocar no perfil do Google e na bio. Assim a busca local que traz o cliente termina em agendamento de verdade. Os planos vão de R$79 (Essencial) a R$179 (Premium, com recall, vistoria e NF-e), com 7 dias grátis sem cartão e anual mais barato." }],
         related: ["loja-online-agendamento-estetica", "como-conseguir-mais-clientes-para-estetica-automotiva", "agenda-online-estetica-automotiva"],
     },
     {
@@ -708,16 +596,14 @@ export const SEO_PAGES: SeoPage[] = [
             },
             {
                 h2: "Os números do seu serviço premium, no claro",
-                paragraphs: ["Os relatórios mostram quanto a vitrificação e o coating rendem de verdade dentro do seu faturamento, e a análise de retenção (RFM) aponta quem são seus melhores clientes de ticket alto e quem está esfriando. No plano Pro, a assistente que não dorme cuida da confirmação automática dos agendamentos enquanto você está com a mão na massa, e a emissão de NF-e fecha a parte fiscal dentro da própria rotina."],
-            },
-        ],
+                paragraphs: ["Os relatórios mostram quanto a vitrificação e o coating rendem de verdade dentro do seu faturamento, e a análise de retenção (RFM) aponta quem são seus melhores clientes de ticket alto e quem está esfriando. No Premium, o recall de garantia traz o cliente de volta na revisão e a emissão de NF-e fecha a parte fiscal dentro da própria rotina."],
+            }],
         faq: [
             { q: "Como o Forbion controla a garantia da vitrificação e do coating?", a: "Você define o prazo de garantia de cada serviço (por exemplo, 180 dias para uma vitrificação ou 365 dias para um coating mais durável). Ao fechar a comanda, o sistema calcula a data de revisão e, quando ela se aproxima, o cliente entra automaticamente na lista de recall pra você chamar de volta pelo WhatsApp." },
             { q: "Dá pra cobrar preço diferente por tamanho de carro no coating?", a: "Sim. O orçamento usa o preço por porte do veículo (hatch, sedan, SUV, picape), porque um carro maior ou mais escuro dá mais trabalho de preparo. Você monta a proposta com os itens e envia pelo WhatsApp, acompanhando se foi aprovada, recusada ou fechada." },
-            { q: "A vistoria com fotos antes de aplicar está em qual plano?", a: "No plano Pro (R$197/mês). Ela registra as fotos do estado de chegada, a marcação de avarias no diagrama do carro e a assinatura do cliente, e trava esse registro no fechamento do serviço — sua prova de antes e depois." },
-            { q: "Recall e clube de assinatura ficam em qual plano?", a: "A partir do Premium (R$179/mês), que inclui recall de garantia, clube de assinatura para planos de manutenção da proteção e os relatórios. O Pro (R$197/mês) acrescenta a vistoria com fotos, a emissão de NF-e e a assistente de confirmação automática." },
-            { q: "Posso testar antes de assinar?", a: "Sim. São 7 dias grátis, sem precisar de cartão. O plano anual sai mais barato que o mensal." },
-        ],
+            { q: "A vistoria com fotos antes de aplicar está em qual plano?", a: "A partir do Premium (R$179/mês). Ela registra as fotos do estado de chegada, a marcação de avarias no diagrama do carro e a assinatura do cliente, e trava esse registro no fechamento do serviço — sua prova de antes e depois." },
+            { q: "Recall e clube de assinatura ficam em qual plano?", a: "A partir do Premium (R$179/mês), que inclui recall de garantia, clube de assinatura para planos de manutenção da proteção, a vistoria com fotos, a emissão de NF-e e os relatórios." },
+            { q: "Posso testar antes de assinar?", a: "Sim. São 7 dias grátis, sem precisar de cartão. O plano anual sai mais barato que o mensal." }],
         related: ["recall-garantia-estetica-automotiva", "vistoria-veiculo-com-fotos-assinatura", "software-para-detailing-automotivo"],
     },
     {
@@ -744,17 +630,15 @@ export const SEO_PAGES: SeoPage[] = [
             },
             {
                 h2: "Os relatórios que viram decisão",
-                paragraphs: ["Número solto não muda nada — número que aponta a próxima ação, sim. A partir do plano Premium, os relatórios mostram faturamento por período e por serviço, e a análise de retenção (RFM) revela quem são seus melhores clientes, quem está esfriando e quanta receita está em risco. Você decide onde mexer: no preço, no mix de serviços ou em chamar de volta quem sumiu.", "No plano Pro, a emissão de NF-e organiza a parte fiscal e a assistente ajuda no dia a dia da operação — somando a confirmação automática de agendamento, que reduz o no-show e protege o caixa de horário furado."],
-                bullets: ["Faturamento por período e por serviço (Premium)", "Análise RFM: melhores clientes, em risco e receita a recuperar (Premium)", "Recorrência do clube de assinatura no relatório (Premium)", "NF-e e assistente na operação (Pro)"],
-            },
-        ],
+                paragraphs: ["Número solto não muda nada — número que aponta a próxima ação, sim. A partir do plano Premium, os relatórios mostram faturamento por período e por serviço, e a análise de retenção (RFM) revela quem são seus melhores clientes, quem está esfriando e quanta receita está em risco. Você decide onde mexer: no preço, no mix de serviços ou em chamar de volta quem sumiu.", "Ainda no Premium, a emissão de NF-e organiza a parte fiscal dentro da própria rotina e o recall de garantia traz de volta o cliente que está na janela de revisão, protegendo o caixa do serviço que sumiria."],
+                bullets: ["Faturamento por período e por serviço (Premium)", "Análise RFM: melhores clientes, em risco e receita a recuperar (Premium)", "Recorrência do clube de assinatura no relatório (Premium)", "NF-e e recall de garantia na operação (Premium)"],
+            }],
         faq: [
             { q: "Como eu sei quanto sobra de verdade no fim do mês?", a: "Cada comanda fechada registra o valor e a forma de pagamento, e o Forbion soma isso no faturamento automaticamente. Descontando o custo de insumo e a comissão que você cadastra por serviço, você enxerga a margem real — não só quanto entrou, mas quanto sobrou." },
             { q: "Preciso ser bom de planilha pra controlar o financeiro?", a: "Não. O controle nasce do próprio fechamento de comanda do dia a dia. Você não monta planilha nem soma nada na mão: o faturamento, as formas de pagamento e os relatórios já vêm prontos pra leitura." },
             { q: "Dá pra ver o quanto cada serviço realmente lucra?", a: "Sim. Cadastrando o custo de insumo e a comissão de cada serviço, você compara o preço cobrado com o que sobra. É assim que se descobre se a vitrificação ou a lavagem está realmente puxando o resultado — ou só o movimento." },
-            { q: "O controle financeiro está em qual plano?", a: "O fechamento de comanda e o faturamento básico estão desde o Essencial (R$79/mês). Os relatórios por serviço, a análise RFM e a recorrência entram a partir do Premium (R$179/mês). NF-e e assistente ficam no Pro (R$197/mês). Todos têm 7 dias grátis pra testar, sem cartão, e o anual sai mais barato." },
-            { q: "Por que baixar preço pode dar prejuízo?", a: "Porque sem conhecer o custo real do serviço, o desconto pode comer toda a margem — você acha que está competindo e está pagando pra trabalhar. Com insumo e comissão à vista, você ajusta o preço com base no que cada serviço custa, inclusive cobrando por porte de veículo, em vez de chutar." },
-        ],
+            { q: "O controle financeiro está em qual plano?", a: "O fechamento de comanda e o faturamento básico estão desde o Essencial (a partir de R$79/mês). Os relatórios por serviço, a análise RFM, a recorrência, a NF-e e a vistoria entram a partir do Premium (R$179/mês). Os dois têm 7 dias grátis pra testar, sem cartão, e o anual sai mais barato." },
+            { q: "Por que baixar preço pode dar prejuízo?", a: "Porque sem conhecer o custo real do serviço, o desconto pode comer toda a margem — você acha que está competindo e está pagando pra trabalhar. Com insumo e comissão à vista, você ajusta o preço com base no que cada serviço custa, inclusive cobrando por porte de veículo, em vez de chutar." }],
         related: ["controle-comissao-repasse-funcionario-estetica", "relatorios-retencao-clientes-rfm-estetica", "como-precificar-servicos-de-estetica-automotiva"],
     },
     {
@@ -782,16 +666,14 @@ export const SEO_PAGES: SeoPage[] = [
             },
             {
                 h2: "Pacote de manutenção: transforme a higienização anual em recorrência",
-                paragraphs: ["Higienização completa o cliente faz uma ou duas vezes por ano — mas a manutenção da limpeza pode ser mensal. Com o clube de assinatura você monta pacotes como 'higienização leve a cada 2 meses' ou combina aspiração e hidratação de couro numa mensalidade, e o sistema controla quantos usos o cliente já consumiu. Em vez de torcer pra ele lembrar de voltar, você cria o motivo recorrente.", "A análise de retenção (RFM) mostra quem fez higienização e está sumindo, pra você chamar de volta na hora certa — e os relatórios revelam quanto esse serviço de fato rende no mês. No plano Pro, a NF-e e o assistente que não dorme deixam o pós-venda no automático."],
-            },
-        ],
+                paragraphs: ["Higienização completa o cliente faz uma ou duas vezes por ano — mas a manutenção da limpeza pode ser mensal. Com o clube de assinatura você monta pacotes como 'higienização leve a cada 2 meses' ou combina aspiração e hidratação de couro numa mensalidade, e o sistema controla quantos usos o cliente já consumiu. Em vez de torcer pra ele lembrar de voltar, você cria o motivo recorrente.", "A análise de retenção (RFM) mostra quem fez higienização e está sumindo, pra você chamar de volta na hora certa — e os relatórios revelam quanto esse serviço de fato rende no mês. No Premium, a NF-e e o recall de garantia deixam o fiscal e o pós-venda no automático."],
+            }],
         faq: [
             { q: "Como o Forbion evita que eu encavale dois carros no box no mesmo horário?", a: "Você define a duração real de cada serviço de higienização (por exemplo, 3 horas). O sistema só oferece ao cliente os horários que comportam essa duração no dia e bloqueia o que já não cabe, então não entra um segundo carro antes do primeiro terminar." },
             { q: "Dá pra cobrar mais caro pela cabine de um SUV ou de um carro de 7 lugares?", a: "Sim. Você cadastra o preço por porte do veículo e o sistema aplica automaticamente o valor de cada tamanho no agendamento e no fechamento da comanda — um SUV de 7 lugares cobra mais que um hatch sem você recalcular." },
             { q: "Consigo registrar o antes e depois da higienização?", a: "Sim. Você anexa fotos ao atendimento e, com a vistoria de entrada, registra o estado da cabine na chegada com marcação de avarias e assinatura do cliente. No fechamento esse registro é travado, servindo de prova caso o cliente reclame de algo que já existia." },
             { q: "Tem como criar um plano de manutenção recorrente de limpeza interna?", a: "Sim, com o clube de assinatura (a partir do plano Premium, R$179/mês). Você monta pacotes mensais, define os serviços inclusos e o sistema controla quantos usos o cliente já consumiu no mês." },
-            { q: "Quanto custa e em qual plano está cada coisa?", a: "Agenda com duração por serviço, loja online, orçamento, estoque e preço por porte já estão no Essencial (R$79/mês). Clube de assinatura, recall e relatórios entram no Premium (R$179/mês). Vistoria com fotos, NF-e e assistente automático ficam no Pro (R$197/mês). São 7 dias grátis sem cartão e o plano anual sai mais barato." },
-        ],
+            { q: "Quanto custa e em qual plano está cada coisa?", a: "Agenda com duração por serviço, loja online, orçamento, estoque e preço por porte já estão no Essencial (a partir de R$79/mês). Clube de assinatura, recall, relatórios, vistoria com fotos e NF-e entram no Premium (R$179/mês). São 7 dias grátis sem cartão e o plano anual sai mais barato." }],
         related: ["software-para-detailing-automotivo", "orcamento-estoque-preco-por-porte-estetica", "clube-de-assinatura-estetica-automotiva"],
     },
     {
@@ -814,17 +696,15 @@ export const SEO_PAGES: SeoPage[] = [
             },
             {
                 h2: "Do orçamento ao recall: o ciclo do serviço de ticket alto",
-                paragraphs: ["Polimento técnico e cristalização não se vendem no balcão — se vendem com orçamento. No Forbion você monta a proposta com os itens, aplica o preço por porte e envia pelo WhatsApp, acompanhando depois o que foi aprovado, recusado ou fechado. E porque o carro fica horas na sua mão, a vistoria de entrada com fotos e assinatura (plano Pro) registra o estado do veículo na chegada e protege você de discussão sobre um arranhão que já estava lá.", "Cristalização e proteção têm prazo de garantia — e isso é receita esperando pra voltar. Com o recall de garantia, você define o prazo de cada serviço e o cliente entra automaticamente na lista de retornos quando a revisão se aproxima, pra você chamá-lo de volta com um clique. Some o clube de assinatura pra manutenção recorrente da proteção e a análise de retenção (RFM) pra saber quem está esfriando, e o polimento deixa de ser serviço pontual pra virar relacionamento."],
-                bullets: ["Orçamento de ticket alto enviável por WhatsApp (aprovado / recusado / vendido)", "Vistoria com fotos e assinatura do veículo na entrada (plano Pro)", "Recall de garantia da cristalização: lista de retornos atualizada sozinha", "Clube de assinatura pra manutenção recorrente e RFM pra retenção"],
-            },
-        ],
+                paragraphs: ["Polimento técnico e cristalização não se vendem no balcão — se vendem com orçamento. No Forbion você monta a proposta com os itens, aplica o preço por porte e envia pelo WhatsApp, acompanhando depois o que foi aprovado, recusado ou fechado. E porque o carro fica horas na sua mão, a vistoria de entrada com fotos e assinatura (a partir do Premium) registra o estado do veículo na chegada e protege você de discussão sobre um arranhão que já estava lá.", "Cristalização e proteção têm prazo de garantia — e isso é receita esperando pra voltar. Com o recall de garantia, você define o prazo de cada serviço e o cliente entra automaticamente na lista de retornos quando a revisão se aproxima, pra você chamá-lo de volta com um clique. Some o clube de assinatura pra manutenção recorrente da proteção e a análise de retenção (RFM) pra saber quem está esfriando, e o polimento deixa de ser serviço pontual pra virar relacionamento."],
+                bullets: ["Orçamento de ticket alto enviável por WhatsApp (aprovado / recusado / vendido)", "Vistoria com fotos e assinatura do veículo na entrada (a partir do Premium)", "Recall de garantia da cristalização: lista de retornos atualizada sozinha", "Clube de assinatura pra manutenção recorrente e RFM pra retenção"],
+            }],
         faq: [
             { q: "Como o Forbion ajuda a precificar polimento sem ser no olhômetro?", a: "Acompanhando o tempo real. Todo serviço entra no pátio do dia com status (aguardando, em execução, pronto), então você vê quanto tempo o carro de fato ficou no box — não a estimativa da chegada. Com esse dado, você compara com o preço cobrado e descobre onde a hora técnica está saindo de graça, pra ajustar a tabela com número." },
             { q: "Dá pra cobrar valores diferentes por tamanho de carro no polimento?", a: "Sim. Você define o preço de cada serviço por porte do veículo (hatch, sedan, SUV, picape) e o Forbion aplica o valor certo automaticamente no agendamento e no orçamento. Como SUV e picape consomem mais área, mais horas e mais material, o preço acompanha o trabalho." },
             { q: "O Forbion controla a garantia da cristalização?", a: "Sim. Você define o prazo de garantia de cada serviço e o cliente entra automaticamente na lista de recall quando a revisão se aproxima — você o chama de volta pra revisão com um clique. É o motor de recompra dos serviços de proteção. O recall está a partir do plano Premium (R$179/mês)." },
-            { q: "Consigo registrar o estado do carro antes do polimento?", a: "Sim, com a vistoria de entrada do plano Pro (R$197/mês): você tira fotos, marca avarias no diagrama do veículo e colhe a assinatura do cliente na tela. Ao fechar o serviço, a vistoria é travada e vira um registro do estado de entrada — útil porque no polimento o carro fica horas na sua mão." },
-            { q: "Quanto custa e dá pra testar?", a: "São três planos: Essencial R$79, Premium R$179 e Pro R$197 por mês, com 7 dias grátis sem precisar de cartão e plano anual mais barato. Orçamento, estoque, preço por porte e pátio do dia já estão no Essencial; recall e clube a partir do Premium; vistoria e NF-e no Pro." },
-        ],
+            { q: "Consigo registrar o estado do carro antes do polimento?", a: "Sim, com a vistoria de entrada a partir do Premium (R$179/mês): você tira fotos, marca avarias no diagrama do veículo e colhe a assinatura do cliente na tela. Ao fechar o serviço, a vistoria é travada e vira um registro do estado de entrada — útil porque no polimento o carro fica horas na sua mão." },
+            { q: "Quanto custa e dá pra testar?", a: "São dois planos: Essencial a partir de R$79/mês e Premium a R$179/mês, com 7 dias grátis sem precisar de cartão e plano anual mais barato. Orçamento, estoque, preço por porte e pátio do dia já estão no Essencial; recall, clube, vistoria e NF-e a partir do Premium." }],
         related: ["orcamento-estoque-preco-por-porte-estetica", "como-precificar-servicos-de-estetica-automotiva", "sistema-para-vitrificacao-coating-ceramico"],
     },
     {
@@ -849,15 +729,13 @@ export const SEO_PAGES: SeoPage[] = [
                 h2: "Recall de garantia: a película tem prazo, e ele trabalha a seu favor",
                 paragraphs: ["PPF de qualidade tem garantia de anos contra amarelamento e descascamento; insulfilm e envelopamento também têm prazo. O problema é que ninguém lembra dessa data — e é exatamente aí que mora a recompra. No Forbion você define o prazo de garantia de cada serviço e, quando a data de revisão se aproxima, o cliente entra automaticamente na lista de retornos a cobrar. Você o chama pra revisão da película pelo WhatsApp com um clique.", "Casado com o recall, o clube de assinatura transforma o serviço pontual em receita recorrente: planos de manutenção e relavagem da proteção, lavagem técnica periódica do carro envelopado, revisões agendadas. A análise de retenção (RFM) ainda mostra seus melhores clientes e quem está esfriando, pra você agir antes de perder o cliente premium pro concorrente."],
                 bullets: ["Prazo de garantia por serviço (PPF, insulfilm, envelopamento)", "Lista de revisões a cobrar atualizada sozinha", "Chamada pelo WhatsApp pra trazer o cliente na revisão da película", "Clube de assinatura pra manutenção recorrente + relatórios RFM"],
-            },
-        ],
+            }],
         faq: [
             { q: "O Forbion controla a garantia do PPF, insulfilm e envelopamento?", a: "Sim. Você define o prazo de garantia de cada serviço e o cliente entra automaticamente na lista de recall quando a revisão se aproxima. Funciona como motor de recompra: a película tem prazo longo e o sistema lembra por você de chamar o cliente de volta." },
             { q: "Dá pra orçar por peça (só capô, só os vidros) e não só o carro fechado?", a: "Sim. Você monta o orçamento com os itens que quiser — frente PPF, carro fechado, vidros, envelopamento parcial ou total —, define o valor por porte do veículo e envia a proposta pelo WhatsApp, acompanhando o status (aprovado, recusado, vendido). Orçamento e estoque já estão no plano Essencial." },
-            { q: "Como me protejo se o cliente reclamar de bolha ou de um risco que já existia?", a: "Com a vistoria de entrada você registra o estado do carro com fotos, marca as avarias prévias no diagrama e colhe a assinatura do cliente. Ao fechar o serviço o registro é travado, então você tem a prova do que chegou e do que foi entregue. A vistoria está no plano Pro (R$197/mês)." },
+            { q: "Como me protejo se o cliente reclamar de bolha ou de um risco que já existia?", a: "Com a vistoria de entrada você registra o estado do carro com fotos, marca as avarias prévias no diagrama e colhe a assinatura do cliente. Ao fechar o serviço o registro é travado, então você tem a prova do que chegou e do que foi entregue. A vistoria está a partir do Premium (R$179/mês)." },
             { q: "Como cobro valores diferentes por tamanho de carro?", a: "Você define o preço por porte do veículo (hatch, sedan, SUV, picape) e o sistema aplica o valor certo no agendamento e no orçamento, sem recálculo manual a cada carro." },
-            { q: "Quanto custa e tem como testar antes?", a: "Essencial R$79, Premium R$179 e Pro R$197 por mês, com plano anual mais barato. São 7 dias grátis sem cartão pra rodar na sua operação real antes de decidir." },
-        ],
+            { q: "Quanto custa e tem como testar antes?", a: "Essencial a partir de R$79/mês e Premium a R$179/mês, com plano anual mais barato. São 7 dias grátis sem cartão pra rodar na sua operação real antes de decidir." }],
         related: ["software-para-detailing-automotivo", "recall-garantia-estetica-automotiva", "vistoria-veiculo-com-fotos-assinatura"],
     },
     {
@@ -871,25 +749,23 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "As faixas de preço do mercado (e o que esperar de cada uma)",
                 paragraphs: ["Sistema de gestão pra estética automotiva quase sempre é cobrado por mês, por loja. O valor varia conforme a profundidade: quanto mais a ferramenta tira do seu colo (agendamento, cobrança, recorrência, fiscal), mais ela tende a custar. Vale separar as faixas pra você comparar maçã com maçã."],
-                bullets: ["Até ~R$80/mês — o básico: agenda, cadastro de cliente e veículo, catálogo de serviços. Resolve a bagunça do caderno e do WhatsApp, mas geralmente para por aí.", "De ~R$130 a ~R$200/mês — a faixa de quem quer crescer: além do básico, entra loja de agendamento online, clube de assinatura/recorrência, relatórios e fidelização. É aqui que o sistema deixa de ser só agenda e vira gestão.", "Acima de ~R$200/mês — operação completa: soma camadas como NF-e, atendimento automático e relatórios mais densos. Faz sentido pra quem já tem volume.", "Cuidado com 'preço sob consulta': se o valor não está publicado, você só descobre depois de falar com vendedor — e costuma ser puxado pra cima conforme o tamanho da sua loja."],
+                bullets: ["Até ~R$80/mês — o básico: agenda, cadastro de cliente e veículo, catálogo de serviços. Resolve a bagunça do caderno e do WhatsApp, mas geralmente para por aí.", "De ~R$130 a ~R$200/mês — a faixa de quem quer crescer: além do básico, entra loja de agendamento online, clube de assinatura/recorrência, recall de garantia, vistoria, NF-e e relatórios. É aqui que o sistema deixa de ser só agenda e vira gestão.", "Acima de ~R$200/mês — operação mais densa, geralmente com relatórios avançados e várias unidades. Faz sentido pra quem já tem grande volume ou rede.", "Cuidado com 'preço sob consulta': se o valor não está publicado, você só descobre depois de falar com vendedor — e costuma ser puxado pra cima conforme o tamanho da sua loja."],
             },
             {
                 h2: "O preço do Forbion, sem esconder",
-                paragraphs: ["A gente publica o preço porque acredita que você tem que decidir com a informação na mesa, não no escuro. São três planos, todos com 7 dias grátis sem cartão — você roda na sua operação real antes de pagar. O plano anual sai mais barato que pagar mês a mês."],
-                bullets: ["Essencial — R$79/mês: agenda, loja online de agendamento, cadastro de clientes e veículos, catálogo com preço por porte, orçamento e estoque. A porta de entrada que organiza a operação.", "Premium — R$179/mês: tudo do Essencial mais clube de assinatura (recorrência), recall de garantia, vistoria do veículo com fotos e relatórios de retenção (RFM). É o plano de quem quer receita previsível.", "Pro — R$197/mês: tudo do Premium mais emissão de NF-e e a assistente do Forbion, que ajuda a confirmar agendamentos e responder o cliente sem você travar no balcão."],
+                paragraphs: ["A gente publica o preço porque acredita que você tem que decidir com a informação na mesa, não no escuro. São dois planos, ambos com 7 dias grátis sem cartão — você roda na sua operação real antes de pagar. O plano anual sai mais barato que pagar mês a mês."],
+                bullets: ["Essencial — a partir de R$79/mês: agenda, loja online de agendamento, cadastro de clientes e veículos, catálogo com preço por porte, orçamento e estoque. A porta de entrada que organiza a operação.", "Premium — R$179/mês: tudo do Essencial mais clube de assinatura (recorrência), recall de garantia, vistoria do veículo com fotos, emissão de NF-e e relatórios de retenção (RFM). É o plano de quem quer receita previsível e operação completa."],
             },
             {
                 h2: "A conta de retorno: quando o sistema se paga sozinho",
                 paragraphs: ["Olhar só o preço é meio caminho pro erro. A pergunta certa é: quanto ele te devolve por mês? Faça a conta com os seus números, não com promessa de ninguém.", "Dois movimentos costumam pagar a mensalidade sozinhos. Primeiro, o no-show: cada cliente que esquece do horário e some é um espaço vago no pátio que você não recupera. A confirmação automática por WhatsApp lembra o cliente sem você precisar parar pra digitar — basta evitar uma ou duas faltas no mês pra cobrir o custo do plano. Segundo, a recorrência: um único cliente no clube de assinatura, pagando mensalidade de lavagem ou manutenção, já costuma cobrir o valor do Premium. A partir do segundo, é margem.", "Some o que você economiza de tempo: parar de responder agendamento manual, montar orçamento de ticket alto em segundos e trazer o cliente de volta com o recall de garantia da vitrificação ou polimento. O cálculo deixa de ser 'quanto custa' e vira 'quanto eu perco sem'."],
-            },
-        ],
+            }],
         faq: [
-            { q: "Afinal, quanto custa um sistema para estética automotiva?", a: "No mercado, a maioria fica entre R$50 e R$300 por mês, conforme o que está incluso. No Forbion são três planos com preço aberto: Essencial R$79, Premium R$179 e Pro R$197 por mês, com 7 dias grátis sem cartão e plano anual mais barato." },
+            { q: "Afinal, quanto custa um sistema para estética automotiva?", a: "No mercado, a maioria fica entre R$50 e R$300 por mês, conforme o que está incluso. No Forbion são dois planos com preço aberto: Essencial a partir de R$79/mês e Premium a R$179/mês, com 7 dias grátis sem cartão e plano anual mais barato." },
             { q: "Tem taxa de instalação, fidelidade ou custo escondido?", a: "Não. O preço publicado é o preço — sem taxa de implantação e sem fidelidade. Você testa 7 dias grátis sem cartão e, se quiser, cancela quando precisar." },
             { q: "Vale a pena pra uma estética pequena, no começo?", a: "Vale justamente pra organizar antes de crescer. O Essencial a R$79 já coloca agenda, loja de agendamento online e cadastro no lugar. Evitar uma ou duas faltas por mês com a confirmação automática já costuma cobrir esse valor." },
             { q: "Por que alguns concorrentes não mostram o preço?", a: "Muitos trabalham com 'preço sob consulta', então o valor só aparece depois de falar com vendedor e pode variar conforme o tamanho da sua loja. A gente prefere publicar: você compara com calma e decide sozinho." },
-            { q: "Qual plano escolher?", a: "Se você só quer sair da bagunça do caderno e do WhatsApp, comece no Essencial. Se quer receita previsível com clube de assinatura, recall e vistoria com fotos, vá de Premium. Se precisa de NF-e e atendimento automático, o Pro fecha a conta. Dá pra começar grátis e subir de plano depois." },
-        ],
+            { q: "Qual plano escolher?", a: "Se você só quer sair da bagunça do caderno e do WhatsApp, comece no Essencial. Se quer receita previsível com clube de assinatura, recall, vistoria com fotos e NF-e, vá de Premium. Dá pra começar grátis e subir de plano depois." }],
         related: ["software-para-estetica-automotiva", "clube-de-assinatura-estetica-automotiva", "reduzir-no-show-faltas-whatsapp-estetica-automotiva"],
     },
     {
@@ -916,16 +792,14 @@ export const SEO_PAGES: SeoPage[] = [
             },
             {
                 h2: "Nasça organizado: agenda e loja online desde o dia um",
-                paragraphs: ["A maioria das estéticas começa no caderno e no WhatsApp. Funciona até o segundo carro do dia — depois vira horário marcado em dois lugares, cliente esquecido e faturamento que ninguém sabe quanto foi. Quem já abre organizado não tem esse retrabalho depois. Com o Forbion você monta a operação desde o começo: o cliente agenda sozinho pela sua loja online (link na bio do Instagram e no Google), você acompanha o pátio do dia e fecha a comanda com o pagamento entrando direto nos relatórios.", "Começar organizado também significa registrar a entrada do veículo com a vistoria com fotos (protege você de reclamação de avaria), avisar o cliente automaticamente quando a vitrificação precisa de revisão com o recall de garantia, e plantar receita previsível com o clube de assinatura, transformando lavagem em mensalidade. Um atendente que não dorme cuida da confirmação automática dos agendamentos, reduzindo falta sem você grudado no celular.", "O Forbion tem 7 dias grátis sem cartão: começa no Essencial (R$79/mês), com agenda e loja online; sobe para o Premium (R$179/mês) quando quer recorrência, clube e relatórios; e chega ao Pro (R$197/mês) com NF-e e assistente quando o movimento aperta. O plano anual sai mais barato — e a regra é simples: é mais fácil já nascer organizado do que arrumar a bagunça do caderno depois."],
-            },
-        ],
+                paragraphs: ["A maioria das estéticas começa no caderno e no WhatsApp. Funciona até o segundo carro do dia — depois vira horário marcado em dois lugares, cliente esquecido e faturamento que ninguém sabe quanto foi. Quem já abre organizado não tem esse retrabalho depois. Com o Forbion você monta a operação desde o começo: o cliente agenda sozinho pela sua loja online (link na bio do Instagram e no Google), você acompanha o pátio do dia e fecha a comanda com o pagamento entrando direto nos relatórios.", "Começar organizado também significa registrar a entrada do veículo com a vistoria com fotos (protege você de reclamação de avaria), avisar o cliente automaticamente quando a vitrificação precisa de revisão com o recall de garantia, e plantar receita previsível com o clube de assinatura, transformando lavagem em mensalidade. O lembrete e a confirmação por WhatsApp ligados à agenda reduzem a falta sem você grudado no celular.", "O Forbion tem 7 dias grátis sem cartão: começa no Essencial (a partir de R$79/mês), com agenda e loja online; e sobe para o Premium (R$179/mês) quando quer recorrência, clube, recall, vistoria, NF-e e relatórios. O plano anual sai mais barato — e a regra é simples: é mais fácil já nascer organizado do que arrumar a bagunça do caderno depois."],
+            }],
         faq: [
             { q: "Preciso de CNPJ para abrir uma estética automotiva?", a: "Sim, o ideal é formalizar. O CNPJ regulariza o negócio, permite emitir nota fiscal e dá acesso ao preço de revenda nos fornecedores de insumo. O enquadramento (MEI, Simples, etc.) depende do seu faturamento previsto e da atividade — confirme com um contador antes de abrir, porque estética automotiva nem sempre se enquadra como MEI." },
             { q: "Quais serviços oferecer quando estou começando?", a: "Comece enxuto, com o que você domina e gera fluxo: lavagem, aspiração e higienização interna. Conforme a clientela e a técnica amadurecem, suba para polimento, vitrificação e coating cerâmico, que têm a maior margem do setor. Não tente oferecer tudo no primeiro dia." },
             { q: "Quanto preciso para abrir uma estética automotiva?", a: "Varia muito conforme o ponto e o equipamento. O básico inclui ponto adequado (água, energia, área coberta), equipamento inicial (lavadora de pressão, aspirador, politriz, compressor, EPIs), formalização e um estoque de insumos para começar. Faça a conta do seu custo fixo mensal desde já — é dele que sai sua hora técnica e, portanto, seus preços." },
             { q: "Vale a pena ter sistema logo no começo, com pouco movimento?", a: "Vale, e talvez seja onde mais economiza dor de cabeça. Começar organizado evita o retrabalho de migrar do caderno e do WhatsApp depois, quando você já está cheio. Com a loja online o cliente agenda sozinho desde o dia um, e você já enxerga faturamento e clientes. O Forbion tem 7 dias grátis sem cartão para testar antes de pagar." },
-            { q: "Como começo com o Forbion sendo um negócio novo?", a: "Comece pelo plano Essencial (R$79/mês), que já entrega agenda e loja online de agendamento — o suficiente para nascer organizado. Quando quiser recorrência, clube de assinatura e relatórios, sobe para o Premium (R$179/mês); e o Pro (R$197/mês) adiciona NF-e e assistente. São 7 dias grátis sem cartão e o plano anual sai mais barato." },
-        ],
+            { q: "Como começo com o Forbion sendo um negócio novo?", a: "Comece pelo plano Essencial (a partir de R$79/mês), que já entrega agenda e loja online de agendamento — o suficiente para nascer organizado. Quando quiser recorrência, clube de assinatura, recall, vistoria, NF-e e relatórios, sobe para o Premium (R$179/mês). São 7 dias grátis sem cartão e o plano anual sai mais barato." }],
         related: ["como-precificar-servicos-de-estetica-automotiva", "loja-online-agendamento-estetica", "software-para-estetica-automotiva"],
     },
     {
@@ -949,16 +823,14 @@ export const SEO_PAGES: SeoPage[] = [
             {
                 h2: "Controle de insumo de baixo consumo e preço por porte",
                 paragraphs: ["A lavagem a seco vive do produto certo: o seu custo está nos litros de quimica de lava a seco, panos de microfibra e selantes — não na água. Saber quanto rende cada galão e quando repor evita ficar na mão no meio da rota. No Forbion você cadastra esses insumos no estoque com alerta de mínimo, pra repor antes de faltar.", "E como SUV e picape consomem mais produto e mais tempo que um hatch, o preço por porte de veículo aplica o valor certo de cada tamanho no agendamento e no fechamento, sem você recalcular na cabeça a cada atendimento. No fim do mês, o relatório de faturamento e a análise de retenção (RFM) mostram seus melhores assinantes e quem está esfriando, pra você agir antes de perder o cliente da rota."],
-                bullets: ["Estoque de insumos de baixo consumo (química, microfibras, selantes) com alerta de mínimo", "Preço por porte do veículo aplicado no agendamento e na comanda", "Relatórios de faturamento e RFM pra ver quem rende e quem está sumindo", "NF-e e assistente que confirma agendamentos sozinho no plano Pro"],
-            },
-        ],
+                bullets: ["Estoque de insumos de baixo consumo (química, microfibras, selantes) com alerta de mínimo", "Preço por porte do veículo aplicado no agendamento e na comanda", "Relatórios de faturamento e RFM pra ver quem rende e quem está sumindo", "NF-e e recall de garantia a partir do Premium"],
+            }],
         faq: [
             { q: "O Forbion serve pra lava a seco que atende a domicílio?", a: "Sim. O cliente agenda pela sua loja online informando endereço e serviço, e você organiza a agenda do dia por horário e região pra montar uma rota que aproveita cada deslocamento. A confirmação e o lembrete automáticos ajudam a evitar o furo de horário, que no atendimento móvel custa caro porque você já se deslocou." },
             { q: "Dá pra montar um plano de lavagem ecológica mensal?", a: "Sim, com o clube de assinatura (a partir do plano Premium, R$179/mês). Você define os serviços e a quantidade inclusa — por exemplo '4 lavagens por mês' — e o sistema controla quantos usos o cliente já consumiu, com a receita recorrente acompanhada no relatório." },
             { q: "Como o sistema ajuda no controle do produto de lava a seco?", a: "No estoque você cadastra os insumos (química de lava a seco, microfibras, selantes) e define o mínimo de cada um. O sistema avisa quando está baixo, pra você repor antes de ficar na mão no meio da rota. Estoque e orçamento já estão no plano Essencial." },
             { q: "Consigo cobrar valores diferentes por tamanho de carro?", a: "Sim. Você define o preço por porte do veículo (hatch, sedan, SUV, picape) e o sistema aplica o valor certo no agendamento e no fechamento, já que carro maior consome mais produto e mais tempo na lavagem a seco." },
-            { q: "Quanto custa o Forbion?", a: "São três planos: Essencial R$79, Premium R$179 e Pro R$197 por mês, com 7 dias grátis pra testar sem cartão. O plano anual sai mais barato. O clube de assinatura entra a partir do Premium; NF-e e assistente que confirma agendamentos sozinho ficam no Pro." },
-        ],
+            { q: "Quanto custa o Forbion?", a: "São dois planos: Essencial a partir de R$79/mês e Premium a R$179/mês, com 7 dias grátis pra testar sem cartão. O plano anual sai mais barato. O clube de assinatura, a NF-e e o recall de garantia entram a partir do Premium." }],
         related: ["clube-de-assinatura-estetica-automotiva", "sistema-para-lava-rapido", "loja-online-agendamento-estetica"],
     },
 
@@ -985,18 +857,15 @@ export const SEO_PAGES: SeoPage[] = [
                 h2: "Histórico do veículo, agenda e relatórios",
                 paragraphs: ["Cada carro que passa pela oficina fica registrado: o que já foi reparado, fotos da época e orçamentos anteriores. Quando o mesmo cliente volta, você consulta o histórico e ganha tempo no atendimento.", "A agenda organiza as entradas para não lotar o box, e os relatórios mostram o que entrou no período. Você também pode publicar uma loja/agenda online para o cliente pedir um orçamento sem ligar."],
                 bullets: ["Histórico de reparos e orçamentos por veículo e por cliente", "Agenda de entradas e loja online para captar pedidos", "Relatórios do que foi feito no período"],
-            },
-        ],
+            }],
         faq: [
             { q: "Dá para orçar cada dano separado?", a: "Sim. Você monta o orçamento por item, separando ponto de martelinho, polimento, retoque de pintura ou troca de peça, e envia o detalhamento direto pelo WhatsApp para o cliente aprovar." },
             { q: "Como a vistoria com fotos ajuda a evitar discussão sobre arranhões?", a: "Na entrada você fotografa todas as avarias e coleta a assinatura do cliente. Na saída, registra de novo. Assim fica documentado o estado do carro antes e depois do reparo, com data, placa e cliente vinculados." },
             { q: "Consigo ver tudo que já foi feito em um carro que voltou?", a: "Sim. O Forbion guarda o histórico do veículo e do cliente, com reparos anteriores, fotos e orçamentos. Quando o carro retorna, você consulta o registro e atende mais rápido." },
-            { q: "O Forbion emite nota fiscal?", a: "A emissão de NF-e e o assistente estão disponíveis no plano Pro. Vistoria com fotos, orçamento, agenda, loja online, histórico e relatórios já estão nos planos iniciais." },
-            { q: "Quanto custa e tem teste grátis?", a: "Os planos são Essencial R$79, Premium R$179 e Pro R$197, com 7 dias grátis sem precisar de cartão. O plano anual sai mais barato." },
-        ],
+            { q: "O Forbion emite nota fiscal?", a: "A emissão de NF-e e a vistoria com fotos estão disponíveis a partir do Premium. Orçamento, agenda, loja online, histórico e relatórios já estão no plano inicial." },
+            { q: "Quanto custa e tem teste grátis?", a: "Os planos são Essencial a partir de R$79/mês e Premium a R$179/mês, com 7 dias grátis sem precisar de cartão. O plano anual sai mais barato." }],
         related: ["software-para-detailing-automotivo", "vistoria-veiculo-com-fotos-assinatura", "orcamento-estoque-preco-por-porte-estetica"],
-    },
-];
+    }];
 
 export const SEO_SLUGS = SEO_PAGES.map((p) => p.slug);
 export const getSeoPage = (slug: string) => SEO_PAGES.find((p) => p.slug === slug);

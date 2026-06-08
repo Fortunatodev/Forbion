@@ -22,8 +22,8 @@ const Workflow = () => {
                         className="title mt-6"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.2 }}
+                        viewport={{ once: true, amount: 0.2, margin: "0px 0px 250px 0px" }}
+                        transition={{ duration: 0.45, delay: 0.2 }}
                     >
                         Do agendamento ao faturamento
                         <br />
@@ -34,8 +34,8 @@ const Workflow = () => {
                         className="desc mt-4"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6, delay: 0.3 }}
+                        viewport={{ once: true, amount: 0.2, margin: "0px 0px 250px 0px" }}
+                        transition={{ duration: 0.45, delay: 0.3 }}
                     >
                         Como o Forbion funciona no dia a dia da sua estética.
                     </motion.p>
@@ -45,12 +45,12 @@ const Workflow = () => {
                     {WORKFLOW_STEPS.map((step, index) => (
                         <React.Fragment key={index}>
                             <motion.div
-                                initial={{ opacity: 0, y: 30 }}
+                                initial={{ opacity: 0, y: 24 }}
                                 whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
+                                viewport={{ once: true, amount: 0.2, margin: "0px 0px 250px 0px" }}
                                 transition={{
-                                    duration: 0.6,
-                                    delay: 0.4 + index * 0.2,
+                                    duration: 0.4,
+                                    delay: index * 0.08,
                                     ease: [0.16, 1, 0.3, 1]
                                 }}
                                 className="flex flex-col items-center text-center relative"
@@ -77,8 +77,8 @@ const Workflow = () => {
                                         className="flex md:hidden relative my-2 -bottom-8 rotate-90"
                                         initial={{ opacity: 0, y: -10 }}
                                         whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
-                                        transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
+                                        viewport={{ once: true, amount: 0.2, margin: "0px 0px 250px 0px" }}
+                                        transition={{ duration: 0.4, delay: 0.15 + index * 0.08 }}
                                     >
                                         <Image
                                             src="/icons/arrow.svg"
@@ -99,8 +99,8 @@ const Workflow = () => {
                                     }}
                                     initial={{ opacity: 0, x: -10 }}
                                     whileInView={{ opacity: 1, x: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
+                                    viewport={{ once: true, amount: 0.2, margin: "0px 0px 250px 0px" }}
+                                    transition={{ duration: 0.4, delay: 0.15 + index * 0.08 }}
                                 >
                                     <Image
                                         src="/icons/arrow.svg"

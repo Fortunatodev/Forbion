@@ -8,7 +8,6 @@ const BASE = "https://www.forbion.digital";
 const OFFERS = [
     { name: "Essencial", price: "79.00" },
     { name: "Premium", price: "179.00" },
-    { name: "Pro", price: "197.00" },
 ];
 
 const jsonLd = {

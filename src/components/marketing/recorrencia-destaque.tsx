@@ -17,7 +17,7 @@ const RecorrenciaDestaque = () => {
 
             <Wrapper>
                 <div className="flex flex-col items-center text-center">
-                    <SectionBadge title="EXCLUSIVO PRO" />
+                    <SectionBadge title="RECEITA RECORRENTE" />
 
                     <motion.h2
                         className="title mt-6"

@@ -37,8 +37,10 @@ export const pricingPlans = [
       { text: "Tudo do Essencial incluído", highlighted: false },
       { text: "Clube de assinatura do cliente (receita recorrente)", highlighted: true },
       { text: "Recall de garantia — avisa o cliente pra voltar", highlighted: true },
+      { text: "Vistoria do veículo com fotos e assinatura", highlighted: true },
       { text: "Relatórios e retenção (RFM)", highlighted: true },
       { text: "Equipe com permissões + repasses/comissão", highlighted: true },
+      { text: "Prioridade no suporte", highlighted: false },
     ],
     cta: {
       text: "Começar 7 dias grátis",
@@ -47,29 +49,6 @@ export const pricingPlans = [
     popular: true,
     badge: "MAIS ESCOLHIDO",
     anualDiscount: "2 meses grátis no plano anual"
-  },
-  {
-    id: 3,
-    name: "Pro",
-    price: {
-      mensal: 197,
-      anual: 1970
-    },
-    tagline: "A oficina no automático, com IA e nota fiscal",
-    description:
-      "Tudo do Premium + assistente com IA atendendo no WhatsApp, emissão de NF-e e prioridade no suporte.",
-    features: [
-      { text: "Tudo do Premium incluído", highlighted: false },
-      { text: "Assistente com IA (Carla) atendendo no WhatsApp", highlighted: true },
-      { text: "Emissão de NF-e (nota de serviço)", highlighted: true },
-      { text: "Vistoria do veículo com fotos e assinatura", highlighted: true },
-      { text: "Prioridade no suporte", highlighted: true },
-    ],
-    cta: {
-      text: "Começar 7 dias grátis",
-      href: "https://pay.cakto.com.br/3c23rs8_764829"
-    },
-    popular: false
   }
 ];
 

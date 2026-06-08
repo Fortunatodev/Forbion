@@ -30,7 +30,7 @@ export const footerLinks = {
         { label: "Agenda online", href: "/agenda-online-estetica-automotiva" },
         { label: "Clube de assinatura", href: "/clube-de-assinatura-estetica-automotiva" },
         { label: "Recall de garantia", href: "/recall-garantia-estetica-automotiva" },
-        { label: "Forbion vs CERA", href: "/forbion-vs-cera-comparativo" },
+        { label: "Preço por porte de veículo", href: "/preco-por-porte-veiculo-estetica-automotiva" },
         { label: "Blog", href: "/blog" },
     ],
     product: [

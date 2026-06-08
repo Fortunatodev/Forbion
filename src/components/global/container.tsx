@@ -88,7 +88,7 @@ const Container = ({
                             filter: "blur(0px)",
                             y: 0,
                         }}
-                        viewport={{ once, amount: threshold, margin: "0px 0px 120px 0px" }}
+                        viewport={{ once, amount: threshold, margin: "0px 0px 240px 0px" }}
                         transition={{
                             duration: 0.5,
                             delay: (delay + index) * 0.03,
@@ -115,7 +115,7 @@ const Container = ({
                 rotate: 0,
                 filter: "blur(0px)",
             }}
-            viewport={{ once, amount: threshold, margin: "0px 0px 120px 0px" }}
+            viewport={{ once, amount: threshold, margin: "0px 0px 240px 0px" }}
             transition={{
                 duration,
                 delay,

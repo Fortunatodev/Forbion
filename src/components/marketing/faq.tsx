@@ -21,8 +21,8 @@ const faqItems = [
         answer: "Não. Os 7 dias de teste são totalmente gratuitos, sem precisar de cartão de crédito. Você acessa a plataforma e começa a configurar sua loja."
     },
     {
-        question: "Qual a diferença entre os planos Essencial, Premium e Pro?",
-        answer: "O Essencial (R$79/mês) organiza sua agenda, loja de agendamento, serviços e pátio. O Premium (R$179/mês) adiciona o clube de assinatura (receita recorrente), recall de garantia e relatórios. O Pro (R$197/mês) inclui ainda assistente de IA e emissão de NF-e."
+        question: "Qual a diferença entre os planos Essencial e Premium?",
+        answer: "O Essencial (R$79/mês) organiza sua agenda, loja de agendamento, serviços e pátio. O Premium (R$179/mês) adiciona o clube de assinatura (receita recorrente), recall de garantia, vistoria do veículo com fotos, relatórios de retenção e gestão de equipe com repasses."
     },
     {
         question: "Meu cliente precisa baixar algum app?",
