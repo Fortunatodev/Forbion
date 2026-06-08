@@ -961,6 +961,41 @@ export const SEO_PAGES: SeoPage[] = [
         ],
         related: ["clube-de-assinatura-estetica-automotiva", "sistema-para-lava-rapido", "loja-online-agendamento-estetica"],
     },
+
+    // ── Lote 3b — sub-nicho martelinho (fecha o ranking da Fobi) ──
+    {
+        slug: "sistema-para-martelinho-de-ouro-reparo-pintura",
+        tier: 3,
+        title: "Sistema para Martelinho de Ouro e Reparo de Pintura | Forbion",
+        description: "Sistema para martelinho de ouro: vistoria com fotos na entrada, orçamento por dano enviável no WhatsApp e histórico do veículo. Teste 7 dias grátis.",
+        h1: "Sistema para martelinho de ouro e reparo de pintura",
+        lead: "No martelinho de ouro e no reparo de pintura cada carro é um orçamento diferente: depende da peça, do tamanho do dano e do estado em que o veículo chegou. O Forbion ajuda você a fotografar a avaria na entrada, montar o orçamento por dano e enviar pelo WhatsApp em minutos, com o histórico do veículo sempre à mão.",
+        sections: [
+            {
+                h2: "Vistoria com fotos na entrada: prova do estado antes do reparo",
+                paragraphs: ["Reparo de pintura e funilaria rápida vivem de uma discussão recorrente: \"esse risco já estava aí quando entreguei?\". Registrar o carro com fotos no momento da entrada tira essa dúvida do caminho e protege os dois lados.", "No Forbion você abre a vistoria, fotografa cada avaria, descreve o ponto a recuperar e coleta a assinatura do cliente ali mesmo. Na saída, repete o registro para mostrar o antes e o depois do mesmo veículo."],
+                bullets: ["Fotos da avaria vinculadas à placa e ao cliente", "Assinatura do cliente na entrada e na saída", "Descrição peça a peça do que será reparado", "Registro guardado para consulta futura, não em fotos soltas no celular"],
+            },
+            {
+                h2: "Orçamento por peça e por dano, enviável no WhatsApp",
+                paragraphs: ["Como o serviço é orçado caso a caso, o que faz fechar é responder rápido e de forma clara. Em vez de mandar um valor solto, você monta o orçamento separando os itens: ponto de martelinho, polimento, retoque de pintura, peça a substituir.", "Com o orçamento pronto, o cliente recebe o detalhamento pelo WhatsApp e decide na hora. Quanto mais cedo o orçamento chega, maior a chance de o carro entrar na agenda no mesmo dia."],
+                bullets: ["Itens separados por dano e por peça", "Envio do orçamento direto pelo WhatsApp", "Resposta rápida para fechar antes do cliente cotar em outro lugar"],
+            },
+            {
+                h2: "Histórico do veículo, agenda e relatórios",
+                paragraphs: ["Cada carro que passa pela oficina fica registrado: o que já foi reparado, fotos da época e orçamentos anteriores. Quando o mesmo cliente volta, você consulta o histórico e ganha tempo no atendimento.", "A agenda organiza as entradas para não lotar o box, e os relatórios mostram o que entrou no período. Você também pode publicar uma loja/agenda online para o cliente pedir um orçamento sem ligar."],
+                bullets: ["Histórico de reparos e orçamentos por veículo e por cliente", "Agenda de entradas e loja online para captar pedidos", "Relatórios do que foi feito no período"],
+            },
+        ],
+        faq: [
+            { q: "Dá para orçar cada dano separado?", a: "Sim. Você monta o orçamento por item, separando ponto de martelinho, polimento, retoque de pintura ou troca de peça, e envia o detalhamento direto pelo WhatsApp para o cliente aprovar." },
+            { q: "Como a vistoria com fotos ajuda a evitar discussão sobre arranhões?", a: "Na entrada você fotografa todas as avarias e coleta a assinatura do cliente. Na saída, registra de novo. Assim fica documentado o estado do carro antes e depois do reparo, com data, placa e cliente vinculados." },
+            { q: "Consigo ver tudo que já foi feito em um carro que voltou?", a: "Sim. O Forbion guarda o histórico do veículo e do cliente, com reparos anteriores, fotos e orçamentos. Quando o carro retorna, você consulta o registro e atende mais rápido." },
+            { q: "O Forbion emite nota fiscal?", a: "A emissão de NF-e e o assistente estão disponíveis no plano Pro. Vistoria com fotos, orçamento, agenda, loja online, histórico e relatórios já estão nos planos iniciais." },
+            { q: "Quanto custa e tem teste grátis?", a: "Os planos são Essencial R$79, Premium R$179 e Pro R$197, com 7 dias grátis sem precisar de cartão. O plano anual sai mais barato." },
+        ],
+        related: ["software-para-detailing-automotivo", "vistoria-veiculo-com-fotos-assinatura", "orcamento-estoque-preco-por-porte-estetica"],
+    },
 ];
 
 export const SEO_SLUGS = SEO_PAGES.map((p) => p.slug);
