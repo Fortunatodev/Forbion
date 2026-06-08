@@ -56,14 +56,14 @@ const Workflow = () => {
                                 className="flex flex-col items-center text-center relative"
                             >
                                 <div className={cn(
-                                    "text-[120px] md:text-[140px] font-bold leading-none",
+                                    "text-[88px] sm:text-[120px] md:text-[140px] font-bold leading-none",
                                     "bg-linear-to-b from-primary/40 to-primary/0",
                                     "text-transparent bg-clip-text select-none"
                                 )}>
                                     {step.number}
                                 </div>
 
-                                <div className="-mt-8 flex flex-col items-center">
+                                <div className="-mt-6 sm:-mt-8 flex flex-col items-center">
                                     <h3 className="text-xl md:text-2xl font-semibold">
                                         {step.title}
                                     </h3>

@@ -86,7 +86,7 @@ const RecorrenciaDestaque = () => {
                             className="pt-2"
                         >
                             <Link href={Routes.AppLogin} target="_blank" rel="noopener noreferrer">
-                                <Button>
+                                <Button size="lg" className="w-full sm:w-auto">
                                     Quero criar meu plano de assinatura
                                     <ArrowRight className="size-4" />
                                 </Button>

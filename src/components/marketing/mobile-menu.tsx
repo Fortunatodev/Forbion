@@ -64,7 +64,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                             rel="noopener noreferrer"
                         >
                             <Button
-                                size="default"
+                                size="lg"
                                 variant="white"
                                 className="w-full"
                                 onClick={() => setIsOpen(false)}
@@ -78,7 +78,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                             rel="noopener noreferrer"
                         >
                             <Button
-                                size="default"
+                                size="lg"
                                 variant="outline"
                                 className="w-full"
                                 onClick={() => setIsOpen(false)}

@@ -19,7 +19,7 @@ const Socials = () => {
                     Tudo pra sua estética rodar redondo
                 </p>
 
-                <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8 max-w-4xl mx-auto mt-8">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-3 sm:gap-x-6 gap-y-8 max-w-4xl mx-auto mt-8">
                     {TRUST.map((t) => (
                         <div key={t.title} className="flex flex-col items-center text-center gap-2 px-2">
                             <div className="flex items-center justify-center size-11 rounded-xl border border-foreground/10 bg-foreground/5 text-primary">

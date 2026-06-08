@@ -79,12 +79,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <article className="w-full pt-28 lg:pt-36 pb-20">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             <Wrapper className="max-w-3xl">
-                <nav className="text-sm text-muted-foreground mb-6" aria-label="Trilha">
-                    <Link href="/" className="hover:text-foreground">Início</Link>
-                    <span className="mx-2">/</span>
-                    <Link href="/blog" className="hover:text-foreground">Blog</Link>
-                    <span className="mx-2">/</span>
-                    <span className="text-foreground/80">{post.h1}</span>
+                <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-6 min-w-0" aria-label="Trilha">
+                    <Link href="/" className="hover:text-foreground shrink-0">Início</Link>
+                    <span className="shrink-0">/</span>
+                    <Link href="/blog" className="hover:text-foreground shrink-0">Blog</Link>
+                    <span className="shrink-0">/</span>
+                    <span className="text-foreground/80 truncate min-w-0">{post.h1}</span>
                 </nav>
 
                 <div className="text-xs text-muted-foreground flex items-center gap-2">

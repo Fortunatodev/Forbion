@@ -195,9 +195,9 @@ const Hero = () => {
                                         </div>
                                     </div>
 
-                                    <div className="p-4 sm:p-5 space-y-4" style={{ background: T.bg }}>
-                                        {/* MetricCards (idênticos ao app) */}
-                                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+                                    <div className="p-3 sm:p-5 space-y-3 sm:space-y-4 overflow-hidden" style={{ background: T.bg }}>
+                                        {/* MetricCards (idênticos ao app) — 1 col no mobile, igual ao dashboard real */}
+                                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                                             {METRICS.map((m) => (
                                                 <MetricCard key={m.title} {...m} />
                                             ))}

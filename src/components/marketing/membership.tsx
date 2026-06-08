@@ -46,7 +46,7 @@ const Membership = () => {
           </motion.p>
 
           <motion.div
-            className="flex items-center gap-3 mt-20 relative"
+            className="flex items-center gap-3 mt-8 lg:mt-20 relative"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -89,7 +89,7 @@ const Membership = () => {
               Anual
             </span>
 
-            <div className="absolute -top-18 -right-3/4 flex flex-col gap-2">
+            <div className="hidden lg:flex absolute -top-18 -right-3/4 flex-col gap-2">
               <span className="text-base text-muted-foreground font-handwriting">
                 7 dias grátis em qualquer plano
               </span>

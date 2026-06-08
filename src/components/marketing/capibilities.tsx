@@ -228,7 +228,7 @@ const Capibilities = () => {
                                     O clube de assinatura transforma lavagem e manutenção em mensalidade — caixa previsível todo mês.
                                 </p>
                                 <Link href="/clube-de-assinatura-estetica-automotiva">
-                                    <Button size="sm" variant="outline" className="mt-2">
+                                    <Button size="default" variant="outline" className="mt-2">
                                         Saiba mais
                                     </Button>
                                 </Link>

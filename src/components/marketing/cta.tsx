@@ -105,7 +105,7 @@ const Cta = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <Button size="lg" className="text-base">
+                                    <Button size="lg" className="text-base w-full sm:w-auto">
                                         Começar meu teste grátis
                                     </Button>
                                 </Link>
@@ -114,7 +114,7 @@ const Cta = () => {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    <Button size="lg" variant="outline" className="text-base">
+                                    <Button size="lg" variant="outline" className="text-base w-full sm:w-auto">
                                         Falar com a Forbion
                                     </Button>
                                 </Link>

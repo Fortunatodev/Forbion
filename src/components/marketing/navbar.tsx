@@ -79,7 +79,7 @@ const Navbar = () => {
                                 </Button>
                             </Link>
                             <Button
-                                size="icon-sm"
+                                size="icon-lg"
                                 variant="ghost"
                                 onClick={() => setIsOpen((prev) => !prev)}
                                 className="lg:hidden"

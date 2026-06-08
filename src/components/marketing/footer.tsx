@@ -43,9 +43,9 @@ const Footer = () => {
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     required
-                                    className="flex-1 h-8.5 text-sm bg-foreground/5 border-foreground/10 focus-visible:ring-0 focus-visible:ring-transparent rounded-full px-4"
+                                    className="flex-1 h-10 md:h-8.5 text-sm bg-foreground/5 border-foreground/10 focus-visible:ring-0 focus-visible:ring-transparent rounded-full px-4"
                                 />
-                                <Button type="submit" size="sm" >
+                                <Button type="submit" size="default" className="h-10 md:h-9" >
                                     Assinar
                                 </Button>
                             </div>
@@ -54,7 +54,7 @@ const Footer = () => {
 
                     <div className="lg:col-span-2" />
 
-                    <div className="lg:col-span-6 grid grid-cols-2 md:grid-cols-3 lg:place-items-end gap-8">
+                    <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-3 lg:place-items-end gap-8">
                         <div>
                             <h3 className="text-sm font-semibold text-foreground mt-0">
                                 Soluções
