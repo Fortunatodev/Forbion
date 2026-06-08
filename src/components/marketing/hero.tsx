@@ -94,22 +94,13 @@ const Hero = () => {
                     <h1 className="text-4xl md:text-6xl font-semibold tracking-tight font-heading mt-8">
                         <Balancer>
                             {"Sistema de Gestão para".split(" ").map((word, index) => (
-                                <motion.span
-                                    initial={{ filter: "blur(10px)", opacity: 0, y: 10 }}
-                                    animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.4, delay: index * 0.05 }}
-                                    className="inline-block"
-                                    key={index}
-                                >
+                                <span className="inline-block" key={index}>
                                     {word}&nbsp;
-                                </motion.span>
+                                </span>
                             ))}
                             <br />
                             {"Estética Automotiva".split(" ").map((word, index) => (
-                                <motion.span
-                                    initial={{ filter: "blur(10px)", opacity: 0, y: 10 }}
-                                    animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.4, delay: (4 + index) * 0.05 }}
+                                <span
                                     className={cn(
                                         "inline-block",
                                         word === "Estética" && "bg-linear-to-r from-primary via-blue-500 to-primary bg-size-[200%_100%] animate-[shimmer_3s_ease-in-out_infinite] text-transparent bg-clip-text"
@@ -117,7 +108,7 @@ const Hero = () => {
                                     key={index}
                                 >
                                     {word}&nbsp;
-                                </motion.span>
+                                </span>
                             ))}
                         </Balancer>
                     </h1>
@@ -125,15 +116,9 @@ const Hero = () => {
                     <p className="text-base md:text-lg text-foreground/70 mt-6 max-w-2xl">
                         <Balancer>
                             {description.split(" ").map((word, index) => (
-                                <motion.span
-                                    initial={{ filter: "blur(10px)", opacity: 0, y: 5 }}
-                                    animate={{ filter: "blur(0px)", opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.3, delay: 0.3 + index * 0.02 }}
-                                    className="inline-block"
-                                    key={index}
-                                >
+                                <span className="inline-block" key={index}>
                                     {word}&nbsp;
-                                </motion.span>
+                                </span>
                             ))}
                         </Balancer>
                     </p>
