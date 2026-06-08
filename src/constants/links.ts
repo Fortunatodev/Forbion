@@ -31,6 +31,7 @@ export const footerLinks = {
         { label: "Clube de assinatura", href: "/clube-de-assinatura-estetica-automotiva" },
         { label: "Recall de garantia", href: "/recall-garantia-estetica-automotiva" },
         { label: "Forbion vs CERA", href: "/forbion-vs-cera-comparativo" },
+        { label: "Blog", href: "/blog" },
     ],
     product: [
         { label: "Para Quem É", href: "#para-quem" },
