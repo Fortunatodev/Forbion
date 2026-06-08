@@ -3,7 +3,7 @@
 
 import { useIsMobile } from "@/hooks";
 import { cn } from "@/utils";
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { type ReactNode } from "react";
 
 interface ContainerProps {
@@ -55,15 +55,17 @@ const Container = ({
     className,
     animation = "fadeUp",
     delay = 0,
-    duration = 0.5,
+    duration = 0.4,
     words = false,
     once = true,
     threshold = 0.1,
 }: ContainerProps) => {
 
     const isMobile = useIsMobile();
+    const prefersReduced = useReducedMotion();
 
-    if (isMobile) {
+    // Mobile ou quem pediu menos movimento → render direto (sem animação tardia)
+    if (isMobile || prefersReduced) {
         return <div className={className}>{children}</div>;
     }
 
@@ -86,10 +88,10 @@ const Container = ({
                             filter: "blur(0px)",
                             y: 0,
                         }}
-                        viewport={{ once, amount: threshold }}
+                        viewport={{ once, amount: threshold, margin: "0px 0px 120px 0px" }}
                         transition={{
-                            duration: 0.9,
-                            delay: (delay + index) * 0.05,
+                            duration: 0.5,
+                            delay: (delay + index) * 0.03,
                             ease: [0.22, 0.61, 0.36, 1]
                         }}
                         className="inline-block"
@@ -113,7 +115,7 @@ const Container = ({
                 rotate: 0,
                 filter: "blur(0px)",
             }}
-            viewport={{ once, amount: threshold }}
+            viewport={{ once, amount: threshold, margin: "0px 0px 120px 0px" }}
             transition={{
                 duration,
                 delay,
