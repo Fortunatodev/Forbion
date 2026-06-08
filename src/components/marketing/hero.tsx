@@ -123,12 +123,7 @@ const Hero = () => {
                         </Balancer>
                     </p>
 
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.6 }}
-                        className={cn("flex items-center gap-4 flex-wrap justify-center mt-8")}
-                    >
+                    <div className={cn("flex items-center gap-4 flex-wrap justify-center mt-8")}>
                         <Link
                             href={Routes.AppLogin}
                             target="_blank"
@@ -143,15 +138,10 @@ const Hero = () => {
                                 Como funciona?
                             </Button>
                         </Link>
-                    </motion.div>
+                    </div>
                 </div>
 
-                <motion.div
-                    initial={{ opacity: 0, filter: "blur(20px)", y: 30 }}
-                    animate={{ opacity: 1, filter: "blur(0px)", y: 0 }}
-                    transition={{ duration: 1, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                    className={cn("mt-10 lg:mt-20 relative")}
-                >
+                <div className={cn("mt-10 lg:mt-20 relative")}>
                     <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 
                         {/* Glow background */}
@@ -282,7 +272,7 @@ const Hero = () => {
                             index={index}
                         />
                     ))}
-                </motion.div>
+                </div>
             </Wrapper>
         </section>
     );

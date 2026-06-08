@@ -3,7 +3,6 @@ import "@/styles/globals.css";
 import { cn, generateMetadata } from "@/utils";
 import Providers from "@/components/global/providers";
 import FlareCursor from "@/components/global/flare-cursor";
-import LoadingScreen from "@/components/global/loading-screen";
 
 export const metadata = generateMetadata();
 
@@ -23,7 +22,6 @@ export default function RootLayout({
                 )}
             >
                 <Providers>
-                    <LoadingScreen />
                     <FlareCursor />
                     {children}
                 </Providers>
