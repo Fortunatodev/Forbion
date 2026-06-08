@@ -7,7 +7,6 @@ import Workflow from "@/components/marketing/workflow";
 import Capibilities from "@/components/marketing/capibilities";
 import RecorrenciaDestaque from "@/components/marketing/recorrencia-destaque";
 import Membership from "@/components/marketing/membership";
-import WallOfLove from "@/components/marketing/wall-of-love";
 import Faq from "@/components/marketing/faq";
 import Cta from "@/components/marketing/cta";
 
@@ -29,11 +28,9 @@ const HomePage = () => {
             <Capibilities />
             {/* 7. Destaque Recorrência PRO */}
             <RecorrenciaDestaque />
-            {/* 8. Planos (BASIC/PRO + Agência) */}
+            {/* 8. Planos */}
             <Membership />
-            {/* 9. Depoimentos */}
-            <WallOfLove />
-            {/* 10. FAQ */}
+            {/* 9. FAQ */}
             <Faq />
             {/* 11. CTA Final */}
             <Cta />

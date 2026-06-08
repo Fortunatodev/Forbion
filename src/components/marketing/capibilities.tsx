@@ -1,12 +1,11 @@
 "use client";
 
-import { capabilities, stats, AVATAR_ITEMS } from '@/constants/capabilities';
+import { capabilities } from '@/constants/capabilities';
 import Wrapper from '@/components/global/wrapper';
 import SectionBadge from '@/components/ui/section-badge';
 import { motion } from 'motion/react';
 import Link from 'next/link';
 import { Users, Calendar, FileText, Zap, ArrowRight, Sparkles } from 'lucide-react';
-import { AnimatedTooltip } from '@/components/ui/animated-tooltip';
 import { cn } from '@/utils';
 import { Button } from "../ui/button";
 import Image from "next/image";
@@ -203,14 +202,11 @@ const Capibilities = () => {
                             )}
                         >
                             <div className="relative overflow-visible">
-                                <div className="flex overflow-visible">
-                                    <AnimatedTooltip items={AVATAR_ITEMS} />
-                                </div>
-                                <h3 className="text-2xl bg-linear-to-r from-foreground to-foreground/70 text-transparent bg-clip-text font-medium mt-4">
-                                    {stats[0]?.value} {stats[0]?.label}
+                                <h3 className="text-2xl bg-linear-to-r from-foreground to-foreground/70 text-transparent bg-clip-text font-medium">
+                                    Tudo num só lugar
                                 </h3>
                                 <p className="text-sm text-muted-foreground mt-1">
-                                    já usam o Forbion
+                                    Agenda, recorrência, vistoria e relatórios — feito pra estética automotiva.
                                 </p>
                             </div>
                         </motion.div>
@@ -225,15 +221,15 @@ const Capibilities = () => {
                             <div className="relative">
                                 <div className="flex items-baseline gap-1">
                                     <h3 className="text-3xl bg-linear-to-r from-foreground to-foreground/70 text-transparent bg-clip-text font-semibold">
-                                        {stats[1]?.value} {stats[1]?.label}
+                                        Receita recorrente
                                     </h3>
                                 </div>
                                 <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
-                                    {stats[1]?.description}
+                                    O clube de assinatura transforma lavagem e manutenção em mensalidade — caixa previsível todo mês.
                                 </p>
-                                <Link href="#">
+                                <Link href="/clube-de-assinatura-estetica-automotiva">
                                     <Button size="sm" variant="outline" className="mt-2">
-                                        {stats[1]?.button?.text}
+                                        Saiba mais
                                     </Button>
                                 </Link>
                             </div>
