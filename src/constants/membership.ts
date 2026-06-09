@@ -25,14 +25,14 @@ export const pricingPlans = [
   },
   {
     id: 2,
-    name: "Premium",
+    name: "Pro",
     price: {
-      mensal: 179,
-      anual: 1790
+      mensal: 129,
+      anual: 1290
     },
-    tagline: "Para crescer com recorrência e dados",
+    tagline: "Para crescer com recorrência, dados e equipe",
     description:
-      "Tudo do Essencial + clube de assinatura (receita recorrente), recall de garantia que traz o cliente de volta e relatórios pra decidir com número.",
+      "Tudo do Essencial + clube de assinatura (receita recorrente), recall de garantia que traz o cliente de volta, vistoria com fotos e relatórios pra decidir com número.",
     features: [
       { text: "Tudo do Essencial incluído", highlighted: false },
       { text: "Clube de assinatura do cliente (receita recorrente)", highlighted: true },
@@ -40,15 +40,37 @@ export const pricingPlans = [
       { text: "Vistoria do veículo com fotos e assinatura", highlighted: true },
       { text: "Relatórios e retenção (RFM)", highlighted: true },
       { text: "Equipe com permissões + repasses/comissão", highlighted: true },
-      { text: "Prioridade no suporte", highlighted: false },
     ],
     cta: {
       text: "Começar 7 dias grátis",
-      href: "https://pay.cakto.com.br/3d4ss4h"
+      href: "https://pay.cakto.com.br/3c23rs8_764829"
     },
     popular: true,
     badge: "MAIS ESCOLHIDO",
     anualDiscount: "2 meses grátis no plano anual"
+  },
+  {
+    id: 3,
+    name: "Premium",
+    price: {
+      mensal: 179,
+      anual: 1790
+    },
+    tagline: "Nota fiscal e nível premium — em breve",
+    description:
+      "Tudo do Pro + emissão de NF-e e integrações avançadas. Em desenvolvimento — chega já já.",
+    features: [
+      { text: "Tudo do Pro incluído", highlighted: false },
+      { text: "Emissão de NF-e (nota de serviço)", highlighted: true },
+      { text: "Integrações avançadas", highlighted: true },
+      { text: "Prioridade no suporte", highlighted: false },
+    ],
+    cta: {
+      text: "Em breve",
+      href: ""
+    },
+    popular: false,
+    comingSoon: true
   }
 ];
 

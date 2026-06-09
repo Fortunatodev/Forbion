@@ -104,8 +104,9 @@ const Membership = () => {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-3xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-12 max-w-5xl mx-auto">
           {pricingPlans.map((plan, index) => {
+            const comingSoon = (plan as { comingSoon?: boolean }).comingSoon
             return (
               <motion.div
                 key={plan.id}
@@ -113,6 +114,7 @@ const Membership = () => {
                   "relative rounded-xl lg:rounded-2xl p-5 lg:p-8 overflow-hidden",
                   "bg-cardbox",
                   "transition-all duration-300",
+                  comingSoon && "opacity-70",
                 )}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -130,6 +132,14 @@ const Membership = () => {
                   <div className="absolute top-4 right-4">
                     <span className="px-3 py-1 text-xs font-medium bg-primary text-white rounded-full">
                       {plan.badge ?? "MAIS CONTRATADO"}
+                    </span>
+                  </div>
+                )}
+
+                {comingSoon && (
+                  <div className="absolute top-4 right-4">
+                    <span className="px-3 py-1 text-xs font-semibold rounded-full" style={{ color: "#F59E0B", background: "rgba(245,158,11,0.12)", border: "1px solid rgba(245,158,11,0.3)" }}>
+                      EM BREVE
                     </span>
                   </div>
                 )}
@@ -161,15 +171,21 @@ const Membership = () => {
                   </p>
                 </div>
 
-                <Link href={plan.cta.href}>
-                  <Button
-                    variant={plan.popular ? "default" : "secondary"}
-                    className={cn("w-full mt-6")}
-                  >
-                    {plan.cta.text}
-                    <ArrowRight className="size-4" />
+                {comingSoon ? (
+                  <Button variant="secondary" disabled className={cn("w-full mt-6 cursor-default opacity-80")}>
+                    Em breve
                   </Button>
-                </Link>
+                ) : (
+                  <Link href={plan.cta.href}>
+                    <Button
+                      variant={plan.popular ? "default" : "secondary"}
+                      className={cn("w-full mt-6")}
+                    >
+                      {plan.cta.text}
+                      <ArrowRight className="size-4" />
+                    </Button>
+                  </Link>
+                )}
 
                 <ul className="space-y-3 mt-8">
                   {plan.features.map((feature, idx) => (

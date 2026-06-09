@@ -21,8 +21,8 @@ const faqItems = [
         answer: "Não. Os 7 dias de teste são totalmente gratuitos, sem precisar de cartão de crédito. Você acessa a plataforma e começa a configurar sua loja."
     },
     {
-        question: "Qual a diferença entre os planos Essencial e Premium?",
-        answer: "O Essencial (R$79/mês) organiza sua agenda, loja de agendamento, serviços e pátio. O Premium (R$179/mês) adiciona o clube de assinatura (receita recorrente), recall de garantia, vistoria do veículo com fotos, relatórios de retenção e gestão de equipe com repasses."
+        question: "Qual a diferença entre os planos Essencial, Pro e Premium?",
+        answer: "O Essencial (R$79/mês) organiza sua agenda, loja de agendamento, serviços e pátio. O Pro (R$129/mês) — o mais escolhido — adiciona o clube de assinatura (receita recorrente), recall de garantia, vistoria do veículo com fotos, relatórios de retenção (RFM) e gestão de equipe com repasses. O Premium (R$179/mês) chega em breve, somando emissão de NF-e e integrações avançadas."
     },
     {
         question: "Meu cliente precisa baixar algum app?",
@@ -30,7 +30,7 @@ const faqItems = [
     },
     {
         question: "Posso criar mais de um tipo de plano de assinatura?",
-        answer: "Sim. A partir do plano Premium você cria quantos planos de assinatura quiser, com preços, descontos e serviços incluídos diferentes para cada um."
+        answer: "Sim. A partir do plano Pro você cria quantos planos de assinatura quiser, com preços, descontos e serviços incluídos diferentes para cada um."
     },
     {
         question: "O Forbion também faz sites e landing pages?",
