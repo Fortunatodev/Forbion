@@ -5,17 +5,7 @@ export const metadata: Metadata = {
     description: "Política de Privacidade da plataforma Forbion para gestão de estéticas automotivas.",
 };
 
-// ============================================================================
-// IMPORTANTE — PLACEHOLDERS A SUBSTITUIR ANTES DE PUBLICAR
-// ----------------------------------------------------------------------------
-//   [RAZÃO SOCIAL]   → Nome completo da empresa
-//   [CNPJ]           → Número do CNPJ (formato XX.XXX.XXX/XXXX-XX)
-//   [ENDEREÇO]       → Endereço completo (rua, nº, cidade, estado, CEP)
-//   [EMAIL_DPO]      → Email para encarregado de dados (LGPD) — ex.: privacidade@forbion.digital
-//   [EMAIL_SUPORTE]  → Email geral de suporte — ex.: suporte@forbion.digital
-// ============================================================================
-
-const LAST_UPDATED = "12 de maio de 2026";
+const LAST_UPDATED = "24 de outubro de 2026";
 
 export default function PrivacyPage() {
     return (
@@ -30,11 +20,12 @@ export default function PrivacyPage() {
             <article className="prose prose-invert max-w-none space-y-6 text-foreground/85 text-base leading-relaxed">
                 <section>
                     <p>
-                        A <strong>[RAZÃO SOCIAL]</strong>, inscrita no CNPJ sob o nº <strong>[CNPJ]</strong>,
-                        com sede em <strong>[ENDEREÇO]</strong> (doravante &ldquo;Forbion&rdquo;, &ldquo;nós&rdquo; ou &ldquo;nosso&rdquo;),
+                        A <strong>FORTUNA COMPANY LTDA</strong>, inscrita no CNPJ sob o nº <strong>54.367.635/0001-50</strong>,
+                        com sede na <strong>Av. Paulista, 777, 15º andar, conj. 15, sala 1084, Bela Vista, São Paulo/SP, CEP 01311-914</strong> (doravante &ldquo;Forbion&rdquo;, &ldquo;nós&rdquo; ou &ldquo;nosso&rdquo;),
                         opera a plataforma <strong>forbion.digital</strong> e o aplicativo
-                        <strong> app.forbion.digital</strong> (em conjunto, a &ldquo;Plataforma&rdquo;), um sistema
-                        SaaS de gestão para negócios de estética automotiva.
+                        <strong> app.forbion.digital</strong>, além do atendimento comercial pelo WhatsApp
+                        (em conjunto, a &ldquo;Plataforma&rdquo;), um sistema SaaS de gestão para negócios de
+                        estética automotiva.
                     </p>
                     <p>
                         Esta Política de Privacidade descreve como coletamos, usamos, armazenamos e
@@ -59,7 +50,9 @@ export default function PrivacyPage() {
                         <li>Funcionários que o Dono cadastra para gerenciar a agenda;</li>
                         <li>Clientes Finais que agendam serviços por meio das lojas públicas
                             disponibilizadas em <code className="text-sm">app.forbion.digital/[loja]</code>;</li>
-                        <li>Visitantes do site institucional <strong>forbion.digital</strong>.</li>
+                        <li>Visitantes do site institucional <strong>forbion.digital</strong>;</li>
+                        <li>Pessoas que conversam com a Forbion pelo WhatsApp (por exemplo, donos de
+                            estética interessados em conhecer ou testar a Plataforma).</li>
                     </ul>
                 </section>
 
@@ -106,6 +99,8 @@ export default function PrivacyPage() {
                             envio dessas mensagens.</li>
                         <li><strong>UploadThing:</strong> para hospedar imagens de serviços que o Dono
                             faz upload.</li>
+                        <li><strong>WhatsApp (Meta):</strong> conversas com a Forbion pelo WhatsApp. Ver a
+                            seção 7.</li>
                     </ul>
 
                     <h3 className="text-lg font-semibold mt-6 mb-2">2.4. Dados técnicos</h3>
@@ -138,7 +133,8 @@ export default function PrivacyPage() {
                     <p>O tratamento dos seus dados se baseia em:</p>
                     <ul className="list-disc list-inside ml-4 space-y-1">
                         <li><strong>Execução de contrato:</strong> para entregar os serviços contratados.</li>
-                        <li><strong>Consentimento:</strong> para integrações opcionais como Google Calendar.</li>
+                        <li><strong>Consentimento:</strong> para integrações opcionais como Google Calendar e
+                            para mensagens promocionais pelo WhatsApp.</li>
                         <li><strong>Legítimo interesse:</strong> para segurança, prevenção de fraudes e
                             melhoria do serviço.</li>
                         <li><strong>Cumprimento de obrigação legal:</strong> para retenção fiscal e
@@ -153,7 +149,10 @@ export default function PrivacyPage() {
                         <li><strong>Provedores de infraestrutura:</strong> Railway (hospedagem da API), Neon
                             (banco de dados PostgreSQL), Vercel (hospedagem do site).</li>
                         <li><strong>Provedores de integrações:</strong> Google (OAuth e Calendar API),
-                            CactoPay (pagamentos), Resend (e-mails), UploadThing (imagens).</li>
+                            CactoPay (pagamentos), Resend (e-mails), UploadThing (imagens), Meta Platforms
+                            (WhatsApp Business Platform).</li>
+                        <li><strong>Provedores de inteligência artificial:</strong> processam o texto das
+                            conversas de WhatsApp apenas para gerar a resposta do atendimento.</li>
                         <li><strong>Autoridades competentes:</strong> quando exigido por lei ou ordem
                             judicial.</li>
                     </ul>
@@ -186,7 +185,38 @@ export default function PrivacyPage() {
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mt-10 mb-4">7. Armazenamento e segurança</h2>
+                    <h2 className="text-2xl font-semibold mt-10 mb-4">7. Conversas pelo WhatsApp</h2>
+                    <p>
+                        Quando você conversa com a Forbion pelo WhatsApp, usamos a WhatsApp Business
+                        Platform, da Meta Platforms. Nesse atendimento tratamos:
+                    </p>
+                    <ul className="list-disc list-inside ml-4 space-y-1">
+                        <li>seu número de telefone e o nome do seu perfil no WhatsApp;</li>
+                        <li>o conteúdo das mensagens (texto, áudio, imagem e documentos que você enviar);</li>
+                        <li>data e hora das mensagens e o status de entrega e leitura;</li>
+                        <li>dados que você nos informar na conversa, como o nome da sua estética.</li>
+                    </ul>
+                    <p>
+                        Usamos esses dados para responder suas dúvidas, criar seu acesso de teste, enviar
+                        avisos da sua conta (como o fim do teste ou a confirmação de pagamento) e
+                        melhorar o atendimento. Parte das respostas é escrita por um assistente de
+                        inteligência artificial, e uma pessoa da equipe pode assumir a conversa a qualquer
+                        momento.
+                    </p>
+                    <p>
+                        Só enviamos mensagens promocionais para quem autorizou receber. Para parar, responda
+                        <strong> SAIR</strong> na conversa ou escreva para contato@forbion.digital.
+                    </p>
+                    <p>
+                        A Meta trata esses dados como operadora, conforme os termos e a política de
+                        privacidade do WhatsApp. Guardamos as conversas enquanto houver relacionamento com
+                        você e por até 2 anos depois da última mensagem; você pode pedir a exclusão antes
+                        disso pelo e-mail acima.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 className="text-2xl font-semibold mt-10 mb-4">8. Armazenamento e segurança</h2>
                     <ul className="list-disc list-inside ml-4 space-y-1">
                         <li>Dados armazenados em servidores localizados nos Estados Unidos (Neon, AWS US-East).</li>
                         <li>Conexão sempre por HTTPS/TLS.</li>
@@ -198,7 +228,7 @@ export default function PrivacyPage() {
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mt-10 mb-4">8. Retenção de dados</h2>
+                    <h2 className="text-2xl font-semibold mt-10 mb-4">9. Retenção de dados</h2>
                     <ul className="list-disc list-inside ml-4 space-y-1">
                         <li>Dados de conta: mantidos enquanto a conta está ativa.</li>
                         <li>Histórico de agendamentos: mantido por até 5 anos para fins fiscais.</li>
@@ -209,7 +239,7 @@ export default function PrivacyPage() {
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mt-10 mb-4">9. Seus direitos (LGPD)</h2>
+                    <h2 className="text-2xl font-semibold mt-10 mb-4">10. Seus direitos (LGPD)</h2>
                     <p>Como titular de dados pessoais, você pode, a qualquer momento:</p>
                     <ul className="list-disc list-inside ml-4 space-y-1">
                         <li>Confirmar a existência de tratamento de seus dados;</li>
@@ -223,12 +253,12 @@ export default function PrivacyPage() {
                     </ul>
                     <p className="mt-3">
                         Para exercer qualquer desses direitos, envie e-mail para{" "}
-                        <strong>[EMAIL_DPO]</strong>. Responderemos em até 15 dias úteis.
+                        <strong>contato@forbion.digital</strong>. Responderemos em até 15 dias úteis.
                     </p>
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mt-10 mb-4">10. Cookies</h2>
+                    <h2 className="text-2xl font-semibold mt-10 mb-4">11. Cookies</h2>
                     <p>Usamos cookies estritamente necessários para:</p>
                     <ul className="list-disc list-inside ml-4 space-y-1">
                         <li>Manter sua sessão autenticada (cookie HttpOnly de autenticação);</li>
@@ -238,16 +268,16 @@ export default function PrivacyPage() {
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mt-10 mb-4">11. Crianças e adolescentes</h2>
+                    <h2 className="text-2xl font-semibold mt-10 mb-4">12. Crianças e adolescentes</h2>
                     <p>
                         A Plataforma não é destinada a menores de 18 anos. Não coletamos
                         intencionalmente dados de menores. Se você tiver conhecimento de que coletamos
-                        dados de um menor, contate-nos imediatamente em <strong>[EMAIL_DPO]</strong>.
+                        dados de um menor, contate-nos imediatamente em <strong>contato@forbion.digital</strong>.
                     </p>
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mt-10 mb-4">12. Alterações nesta Política</h2>
+                    <h2 className="text-2xl font-semibold mt-10 mb-4">13. Alterações nesta Política</h2>
                     <p>
                         Podemos atualizar esta Política periodicamente. Mudanças relevantes serão
                         comunicadas por e-mail e por aviso na Plataforma com pelo menos 15 dias de
@@ -256,19 +286,19 @@ export default function PrivacyPage() {
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mt-10 mb-4">13. Contato</h2>
+                    <h2 className="text-2xl font-semibold mt-10 mb-4">14. Contato</h2>
                     <p>
                         Para dúvidas, solicitações relativas à LGPD ou outras questões de privacidade:
                     </p>
                     <ul className="list-disc list-inside ml-4 space-y-1">
-                        <li><strong>Encarregado pelo Tratamento de Dados (DPO):</strong> [EMAIL_DPO]</li>
-                        <li><strong>Suporte:</strong> [EMAIL_SUPORTE]</li>
-                        <li><strong>Endereço:</strong> [ENDEREÇO]</li>
+                        <li><strong>Encarregado pelo Tratamento de Dados (DPO):</strong> contato@forbion.digital</li>
+                        <li><strong>Suporte:</strong> contato@forbion.digital</li>
+                        <li><strong>Endereço:</strong> Av. Paulista, 777, 15º andar, conj. 15, sala 1084, Bela Vista, São Paulo/SP, CEP 01311-914</li>
                     </ul>
                 </section>
 
                 <section>
-                    <h2 className="text-2xl font-semibold mt-10 mb-4">14. Lei aplicável e foro</h2>
+                    <h2 className="text-2xl font-semibold mt-10 mb-4">15. Lei aplicável e foro</h2>
                     <p>
                         Esta Política é regida pelas leis da República Federativa do Brasil. Fica eleito o
                         foro da comarca da sede da Forbion para dirimir quaisquer controvérsias,
